@@ -1,0 +1,17 @@
+body { 
+	width: 700px; 
+	margin-top: 20px; 
+	font-family: Book Antiqua,serif; 
+	line-height: 23px; 
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+h1 { text-align: center; font-size: 20pt; font-weight: 700; }
+
+.tab1 { margin-left: 40px;}
+
+.sand { color: b09f82; }
