@@ -19,20 +19,20 @@ h1 { text-align: center; font-size: 20pt; font-weight: 700; }
 }
 
 .cover-image {
-	animation-duration: 5s;
+	animation-duration: 20s;
 	animation-name: coverFade;
 	animation-fill-mode: forwards;
 }
 
 .sand-top {
-	animation-duration: 5s;
+	animation-duration: 20s;
 	animation-name: coverSlideFadeUp;
 	animation-fill-mode: forwards;
 }
 
 .sand-bottom {
 	margin: 0px;
-	animation-duration: 5s;
+	animation-duration: 20s;
 	animation-name: coverSlideFadeDown;
 	animation-fill-mode: forwards;
 }
@@ -49,7 +49,8 @@ h1 { text-align: center; font-size: 20pt; font-weight: 700; }
 	margin-top: 5px; 
 	transform-origin: left;
 	border-top: 0px solid;
-	animation-duration: 4.8s;
+	animation-duration: 19.8s;
+	animation-timing-function: linear;
 	animation-delay: 0.2s;
 	animation-name: loadingBar;
 	animation-fill-mode: forwards;
@@ -61,7 +62,7 @@ h1 { text-align: center; font-size: 20pt; font-weight: 700; }
 		transform: scale(0.01, 1);
 	}
 
-	90% {
+	96% {
 		opacity: 1;
 		transform: scale(1, 1);
 	}
@@ -79,7 +80,7 @@ h1 { text-align: center; font-size: 20pt; font-weight: 700; }
 		top: 20px;
 	}
 
-	10%,90% {
+	4%,96% {
 		opacity: 100%;
 		position: relative;
 		top: 0px;
@@ -99,7 +100,7 @@ h1 { text-align: center; font-size: 20pt; font-weight: 700; }
 		bottom: 20px;
 	}
 
-	10%,90% {
+	4%,96% {
 		opacity: 100%;
 		position: relative;
 		bottom: 0px;
@@ -117,7 +118,7 @@ h1 { text-align: center; font-size: 20pt; font-weight: 700; }
 		opacity: 0%;
 	}
 
-	10%,90% {
+	4%,96% {
 		opacity: 100%;
 	}
 
