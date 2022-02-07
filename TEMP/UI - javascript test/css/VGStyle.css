@@ -1,0 +1,154 @@
+body { 
+	width: 700px; 
+	margin-top: 20px; 
+	font-family: Book Antiqua,serif; 
+	line-height: 23px; 
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+h1 { 
+	text-align: center; 
+	font-size: 20pt; 
+	font-weight: 700; 
+	text-decoration:  underline;
+}
+
+.topLink { text-decoration: none; color: #888888; }
+
+.tab1 { margin-left: 40px;}
+
+.centered { text-align: center; }
+
+.sand {
+	color: b09f82; 
+}
+
+#topper{
+
+	font: 8pt Tahoma;
+	text-align: center;
+	text-transform:  uppercase;
+}
+
+.cover-image {
+	animation-duration: 20s;
+	animation-name: coverFade;
+	animation-fill-mode: forwards;
+}
+
+.sand-top {
+	animation-duration: 20s;
+	animation-name: coverSlideFadeUp;
+	animation-fill-mode: forwards;
+}
+
+.sand-bottom {
+	margin: 0px;
+	animation-duration: 20s;
+	animation-name: coverSlideFadeDown;
+	animation-fill-mode: forwards;
+}
+
+.quick-fade {
+	animation-duration: 0.5s;
+	animation-name: quickFadeIn;
+	animation-fill-mode: forwards;
+}
+
+.loading-bar {
+	opacity: 0;
+	padding: 0;
+	margin-top: 5px; 
+	transform-origin: left;
+	border-top: 0px solid;
+	animation-duration: 19.8s;
+	animation-timing-function: linear;
+	animation-delay: 0.2s;
+	animation-name: loadingBar;
+	animation-fill-mode: forwards;
+}
+
+@keyframes loadingBar {
+	0% {
+		opacity: 1;
+		transform: scale(0.01, 1);
+	}
+
+	96% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+
+	100% {
+		opacity: 0;
+	}
+
+}
+
+@keyframes coverSlideFadeUp {
+	0% {
+		opacity: 0%;
+		position: relative;
+		top: 20px;
+	}
+
+	4%,96% {
+		opacity: 100%;
+		position: relative;
+		top: 0px;
+	}
+
+	100% {
+		opacity: 0%;
+		position: relative;
+		top: 20px;
+	}
+}
+
+@keyframes coverSlideFadeDown {
+	0% {
+		opacity: 0%;
+		position: relative;
+		bottom: 20px;
+	}
+
+	4%,96% {
+		opacity: 100%;
+		position: relative;
+		bottom: 0px;
+	}
+
+	100% {
+		opacity: 0%;
+		position: relative;
+		bottom: 20px;
+	}
+}
+
+@keyframes coverFade {
+	0% {
+		opacity: 0%;
+	}
+
+	4%,96% {
+		opacity: 100%;
+	}
+
+	100% {
+		opacity: 0%;
+	}
+}
+
+@keyframes quickFadeIn {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
