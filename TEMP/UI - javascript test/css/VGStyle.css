@@ -1,8 +1,13 @@
 body { 
-	width: 700px; 
-	margin-top: 20px; 
-	font-family: Book Antiqua,serif; 
-	line-height: 23px; 
+	position: relative;
+	height: 100%;
+}
+
+main {
+	width: 700px;
+	margin-top: 20px;
+	font-family: Book Antiqua,serif;
+	line-height: 23px;
 	position: absolute;
 	top: 25%;
 	transform: translateY(-50%);
@@ -71,6 +76,8 @@ h1 {
 	animation-name: loadingBar;
 	animation-fill-mode: forwards;
 }
+
+/* ANIMATION CONTENT BELOW */
 
 @keyframes loadingBar {
 	0% {
@@ -151,4 +158,29 @@ h1 {
 	100% {
 		opacity: 100%;
 	}
+}
+
+/* UI CONTENT BELOW */
+
+.ui-container { /* This is a <div> inside the <body> */
+	opacity: 50%;
+}
+
+.ui-box { /* This is a <nav> inside the .ui-container <div> */
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ui-box img { /* This is a <img> inside the .ui-box <nav> */
+  transform: scale(80%);
+  background: red;
+}
+
+@media only screen and (max-height: 500px) {
+/* For smaller screens, shrink the UI */
+  .ui-box img {
+    transform: scale(60%);
+  }
 }
