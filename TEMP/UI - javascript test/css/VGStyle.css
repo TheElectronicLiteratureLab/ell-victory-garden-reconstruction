@@ -162,25 +162,61 @@ h1 {
 
 /* UI CONTENT BELOW */
 
-.ui-container { /* This is a <div> inside the <body> */
-	opacity: 50%;
-}
-
-.ui-box { /* This is a <nav> inside the .ui-container <div> */
+.ui-box { /* This is a <nav> inside the <body> */
   position: fixed;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
+  float: left;
 }
 
-.ui-box img { /* This is a <img> inside the .ui-box <nav> */
+.ui-box img { /* This is an <img> inside the .ui-box <nav> */
   transform: scale(80%);
-  background: red;
+}
+
+.ui-box button {
+	position: fixed;
+	background-color: white;
+	border: solid 1px #b09f82;
+}
+
+.ui-box button:hover {
+	background-color: b09f82;
+}
+
+.ui-box .ui-path-fw {
+	padding: 15px 15px;
+	left: 18px;
+	top: 57px;
+}
+
+.ui-box .ui-test-1 {
+	padding: 15px 15px;
+	left: 18px;
+	top: 120px;
+}
+
+.ui-box .ui-test-center {
+	padding: 8px 8px;
+	left: 25px;
+	top: 282px;
+}
+
+.ui-box .ui-stream-fw {
+	padding: 15px 15px;
+	left: 18px;
+	bottom: 57px;
+}
+
+.ui-box .ui-test-2 {
+	padding: 15px 15px;
+	left: 18px;
+	bottom: 120px;
 }
 
 @media only screen and (max-height: 500px) {
 /* For smaller screens, shrink the UI */
-  .ui-box img {
-    transform: scale(60%);
+  .ui-box {
+    background: red;
   }
 }
