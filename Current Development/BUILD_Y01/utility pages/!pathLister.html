@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>˚</title>
+<link rel='stylesheet' href='css/VGStyle.css'>
+<script src="scripts/pathSource.js"></script>
+<script src='scripts/VGScript.js'></script>
+
+</head>
+<body>
+<div id="out"></div>
+</main>
+<script src='scripts/uiScript.js'></script>
+</body>
+<script>
+	thePath = astray.split(",")
+	for(i=0; i<thePath.length; i++){
+		document.getElementById('out').innerHTML += i + " " + thePath[i]+'<br>'
+	}
+</script>
+</html>
