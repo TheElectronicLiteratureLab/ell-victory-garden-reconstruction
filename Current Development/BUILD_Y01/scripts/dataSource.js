@@ -26,7 +26,7 @@ telephone = new Array("Telephone","Ringing_Tone","Listeners","Caller","Unhappy",
 
 //STREAMS FROM 'DONE II'
 
-u_turns = new Array("U_Turns","Not_Right","What_Am_I_","A_Little_Paranoia","Five_Hundred","Reflex","What_U_Know","Engineer","No_Complaints","Broadcast","The_White_Suit","Create","For Me_For You_","Ubi_Sunt","Know_About_That","Vast_Perpetual","A_New_Refutation_of_Time","Turnabout","About_Turn")
+u_turns = new Array("U_Turns","Not_Right","What_Am_I_","A_Little_Paranoia","Five_Hundred","Reflex","What_U_Know","Engineer","No_Complaints","Broadcast","The_White_Suit","Create_","For Me_For You_","Ubi_Sunt","Know_About_That","Vast_Perpetual","A_New_Refutation_of_Time","Turnabout","About_Turn")
 
 whitman_s_creek = new Array("Whitman_s_Creek","Meet_the_Creek","Anomaly","Miles_in_Nature","Coming_In_","Splashdown","While_You_Can","Fertile_Subject","Up_the_Creek","With_a_Bullet","Et_Voila","Something_Happens","Well_in_Hand","The_Prophet_Returns")
 
