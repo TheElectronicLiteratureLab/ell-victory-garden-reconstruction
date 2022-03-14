@@ -1,13 +1,58 @@
 //SET UP OVERRIDE VARIABLE
 override = "";
 
-//SET LISTENER FOR PATH & STREAM KEYS
-window.addEventListener('keyup', function(event) {
-  // NUMBER 13 IS "RETURN"; NUMBER 17 IS "CONTROL"
-  if (event.keyCode == 13) pathFinder(); if(event.keyCode == 17) streamLiner()	
-}); 
+//SET LISTENER FOR PATH & STREAM KEYS, FWD AND REV
+//UP IS PATH FWD; DOWN IS PATH REV; RIGHT IS STREAM FWD, LEFT  IS STREAM REV
 
-//ENABLE RANDOM SELECTION IN 'LABYRINTH' SECTION
+window.addEventListener('keyup', function(event) {
+  if(event.keyCode == 37) streamLiner('rev'); 
+  if(event.keyCode == 38) pathFinder('fwd');
+  if(event.keyCode == 39) streamLiner('fwd'); 
+  if(event.keyCode == 40) pathFinder('rev');
+  if(event.keyCode == 17) streamLiner('fwd');
+  if(event.keyCode == 13) pathFinder('fwd');
+});
+
+function transit(dest){
+	if(dest == "index"){
+		window.open("index.html", "_parent")
+	}
+	else{
+		window.open(dest + ".html", "_self")
+	}
+}
+
+//REPORT PATH AND STREAM IN 'TOPPER' DIV
+function pageStart()
+{
+	//SOME PAGES DON'T HAVE THE HEADER
+	if(document.getElementById('topper') != null)
+	{
+		//PATH
+		//DETERMINE NAME OF CURRENT PATH
+		thePath = sessionStorage.getItem('currentPath');
+		thePathName = "Victory Garden";
+		pathNamesArray = pathNames.split(',')
+		for(var i=0; i<allPaths.length; i++)
+		{
+			if(allPaths[i] == thePath) thePathName = pathNamesArray[i];
+		}
+		//STREAM
+		//DEFAULT VALUE FOR PAGES NOT IN A STREAM (THERE ARE SOME)
+		theStream = "Victory Garden"
+		thisPage = shortNamer();
+		//SEARCH ALL STREAMS TO FIND STREAM INCLUDING THIS SPACE
+		for(var i=0; i<allStreams.length; i++){
+			//IF ARRAY INCLUDES PAGE, USE ASSOCIATED STREAM NAME
+			if(allStreams[i].includes(thisPage)) theStream = streamNames[i]
+		}
+		//EASTER-EGG: PATH AND STREAM INDICATORS LINK TO LISTING PAGES FOR PATHS AND STREAMS
+		document.getElementById('topper').innerHTML = "<a class='topLink' href='Pathfinder.html'>" + thePathName + "</a> &middot; " + "<a class='topLink' href='Streamlines.html'>" + theStream + "</a>";
+	}
+}
+
+
+//ENABLE RANDOM CHOICE OF DUAL OPTIONS IN 'LABYRINTH' SECTION
 //ACTUALLY THIS COULD WORK FOR LARGER OPTION SETS AS WELL!
 function labFlip(overString)
 {
@@ -18,10 +63,10 @@ function labFlip(overString)
 }
 
 //HANDLE STREAMS
-function streamLiner()
+function streamLiner(dir)
 {
-	//CHECK FOR LOCAL OVERRIDE
-	//FIRST CHECK FOR SPECIAL 'LABYRINTH' OVERRIDE - RANDOM CHOICE
+	//CHECK FOR LOCAL OVERRIDE - DIR DOES NOT MATTER
+	//FIRST CHECK FOR SPECIAL 'LABYRINTH' OVERRIDE (RANDOM CHOICE)
 	if(override != ""){
 		if(override.charAt(0) == "~"){
 			dest = labFlip(override);
@@ -37,14 +82,14 @@ function streamLiner()
 		thisPage = shortNamer();
 		//CLEAR KEY VARIABLES
 		dest = "";
-		searchArray = ""
-		//SEARCH ALL STREAMS TO FIND STREAM INCLUDING THIS SPACE
+		searchArray = "";
+		//SEARCH STREAMS TO FIND STREAM INCLUDING THIS SPACE
 		for(var i=0; i<allStreams.length; i++){
-			//IF ARRAY INCLUDES PAGE, USE THE ARRAY
+			//IF ARRAY INCLUDES THIS PAGE, USE THE ARRAY
 			if(allStreams[i].includes(thisPage)) searchArray = allStreams[i];
 		}
 		if(searchArray == ""){
-			//NOT ALL PAGES ARE IN STREAMS!
+			//NOT ALL PAGES ARE IN STREAMS! - JUMP TO END OF SCRIPT
 			dest = "Streamlines"
 		}
 		else{
@@ -53,93 +98,120 @@ function streamLiner()
 					//DETERMINE POSITION OF MATCH IN ARRAY
 					if(searchArray[i] == thisPage) thePos = i;
 				}
-					//IF FINAL ITEM, GO TO 'STREAMLINES' PAGE
-					if(thePos == searchArray.length-1){
-					dest = "Streamlines"
-				}
-				else{
-					//IF NOT FINAL, DEST IS NEXT PAGE IN ARRAY
-					dest = searchArray[thePos + 1]
+					//FORWARD OR BACKWARD?
+					if(dir == 'fwd'){
+						//MOVING FORWARD!
+						//IF AT FINAL PAGE OF STREAM, GO TO 'STREAMLINES'
+						if(thePos == searchArray.length-1){
+							dest = "Streamlines";
+						}
+						else{
+							//GO TO NEXT PAGE IN STREAM
+							dest = searchArray[thePos + 1];
+						}
+					}
+					else{
+					//BACKWARD IT IS!
+						//IF AT FIRST PAGE OF STREAM, GO TO 'STREAMLINES'
+						if(thePos == 0){
+							dest = "Streamlines";
+						}
+						else{
+							//GO TO PREVIOUS PAGE IN STREAM
+							dest = searchArray[thePos - 1];
+						}
+					}
 				}
 		}
-
-	}
 	//PROCEED TO DESTINATION
-	location = dest + ".html";
+	transit(dest);
 }
 
 //HANDLE PATHS
-function pathFinder()
+function pathFinder(dir)
 {	
 	//PATHS REQUIRE SETUP ON INDEX PAGE, BUT PAGES MAY BE ACCESSED INDEPENDENTLY
 	//SO WE CHECK THE SETUP AND SKIP TO END IF IT HASN'T BEEN DONE
-	if(sessionStorage.getItem('currentPath') != null)
+	if(sessionStorage.getItem('currentPath') == null)
 	{
-			dest = "";
-			//CONVERT STORED PATH STRING TO ARRAY
-			pathString = sessionStorage.getItem('currentPath')
-			thePathArray = pathString.split(',')	
-			//CHECK FOR LOCAL OVERRIDE
+		dest = thePathArray[thePathCount]; //GO STRAIGHT TO TRANSIT CALL AT BOTTOM
+	}
+	else //THERE IS A WORKING PATH; ADVANCE OR REVERSE
+	{
+		dest = "";
+		//CONVERT STORED PATH STRING TO ARRAY
+		pathString = sessionStorage.getItem('currentPath')
+		thePathArray = pathString.split(',')	
+		//CHECK FOR OVERRIDES
+		if(override != "")
+		{
 			//FIRST CHECK FOR SPECIAL 'LABYRINTH' OVERRIDE - RANDOM CHOICE
-			if(override != ""){
-				if(override.charAt(0) == "~"){
-					dest = labFlip(override);
-				}
-				else{
-					dest = override;
-					override = "";
-				}
+			if(override.charAt(0) == "~"){
+				dest = labFlip(override);
 			}
-			//NO OVERRIDE
 			else{
+				dest = override;
+				override = "";
+			}
+		}
+			else //NO OVERRIDE
+			{
 				//GET PATHCOUNT
 				thePathCount = parseInt(sessionStorage.getItem('pathCount'))
-				//HAVE WE FINISHED THE PATH?
-				if(thePathCount == thePathArray.length){
-					//GO TO ENTRY PAGE AND START NEW SESSION
-					dest = "index"
-				}
-				else{
-					//EITHER LOOP OR CONTINUE
-					dest = thePathArray[thePathCount]
-					//LOOP IF INDICATED - LOOPING PATHS DO NOT END
-					if(dest.charAt(0) == "*"){
-						//LOOP POSITION SET BY CHARACTERS FOLLOWING "*"
-						loopString = parseInt(dest.substring(1,dest.length))
-						loopNum = parseInt(loopString);
-						dest = thePathArray[loopNum]
-						loopNum ++; //PREVENT LOOP ENTRY NODE FROM REPEATING
-						loopString = parseInt(loopNum)  //PERHAPS UNNECESSARY
-						sessionStorage.setItem('pathCount', loopString);
+				//DIRECTIONAL SPLIT
+				if(dir == 'fwd') //FORWARD!
+				{
+					//END OF PATH?
+					if(thePathCount == thePathArray.length){
+						//DOES THE PATH LOOP?
+						dest = thePathArray[thePathCount]
+						if(dest.charAt(0) == "*")
+						{
+							//LOOP POSITION SET BY CHARACTERS FOLLOWING "*"
+							loopString = parseInt(dest.substring(1,dest.length))
+							loopNum = parseInt(loopString);
+							dest = thePathArray[loopNum]
+							loopNum ++; //PREVENT LOOP ENTRY NODE FROM REPEATING
+							loopString = parseInt(loopNum)  //PERHAPS UNNECESSARY
+							sessionStorage.setItem('pathCount', loopString);
+						}
+					else
+						{
+							//AT END OF PATH BUT NO LOOP
+							dest = "index"
+						}
 					}
-					else{
-					//NO LOOP, NOT AT END OF PATH
-						thePathCount ++;
-						sessionStorage.setItem('pathCount', thePathCount.toString());				
+				else //FWD, NOT AT END OF PATH
+				{
+							thePathCount ++;
+							dest = thePathArray[thePathCount];
+							sessionStorage.setItem('pathCount', thePathCount.toString());				
+						}
+				} //END OF 'FORWARD' CONDITIONS
+				else
+				{ //REVERSE
+					if(thePathCount == 0) //AT START OF PATH; GO TO INDEX
+					{
+						dest = 'index'
 					}
-				}
-			}
-		}
-		else{
-			//WE'RE HERE BECAUSE PAGE WAS ACCESSED WITHOUT GOING THROUGH INDEX.HTML
-			//SO THAT'S WHERE WE'RE GOING, EH
-			dest = "index";
-		}
-	//PROCEED TO DESTINATION
-	location = dest + ".html";
-}
+					else
+					{ //BACK UP ONE PAGE
+						thePathCount --;
+						dest = thePathArray[thePathCount];
+						sessionStorage.setItem('pathCount', thePathCount.toString());	
+					}
+				}  // END OF 'REVERSE' CONDITIONS
+		} 
+			
+		//PROCEED TO DESTINATION
+		transit(dest);
+	} //END OF NO-OVERRIDE CONDITIONS (MAIN LOGIC)
 
-//TRACK READING HISTORY
-function historicize()
-{
-	thePage = shortNamer();
-	//RETRIEVE HISTORY FROM LOCAL STORAGE
-	currHist = sessionStorage.getItem('VGH');
-	//CATCH ERROR IF CURRHIST IS NULL (PAGE ACCESSED W/O INDEX PAGE)
-	if(currHist === null) currHist = "index"
-	//ADD THIS PAGE TO HISTORY IF NOT ALREADY THERE
-	if(!currHist.includes(thePage)) currHist += thePage + ','
-	sessionStorage.setItem('VGH',currHist)
+} //END OF PATHFINDER FUNCTION
+
+//CALLED ON THE TWO 'IMAGE' PAGES
+function emilyPic(){
+	document.getElementById("Emily").src = "images/Emilys/emily_" + Math.floor(Math.random()*100) + ".jpg";
 }
 
 //SCRUB FILE EXTENSION FROM PAGE NAMES
@@ -152,7 +224,3 @@ function shortNamer()
 	pn = pn.substring(0,pn.length-5)
 	return pn
 }
-
-
-
-
