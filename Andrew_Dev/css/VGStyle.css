@@ -22,14 +22,18 @@ h1 {
 	text-decoration:  underline;
 }
 
-.topLink { text-decoration: none; color: #888888; }
+a {
+	color: #9A896D;
+}
+
+.topLink { text-decoration: none; color: #B09F82; }
 
 .tab1 { margin-left: 40px;}
 
 .centered { text-align: center; }
 
 .sand {
-	color: b09f82; 
+	color: #b09f82; 
 }
 
 #topper{
@@ -183,7 +187,8 @@ h1 {
 .ui-box button {
 	position: absolute;
 	background-color: white;
-	border: solid #888888 1px;
+	border: solid #B09F82 1px;
+	cursor: pointer;
 }
 
 .ui-box .ui-helix {
@@ -208,7 +213,7 @@ h1 {
 		top: 15%;
 		transform: translateY(-50%) translateX(-50%);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;
@@ -237,7 +242,7 @@ h1 {
 		top: 25%;
 		transform: translateY(-50%) translateX(-50%);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;
@@ -266,7 +271,7 @@ h1 {
 		top: 50%;
 		transform: translateY(-50%) translateX(-50%);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;
@@ -295,7 +300,7 @@ h1 {
 		top: 75%;
 		transform: translateY(-50%) translateX(-50%);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;
@@ -324,7 +329,7 @@ h1 {
 		top: 85%;
 		transform: translateY(-50%) translateX(-50%);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;
@@ -353,7 +358,7 @@ h1 {
 		top: 34%;
 		transform: translateY(-50%) translateX(-50%) rotate(45deg);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;
@@ -382,7 +387,7 @@ h1 {
 		top: 34%;
 		transform: translateY(-50%) translateX(-50%) rotate(225deg);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;
@@ -411,7 +416,7 @@ h1 {
 		top: 66%;
 		transform: translateY(-50%) translateX(-50%) rotate(45deg);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;
@@ -440,7 +445,7 @@ h1 {
 		top: 66%;
 		transform: translateY(-50%) translateX(-50%) rotate(225deg);
 		background-image: url('../images/ui/ui-btn-blank.png');
-		border: solid #888888 1px;
+		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
 		transition-property: opacity;

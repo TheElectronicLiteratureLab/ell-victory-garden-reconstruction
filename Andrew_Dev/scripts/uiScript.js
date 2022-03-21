@@ -22,30 +22,35 @@ const eleTopBtn = document.createElement("button");
 eleTopBtn.className = "ui-button-1";
 const eleTopBtnOvr = document.createElement("button");
 eleTopBtnOvr.className = "ui-button-1-over";
+eleTopBtn.setAttribute("onclick", "window.location.href='./theMap.html';");
 
 //Create a <button> second in the UI.
 const eleSecBtn = document.createElement("button");
 eleSecBtn.className = "ui-button-2";
 const eleSecBtnOvr = document.createElement("button");
 eleSecBtnOvr.className = "ui-button-2-over";
+eleSecBtn.setAttribute("onclick", "window.location.href='./Streamlines.html';");
 
 //Create a <button> in the center of the UI.
 const eleCenBtn = document.createElement("button");
 eleCenBtn.className = "ui-button-0";
 const eleCenBtnOvr = document.createElement("button");
 eleCenBtnOvr.className = "ui-button-0-over";
+eleCenBtn.setAttribute("onclick", "window.location.href='./readME.html';");
 
 //Create a <button> third in the UI.
 const eleThrBtn = document.createElement("button");
 eleThrBtn.className = "ui-button-3";
 const eleThrBtnOvr = document.createElement("button");
 eleThrBtnOvr.className = "ui-button-3-over";
+eleThrBtn.setAttribute("onclick", "window.location.href='./Pathfinder.html';");
 
 //Create a <button> fourth in the UI.
 const eleBtmBtn = document.createElement("button");
 eleBtmBtn.className = "ui-button-4";
 const eleBtmBtnOvr = document.createElement("button");
 eleBtmBtnOvr.className = "ui-button-4-over";
+eleBtmBtn.setAttribute("onclick", "window.location.href='./index.html';");
 
 //Create a <button> for moving back in the stream.
 const eleStmBckBtn = document.createElement("button");
