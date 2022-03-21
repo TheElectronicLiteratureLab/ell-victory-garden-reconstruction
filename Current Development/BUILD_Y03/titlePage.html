@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>&eqvparsl;</title>
+<link rel='stylesheet' href='css/VGStyle.css'>
+	<style>
+		main { position: absolute; top: 10px; }
+	</style>
+<script src='scripts/VGScript.js'></script>
+<script src='scripts/dataSource.js'></script>
+<script>
+	//'LABYRINTH' IS DEFAULT DESTINATION
+	override = "Come_In";
+</script>
+</head>
+<body class="quick-fade">
+<main>
+
+<div style="text-align: center">
+
+<img src="images/title.jpg" width="512" alt="Victory Garden Title Image" >
+
+<p><em>a fiction</em></p>
+<p>by Stuart Moulthrop<br>
+2022</p>
+
+<p id='buildID' style="color: #DD0000;" </p>
+
+<p>
+<em>
+	This version is work in progress.  The reader interface is not finished; there may be holes in the road.
+	You can move through this version in any of three ways: if there are visible links, follow them as on any webpage; you may press the UP arrow key at any point to advance along a Path -- an idiosyncratic, hopscotch traversal of the work; press the DOWN ARROW to reverse through the Path.  There are also Streams, which are more coherent narrative episodes.  Use the RIGHT arrow to move ahead in a Stream, LEFT to move backward.  Not all pages are in Streams.  Pressing LEFT or RIGHT in this case will take you to a list of Streams to enter.
+</em>
+</p><p>
+	  There is also a graphical <a class="textlink"  href="theMap.html">map</a>
+	</p><p>
+	Press any arrow key to start.
+	</p>
+</div>
+
+</main>
+</body>
+
+<script>
+	document.getElementById('buildID').innerHTML = "BUILD " + theBuild;
+</script>
+
+</html>
