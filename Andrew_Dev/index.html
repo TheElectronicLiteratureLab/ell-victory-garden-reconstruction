@@ -4,16 +4,19 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>cover</title>
 <link rel='stylesheet' href='css/VGStyle.css'>
-<script src="scripts/pathSource.js"></script>
+
+<style>
+		main { position: absolute; top: 10px; }
+</style>
+
+<script src="scripts/dataSource.js"></script>
+<script src='scripts/VGScript.js'></script>
 <script>
 	//USING SESSION STORAGE FOR ACCESS ON MULTIPLE PAGES
 	//SET A DEFAULT PATH/COUNT HERE IN CASE READERS BYPASS THE LABYRINTH OR OTHER HEADNODES
-	sessionStorage.setItem('currentPath',as_we_want);
+	sessionStorage.setItem('currentPath',grand);
 	sessionStorage.setItem('pathCount','0');
-	sessionStorage.setItem('VGH','')
 </script>
-<script src='scripts/VGScript.js'></script>
-<script src='scripts/streamSource.js'></script>
 <script>
 	//ALWAYS GO TO TITLEPAGE FROM HERE
 	override = "titlePage"
@@ -39,18 +42,19 @@
 	}
 </script>
 </head>
-<body onLoad="historicize(),redirect_Page()">
+<body onLoad="coverUp(); redirect_Page()">
+<main>
 
-<h1 class="sand sand-top" style="text-align: left">&#9632 &#9633</h1>
+<h2 class="sand sand-top" style="text-align: left">&#9632 &#9633</h2>
 
 <div style="text-align: center">
 <!-- Reduced image size from 800 to 700 to match main div width -->
-<img src="images/VG_2022_Cover.jpg" width="700" alt="Victory Garden 2022 Title Image" usemap="#coverMap" class="cover-image">
+<img src="images/covers/VG_Cover_Image_BASE.jpg" width="700" alt="Victory Garden 2022 Title Image" id="coverImg" usemap="#coverMap" class="cover-image">
 </div>
 
 <hr class="sand loading-bar"></hr>
 
-<h1 class="sand sand-bottom" style="text-align: right">&#9633 &#9632</h1>
+<h2 class="sand sand-bottom" style="text-align: right">&#9633 &#9632</h2>
 
 <map name='coverMap'>
 	<area shape='rect' coords='621,43,694,143' href="javascript: maplink('thea')">
@@ -61,6 +65,11 @@
 </map>
 
 <script type="text/javascript">
+	//set cover image
+	function coverUp(){
+		document.getElementById('coverImg').src="images/covers/VG_Cover_Image_" + Math.floor(Math.random()*10) + ".jpg";
+	}
+
 	//Redirect the page
 	let redirect_Page = () => {
         let tID = setTimeout(function () {
@@ -70,5 +79,6 @@
     }
 </script>
 
+</main>
 </body>
 </html>
