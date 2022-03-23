@@ -6,7 +6,7 @@ body {
 main {
 	width: 700px;
 	margin-top: 20px;
-	font-family: Book Antiqua,serif;
+	font-family: Crimson Pro,serif;
 	line-height: 23px;
 	position: absolute;
 	top: 25%;
@@ -16,10 +16,10 @@ main {
 }
 
 h1 { 
-	text-align: center; 
+	text-align: center;
+	font-family:  Cabin,sans-serif; 
 	font-size: 20pt; 
-	font-weight: 700; 
-	text-decoration:  underline;
+	font-weight: 700;
 }
 
 a {
@@ -31,6 +31,8 @@ a {
 .tab1 { margin-left: 40px;}
 
 .centered { text-align: center; }
+
+.caption { font-family:  Cabin,sans-serif; font-size:  10pt; text-align: center; color: #b09f82; }
 
 .sand {
 	color: #b09f82; 

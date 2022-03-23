@@ -22,7 +22,11 @@ h1 {
 	font-weight: 700;
 }
 
-.topLink { text-decoration: none; color: #888888; }
+a {
+	color: #9A896D;
+}
+
+.topLink { text-decoration: none; color: #B09F82; }
 
 .tab1 { margin-left: 40px;}
 
@@ -31,7 +35,7 @@ h1 {
 .caption { font-family:  Cabin,sans-serif; font-size:  10pt; text-align: center; color: #b09f82; }
 
 .sand {
-	color: b09f82; 
+	color: #b09f82; 
 }
 
 #topper{
@@ -163,58 +167,307 @@ h1 {
 }
 
 /* UI CONTENT BELOW */
-
-.ui-box { /* This is a <nav> inside the <body> */
-  position: fixed;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  float: left;
+.ui-pos {
+	pointer-events: none;
+	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	transform: translateY(-50%) translateX(-50%);
 }
 
-.ui-box img { /* This is an <img> inside the .ui-box <nav> */
-  transform: scale(80%);
+.ui-box { /* This is a <nav> inside the <body> */
+	pointer-events: auto; 
+	position: relative;
+	right: 410px;
+}
+
+.ui-box .ui-template { /* This is an <img> inside the .ui-box <nav> */
+  transform: scale(75%);
+  opacity: 0;
 }
 
 .ui-box button {
-	position: fixed;
+	position: absolute;
 	background-color: white;
-	border: solid 1px #b09f82;
+	border: solid #B09F82 1px;
+	cursor: pointer;
 }
 
-.ui-box button:hover {
-	background-color: b09f82;
+.ui-box .ui-helix {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	z-index: -5;
+	transform: translateY(-50%) translateX(-50%) scale(60%);
+	background-image: url('../images/ui/ui-helix.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.ui-box .ui-path-fw {
-	padding: 15px 15px;
-	left: 18px;
-	top: 57px;
-}
+	/* UI BUTTON 1 */
+	.ui-box .ui-button-1 { /* Center button on the UI - Initial state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 15%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
 
-.ui-box .ui-test-1 {
-	padding: 15px 15px;
-	left: 18px;
-	top: 120px;
-}
+	.ui-box .ui-button-1:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
 
-.ui-box .ui-test-center {
-	padding: 8px 8px;
-	left: 25px;
-	top: 282px;
-}
+	.ui-box .ui-button-1-over { /* Center button on the UI - Hover state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 15%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
 
-.ui-box .ui-stream-fw {
-	padding: 15px 15px;
-	left: 18px;
-	bottom: 57px;
-}
+	/* UI BUTTON 2 */
+	.ui-box .ui-button-2 { /* Center button on the UI - Initial state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 25%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
 
-.ui-box .ui-test-2 {
-	padding: 15px 15px;
-	left: 18px;
-	bottom: 120px;
-}
+	.ui-box .ui-button-2:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-2-over { /* Center button on the UI - Hover state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 25%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
+
+	/* UI BUTTON 0 */
+	.ui-box .ui-button-0 { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 50%;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-button-0:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-0-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 50%;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
+
+	/* UI BUTTON 3 */
+	.ui-box .ui-button-3 { /* Center button on the UI - Initial state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 75%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-button-3:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-3-over { /* Center button on the UI - Hover state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 75%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
+
+	/* UI BUTTON 4 */
+	.ui-box .ui-button-4 { /* Center button on the UI - Initial state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 85%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-button-4:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-4-over { /* Center button on the UI - Hover state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 85%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
+
+	/* UI STREAM BACK */
+	.ui-box .ui-stream-back { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 25%;
+		top: 34%;
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-stream-back:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-stream-back-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 25%;
+		top: 34%;
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
+
+	/* UI STREAM FORWARD */
+	.ui-box .ui-stream-forward { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 75%;
+		top: 34%;
+		transform: translateY(-50%) translateX(-50%) rotate(225deg);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-stream-forward:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-stream-forward-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 75%;
+		top: 34%;
+		transform: translateY(-50%) translateX(-50%) rotate(225deg);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
+
+	/* UI PATH BACK */
+	.ui-box .ui-path-back { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 25%;
+		top: 66%;
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-path-back:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-path-back-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 25%;
+		top: 66%;
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
+
+	/* UI PATH FORWARD */
+	.ui-box .ui-path-forward { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 75%;
+		top: 66%;
+		transform: translateY(-50%) translateX(-50%) rotate(225deg);
+		background-image: url('../images/ui/ui-btn-blank.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-path-forward:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-path-forward-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 75%;
+		top: 66%;
+		transform: translateY(-50%) translateX(-50%) rotate(225deg);
+		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-size: cover;
+	}
+
 
 @media only screen and (max-height: 500px) {
 /* For smaller screens, shrink the UI */
