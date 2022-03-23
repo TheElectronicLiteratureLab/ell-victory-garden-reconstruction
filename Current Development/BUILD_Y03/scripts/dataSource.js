@@ -6,9 +6,9 @@ theBuild = 'Y03';
 
 //STREAMS FROM 'DONE I'
 
-thea_s_war = new Array("Thea_s_War","Unreal","Buildup","Games","Big_Games","Unseen","Face_the_Wall","Sisters","Keep_the_Change","Thea_Harley","Heirloom","Our_Mother","Lucy_Reasons","Rock_of_Faith","Last_Days","Your_Generation","Resistance_","Futility")
+thea_s_war = new Array("Auroras","Thea_s_War","Unreal","Buildup","Games","Big_Games","Unseen","Face_the_Wall","Sisters","Keep_the_Change","Thea_Harley","Heirloom","Our_Mother","Lucy_Reasons","Rock_of_Faith","Last_Days","Your_Generation","Resistance_","Futility")
 
-emily_to_thea = new Array("Emily_to_Thea","My_Fault_","Get_It_Done","Opinions","Who_s_Out_of_It_","The_General","Believer","Conquering_Hero","Forbidden_Planet","Aliens","Inversion","I_m_OK","New_Kids","Love_Emily")
+emily_to_thea = new Array("Where_s_my_goddam_letter","Emily_to_Thea","My_Fault_","Get_It_Done","Opinions","Who_s_Out_of_It_","The_General","Believer","Conquering_Hero","Forbidden_Planet","Aliens","Inversion","I_m_OK","New_Kids","Love_Emily")
 
 postwar = new Array("Postwar","Morning","Noon","Night","Aftermath","Breakfast","Lunch","Dinner","Leroy_at_the_Beach","New_Drugs","Reality_Artist","Beautiful_People","At_Work","At_Play","In_Dreams","Surprise_Call","Long_Distance","Foursome","NJ","Epithalamion","About_the_War","Kisses","Then","And_Now","And_Then_Again","Mourning","Miles","Stranger","And_","Anima","Image")
 
