@@ -213,8 +213,8 @@ a {
 		height: 30px;
 		left: 50%;
 		top: 15%;
-		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-map.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -227,12 +227,13 @@ a {
 	}
 
 	.ui-box .ui-button-1-over { /* Center button on the UI - Hover state */
+		display: none;
 		width: 30px;
 		height: 30px;
 		left: 50%;
 		top: 15%;
-		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-map-over.svg');
 		background-size: cover;
 	}
 
@@ -329,7 +330,7 @@ a {
 		height: 30px;
 		left: 50%;
 		top: 85%;
-		transform: translateY(-50%) translateX(-50%);
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
 		background-image: url('../images/ui/ui-btn-blank.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
@@ -347,7 +348,7 @@ a {
 		height: 30px;
 		left: 50%;
 		top: 85%;
-		transform: translateY(-50%) translateX(-50%);
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
 		background-image: url('../images/ui/ui-btn-blank-over.png');
 		background-size: cover;
 	}
