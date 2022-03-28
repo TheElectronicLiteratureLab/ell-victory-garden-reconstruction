@@ -24,6 +24,14 @@ h1 {
 
 a {
 	color: #9A896D;
+	transition-property: color;
+	transition-duration: 0.2s;
+}
+
+a:hover {
+	color: #7B919E;
+	transition-property: color;
+	transition-duration: 0.2s;
 }
 
 .topLink { text-decoration: none; color: #B09F82; }
@@ -213,8 +221,9 @@ a {
 		height: 30px;
 		left: 50%;
 		top: 15%;
-		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		padding: 0;
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-map.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -231,8 +240,9 @@ a {
 		height: 30px;
 		left: 50%;
 		top: 15%;
-		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-map-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
@@ -243,7 +253,7 @@ a {
 		left: 50%;
 		top: 25%;
 		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		background-image: url('../images/ui/ui-btn-paths.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -261,7 +271,8 @@ a {
 		left: 50%;
 		top: 25%;
 		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-image: url('../images/ui/ui-btn-paths-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
@@ -272,7 +283,7 @@ a {
 		left: 50%;
 		top: 50%;
 		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		background-image: url('../images/ui/ui-btn-square.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -290,7 +301,8 @@ a {
 		left: 50%;
 		top: 50%;
 		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-image: url('../images/ui/ui-btn-square-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
@@ -301,7 +313,7 @@ a {
 		left: 50%;
 		top: 75%;
 		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		background-image: url('../images/ui/ui-btn-streams.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -319,7 +331,8 @@ a {
 		left: 50%;
 		top: 75%;
 		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		background-image: url('../images/ui/ui-btn-streams-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
@@ -329,8 +342,8 @@ a {
 		height: 30px;
 		left: 50%;
 		top: 85%;
-		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-tower.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -347,8 +360,9 @@ a {
 		height: 30px;
 		left: 50%;
 		top: 85%;
-		transform: translateY(-50%) translateX(-50%);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-tower-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
@@ -358,8 +372,8 @@ a {
 		height: 20px;
 		left: 25%;
 		top: 34%;
-		transform: translateY(-50%) translateX(-50%) rotate(45deg);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-arrow.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -376,8 +390,9 @@ a {
 		height: 20px;
 		left: 25%;
 		top: 34%;
-		transform: translateY(-50%) translateX(-50%) rotate(45deg);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-arrow-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
@@ -387,8 +402,8 @@ a {
 		height: 20px;
 		left: 75%;
 		top: 34%;
-		transform: translateY(-50%) translateX(-50%) rotate(225deg);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		transform: translateY(-50%) translateX(-50%) rotate(135deg);
+		background-image: url('../images/ui/ui-btn-arrow.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -405,8 +420,9 @@ a {
 		height: 20px;
 		left: 75%;
 		top: 34%;
-		transform: translateY(-50%) translateX(-50%) rotate(225deg);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		transform: translateY(-50%) translateX(-50%) rotate(135deg);
+		background-image: url('../images/ui/ui-btn-arrow-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
@@ -416,8 +432,8 @@ a {
 		height: 20px;
 		left: 25%;
 		top: 66%;
-		transform: translateY(-50%) translateX(-50%) rotate(45deg);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-arrow.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -434,8 +450,9 @@ a {
 		height: 20px;
 		left: 25%;
 		top: 66%;
-		transform: translateY(-50%) translateX(-50%) rotate(45deg);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-arrow-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
@@ -445,8 +462,8 @@ a {
 		height: 20px;
 		left: 75%;
 		top: 66%;
-		transform: translateY(-50%) translateX(-50%) rotate(225deg);
-		background-image: url('../images/ui/ui-btn-blank.png');
+		transform: translateY(-50%) translateX(-50%) rotate(135deg);
+		background-image: url('../images/ui/ui-btn-arrow.png');
 		border: solid #B09F82 1px;
 		background-size: cover;
 		opacity: 1;
@@ -463,8 +480,9 @@ a {
 		height: 20px;
 		left: 75%;
 		top: 66%;
-		transform: translateY(-50%) translateX(-50%) rotate(225deg);
-		background-image: url('../images/ui/ui-btn-blank-over.png');
+		transform: translateY(-50%) translateX(-50%) rotate(135deg);
+		background-image: url('../images/ui/ui-btn-arrow-over.png');
+		border: solid #7B919E 1px;
 		background-size: cover;
 	}
 
