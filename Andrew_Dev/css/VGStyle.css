@@ -178,6 +178,7 @@ a:hover {
 .ui-pos {
 	pointer-events: none;
 	position: fixed;
+	z-index: 20;
   	top: 50%;
   	left: 50%;
   	transform: translateY(-50%) translateX(-50%);

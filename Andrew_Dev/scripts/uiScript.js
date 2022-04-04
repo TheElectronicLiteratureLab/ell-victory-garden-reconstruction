@@ -109,3 +109,28 @@ eleNavBox.appendChild(eleUiHelix);
 //-------------------- Get the html body tag and put everything inside it. --------------------//
 const main = document.body;
 main.appendChild(eleNavPos);
+
+//-------------------- Swipe UI navigation functionality. --------------------//
+const swipezone = document.body
+let touchstartX = 0
+let touchendX = 0
+let touchstartY = 0
+let touchendY = 0
+
+function handleGestureX() {
+  if ((touchendX < touchstartX) && (touchstartX - touchendX) > 100) streamLiner('rev'); 
+  if ((touchendX > touchstartX) && (touchendX - touchstartX) > 100) streamLiner('fwd');
+  if ((touchendY > touchstartY) && (touchendY - touchstartY) > 100) pathFinder('rev');
+  if ((touchendY < touchstartY) && (touchstartY - touchendY) > 100) pathFinder('fwd');
+}
+
+swipezone.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+  touchstartY = e.changedTouches[0].screenY
+})
+
+swipezone.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  touchendY = e.changedTouches[0].screenY
+  handleGestureX()
+})
