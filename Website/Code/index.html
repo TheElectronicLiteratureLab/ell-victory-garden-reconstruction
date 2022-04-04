@@ -9,41 +9,47 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
     <!--FONTS-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap"
-        rel="stylesheet">  <!--Placeholder font from Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <style>
+        body, p, h1, h3, h4, h5, h6 {
+            font-family: "Crimson Pro";
+        }
+        h2, button {
+            font-family: "Cabin";
+    </style>
 
     <!--PAGE TITLE-->
     <title>Victory Garden 2022 | Home</title>
 
     <!--FAVICON-->
-    <link rel="icon" href="img/favicon-circle-32x32.png" sizes="18x18">
+    <link rel="icon" href="" sizes="18x18">
 
 </head>
 <body>
 
     <!--NAVBAR-->
-    <header id="navbar-desktop">
-        <nav>
+    <header>
+        <nav id="header-nav">
             <ul>
-                <li>
-                    <a href="#about" id="standalone">[Logo here]</a>
+                <li class="header-nav-item">
+                    <a href="web/home.html" id="standalone">[Logo here]</a>
                 </li>
-                <li>[Empty space here]</li>
+                <li class="navbar-item">[Empty space here]</li>
                 <li>
-                    <a href="#history">History</a>
+                    <a href="web/history.html">History</a>
                 </li>
-                <li>
-                    <a href="#reconstruction">Reconstruction</a>
+                <li class="navbar-item">
+                    <a href="web/reconstruction.html">Reconstruction</a>
                 </li>
-                <li>
-                    <a href="#author">Author</a>
+                <li class="navbar-item">
+                    <a href="web/author.html">Author</a>
                 </li>
-                <li>
-                    <a href="#credits">Credits</a>
+                <li class="navbar-item">
+                    <a href="web/credits.html">Credits</a>
                 </li>
-                <li>
-                    <a href="#play">ENTER&nbsp;THE&nbsp;GARDEN</a>
+                <li class="navbar-item">
+                    <a href="web/play.html">ENTER&nbsp;THE&nbsp;GARDEN</a>
                 </li>
             </ul>
         </nav>
@@ -51,8 +57,8 @@
     <main>
 
 
-        <!--HERO/BANNER-->
-        <section>
+        <!--HERO-->
+        <section class="hero">
             <div>
                 <h3>Stuart Moulthrop</h3>
                 <h1>Victory Garden 2022</h1>
@@ -62,9 +68,11 @@
 
 
         <!--MAZE BLURB-->
-        <section>
+        <section class="maze-blurb">
             <div>
                 <h1>“A short quote or text bite from a character or passage in Victory Garden."</h1>
+            </div>
+            <div>
                 <p>Possible continuation of the text passage if additional text is meaningful. Ideally this would be from a node that captures the feel of the work as a whole, or alternately, an intriguing piece that makes viewers want to read more. Think of those 'grab your attention' paragraphs on the back of books.</p>
                 <button type="button">ENTER THE GARDEN</button>
             </div>
@@ -74,7 +82,7 @@
         <!--GRID CONTENT-->
 
         <!--"Project History"-->
-        <section>
+        <section class="project-history">
             <div class="grid-columns">
                 
                 <!--grid text-->
@@ -94,7 +102,7 @@
 
 
         <!--"Reconstruction"-->
-        <section>
+        <section class="resconstruction">
             <div class="grid-columns">
 
                 <!--grid image-->
@@ -114,7 +122,7 @@
 
 
         <!--"About the Author"-->
-        <section>
+        <section class="about-the-author">
             <div class="grid-columns">
                 
                 <!--grid text-->
@@ -171,12 +179,12 @@
         <!--footer nav-->
         <div class="footer-nav">
             <ul>
-                <li><a href="play.html">Enter The Garden</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="reconstruction.html">Reconstruction</a></li>
-                <li><a href="author.html">Author</a></li>
-                <li><a href="credits.html">Credits</a></li>
+                <li class="footer-nav-item"><a href="play.html">Enter The Garden</a></li>
+                <li class="footer-nav-item"><a href="home.html">Home</a></li>
+                <li class="footer-nav-item"><a href="history.html">History</a></li>
+                <li class="footer-nav-item"><a href="reconstruction.html">Reconstruction</a></li>
+                <li class="footer-nav-item"><a href="author.html">Author</a></li>
+                <li class="footer-nav-item"><a href="credits.html">Credits</a></li>
             </ul>
         </div>
 
