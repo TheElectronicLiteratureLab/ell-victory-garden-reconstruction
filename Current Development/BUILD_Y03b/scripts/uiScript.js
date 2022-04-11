@@ -117,18 +117,25 @@ let touchendX = 0
 let touchstartY = 0
 let touchendY = 0
 
+// Compare the touch start position to the touch end position to calculate swipe
 function handleGestureX() {
+	// Swipe left - move backward in the current stream
   if ((touchendX < touchstartX) && (touchstartX - touchendX) > 100) streamLiner('rev'); 
+  	// Swipe right - move forward in the current stream
   if ((touchendX > touchstartX) && (touchendX - touchstartX) > 100) streamLiner('fwd');
+  	// Swipe down - move backward in the current path
   if ((touchendY > touchstartY) && (touchendY - touchstartY) > 100) pathFinder('rev');
+  	// Swipe up - move forward in the current path
   if ((touchendY < touchstartY) && (touchstartY - touchendY) > 100) pathFinder('fwd');
 }
 
+// Get the position at the start of the touch
 swipezone.addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenX
   touchstartY = e.changedTouches[0].screenY
 })
 
+// Get the position at the end of the touch
 swipezone.addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
   touchendY = e.changedTouches[0].screenY

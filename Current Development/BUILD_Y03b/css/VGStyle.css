@@ -46,15 +46,6 @@ a:hover {
 	color: #b09f82; 
 }
 
-hr {
-  display: block;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  border-style: solid;
-  border-width: 1px;
-  color: #b09f82;
-}
-
 #topper{
 
 	font: 8pt Tahoma;
@@ -62,21 +53,11 @@ hr {
 	text-transform:  uppercase;
 }
 
-.fakeTopper{
-
-	font: 8pt Tahoma;
-	text-align: center;
-	text-transform:  uppercase;
-	color: #b09f82; 
-}
-
 .cover-image {
 	animation-duration: 20s;
 	animation-name: coverFade;
 	animation-fill-mode: forwards;
 }
-
-.red{ color: #FF0000; }
 
 .sand-top {
 	animation-duration: 20s;
@@ -510,6 +491,20 @@ hr {
 @media only screen and (max-height: 500px) {
 /* For smaller screens, shrink the UI */
   .ui-box {
-    background: red;
+    transform: scale(90%);
+  }
+}
+
+@media only screen and (max-height: 400px) {
+/* For smaller screens, shrink the UI */
+  .ui-box {
+    transform: scale(80%);
+  }
+}
+
+@media only screen and (max-height: 350px) {
+/* For smaller screens, shrink the UI */
+  .ui-box {
+    transform: scale(60%);
   }
 }
