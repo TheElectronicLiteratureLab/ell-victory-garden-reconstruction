@@ -60,8 +60,17 @@ function pageStart()
 			//IF ARRAY INCLUDES PAGE, USE ASSOCIATED STREAM NAME
 			if(allStreams[i].includes(thisPage)) theStream = streamNames[i]
 		}
+		//WRITE THE HEADER
 		//EASTER-EGG: PATH AND STREAM INDICATORS LINK TO LISTING PAGES FOR PATHS AND STREAMS
-		document.getElementById('topper').innerHTML = "<a class='topLink' href='Pathfinder.html'>" + thePathName + "</a> &middot; " + "<a class='topLink' href='Streamlines.html'>" + theStream + "</a>";
+		//NOTE THIS WILL BE CHANGED SO THAT LINKS GO TO HEAD OF PATH OR STREAM - HAVEN'T BUILT YET
+		//SET COLORS TO REFLECT TRANSITMODE
+		pathColor = '#b09f82';
+		streamColor = '#b09f82';
+		if(sessionStorage.getItem('transitMode') == 'path') pathColor = '#FF0000';
+		if(sessionStorage.getItem('transitMode') == 'stream') streamColor = '#FF0000';
+		document.getElementById('topper').innerHTML = "<a class='topLink' href='Pathfinder.html' style='color:" + pathColor +"''>" + thePathName + "</a> &middot; " + "<a class='topLink' href='Streamlines.html' style='color:" + streamColor + "''>" + theStream + "</a>";
+		//RESET TRANSITMODE TO NULL
+		sessionStorage.setItem('transitMode', '');
 	}
 }
 
@@ -79,6 +88,9 @@ function labFlip(overString)
 //HANDLE STREAMS
 function streamLiner(dir)
 {
+	//SET TRANSITMODE TO 'STREAM'
+	sessionStorage.setItem('transitMode', 'stream');
+
 	//CHECK FOR LOCAL OVERRIDE - DIR DOES NOT MATTER
 	//FIRST CHECK FOR SPECIAL 'LABYRINTH' OVERRIDE (RANDOM CHOICE)
 	if(override != ""){
@@ -144,6 +156,8 @@ function streamLiner(dir)
 //HANDLE PATHS
 function pathFinder(dir)
 {	
+	//SET TRANSITMODE TO 'PATH'
+	sessionStorage.setItem('transitMode', 'path');
 
 	//PATHS REQUIRE SETUP ON INDEX PAGE, BUT PAGES MAY BE ACCESSED INDEPENDENTLY
 	//SO WE CHECK THE SETUP AND SKIP TO END IF IT HASN'T BEEN DONE

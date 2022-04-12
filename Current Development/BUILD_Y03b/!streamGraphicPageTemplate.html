@@ -2,24 +2,29 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>PAGE TITLE</title>
+	<title>PAGETITLE</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson Pro|Cabin">
 <link rel='stylesheet' href='css/VGStyle.css'>
 	<script src='scripts/VGScript.js'></script>
 	<script src='scripts/dataSource.js'></script>
-	<script>override = 'NEXT PAGE HERE NO HTML'</script>
+	<script>sessionStorage.setItem('transitMode','stream')</script>
 </head>
 <body onLoad="pageStart()">
 <main>
 
-<h1>PAGE TITLE</h1>
+<h1>PAGETITLE</h1>
 
 <hr>
-<a href='images/streamImages/NAMEofGRAPHIC.jpg' target='_new'>
-<img src='images/streamImages/NAMEofGRAPHIC.jpg' width='700' alt='ALTSTRING' /></a>
+<a href='NEXTPAGEWITHHTML'>
+<img src='images/streamImages/IMAGEFILE.jpg' width='700' alt='ALTSTRING' /></a>
 <hr>
+
 <p class='caption'>
 CAPTION
+<br>
+<span class='subCaption'>- click image to continue -</span>
+<br>
+<a href='images/streamImages/IMAGEFILE.jpg' class='picLink' target='_new'>&#9967;</a>
 </p>
 
 </html>

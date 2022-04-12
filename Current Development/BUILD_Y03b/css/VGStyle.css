@@ -42,6 +42,8 @@ a:hover {
 
 .caption { font-family:  Cabin,sans-serif; font-size:  10pt; text-align: center; color: #b09f82; }
 
+.subCaption { font-family:  Cabin,sans-serif; font-size:  8pt; text-align: center; color: #b09f82; }
+
 .sand {
 	color: #b09f82; 
 }
@@ -77,6 +79,8 @@ hr {
 }
 
 .red{ color: #FF0000; }
+
+.picLink{ font-weight: 700; text-decoration: none }
 
 .sand-top {
 	animation-duration: 20s;
