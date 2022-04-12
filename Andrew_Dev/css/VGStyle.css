@@ -491,6 +491,20 @@ a:hover {
 @media only screen and (max-height: 500px) {
 /* For smaller screens, shrink the UI */
   .ui-box {
-    background: red;
+    transform: scale(90%);
+  }
+}
+
+@media only screen and (max-height: 400px) {
+/* For smaller screens, shrink the UI */
+  .ui-box {
+    transform: scale(80%);
+  }
+}
+
+@media only screen and (max-height: 350px) {
+/* For smaller screens, shrink the UI */
+  .ui-box {
+    transform: scale(60%);
   }
 }
