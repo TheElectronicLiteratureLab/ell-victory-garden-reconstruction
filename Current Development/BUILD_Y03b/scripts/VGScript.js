@@ -15,6 +15,7 @@ window.addEventListener('keyup', function(event) {
 });
 
 function transit(dest){
+	//INDEX PAGE IS SPECIAL CASE
 	if(dest == "index"){
 		window.open("index.html", "_parent")
 	}
@@ -26,19 +27,22 @@ function transit(dest){
 //REPORT PATH AND STREAM IN 'TOPPER' DIV
 function pageStart()
 {
-
 	//SOME PAGES DON'T HAVE THE HEADER
 	if(document.getElementById('topper') != null)
 	{
+		//SET DEFAULT VALUES FOR THE HEADER LINKS - MAY BE RESET BELOW
+		pathHead = 'Pathfinder.html';
+		streamHead = 'Streamlines.html'
+
 		//PATH
 		//DETERMINE NAME OF CURRENT PATH
 		thePath = sessionStorage.getItem('currentPath');
 		if(thePath == null) //THIS PAGE WAS ACCESSED OUT OF SEQUENCE - SET DEFAULT PATH
 		{
-			thePathName = "Victory Garden";
+			thePathName = "Grand";
 			//THESE LINES SEEM NOT TO HAVE EFFECT
 			//SOMETHING IN PATHFINDER PROBABLY OVERRIDES THEM FOR NON-SEQUENCE PAGES:
-			//FORCES TRANSITION TO INDEX, WHICH IS OK
+			//FORCES TRANSITION TO INDEX - MAY NEED TO ADDRESS THIS FOR TESTING
 			sessionStorage.setItem('currentPath', grand);
 			sessionStorage.setItem('pathCount', '0')
 		}
@@ -47,28 +51,39 @@ function pageStart()
 			pathNamesArray = pathNames.split(',')
 			for(var i=0; i<allPaths.length; i++)
 			{
-				if(allPaths[i] == thePath) thePathName = pathNamesArray[i];
+				if(allPaths[i] == thePath)
+				{
+					thePathName = pathNamesArray[i];
+					//SPLIT PATH DATA TO ARRAY, PULL FIRST ITEM (PATHHEAD)
+					currPathArray = thePath.split(',');
+					pathHead = currPathArray[0] + '.html';
+				}	
 			}			
 		}
 		
 		//STREAM
 		//DEFAULT VALUE FOR PAGES NOT IN A STREAM (THERE ARE SOME)
-		theStream = "Victory Garden"
+		theStream = "Victory Garden";
 		thisPage = shortNamer();
 		//SEARCH ALL STREAMS TO FIND STREAM INCLUDING THIS SPACE
 		for(var i=0; i<allStreams.length; i++){
 			//IF ARRAY INCLUDES PAGE, USE ASSOCIATED STREAM NAME
-			if(allStreams[i].includes(thisPage)) theStream = streamNames[i]
+			if(allStreams[i].includes(thisPage))
+			{			
+				//NAME THAT STREAM
+				theStream = streamNames[i];
+				currStream = allStreams[i]
+				streamHead = currStream[0] + ".html";
+			}
+
 		}
 		//WRITE THE HEADER
-		//EASTER-EGG: PATH AND STREAM INDICATORS LINK TO LISTING PAGES FOR PATHS AND STREAMS
-		//NOTE THIS WILL BE CHANGED SO THAT LINKS GO TO HEAD OF PATH OR STREAM - HAVEN'T BUILT YET
 		//SET COLORS TO REFLECT TRANSITMODE
 		pathColor = '#b09f82';
 		streamColor = '#b09f82';
 		if(sessionStorage.getItem('transitMode') == 'path') pathColor = '#FF0000';
 		if(sessionStorage.getItem('transitMode') == 'stream') streamColor = '#FF0000';
-		document.getElementById('topper').innerHTML = "<a class='topLink' href='Pathfinder.html' style='color:" + pathColor +"''>" + thePathName + "</a> &middot; " + "<a class='topLink' href='Streamlines.html' style='color:" + streamColor + "''>" + theStream + "</a>";
+		document.getElementById('topper').innerHTML = "<a class='topLink' href=" + pathHead + " style='color:" + pathColor +"''>" + thePathName + "</a> &middot; " + "<a class='topLink' href=" + streamHead + " style='color:" + streamColor + "'>" + theStream + "</a>";
 		//RESET TRANSITMODE TO NULL
 		sessionStorage.setItem('transitMode', '');
 	}
