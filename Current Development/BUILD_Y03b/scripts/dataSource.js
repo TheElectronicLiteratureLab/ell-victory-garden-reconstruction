@@ -10,15 +10,15 @@ thea_s_war = new Array("Auroras","Thea_s_War","Unreal","Buildup","Games","Big_Ga
 
 emily_to_thea = new Array("Where_s_my_goddam_letter","Emily_to_Thea","My_Fault_","Get_It_Done","Opinions","Who_s_Out_of_It_","The_General","Believer","Conquering_Hero","Forbidden_Planet","Aliens","Inversion","I_m_OK","New_Kids","Love_Emily")
 
-postwar = new Array("Postwar","Morning","Noon","Night","Aftermath","Breakfast","Lunch","Dinner","Leroy_at_the_Beach","New_Drugs","Reality_Artist","Beautiful_People","At_Work","At_Play","In_Dreams","Surprise_Call","Long_Distance","Foursome","NJ","Epithalamion","About_the_War","Kisses","Then","And_Now","And_Then_Again","Mourning","Miles","Stranger","And_","Anima","Image")
+postwar = new Array("Postwar","Morning","Noon","Night","Aftermath","Breakfast","Lunch","Dinner","Leroy_at_the_Beach","New_Drugs","Reality_Artist","Beautiful_People","At_Work","At_Play","In_Dreams","Surprise_Call","Long_Distance","Foursome","NJ","Epithalamion","About_the_War","Kisses","Then","And_And_Now","And_Then_Again","Mourning","Miles","Stranger","And_","Anima","Image")
 
 scare = new Array("Scare","Reprimand","Shaky","Thea_s_Mail","Poor_Correspondent","Insidious","Motives","What_About_Boris_","Chances","Bad","This_Is_a_Recording","Ratfucking","Transcript","Hostage","Apolitical","Solid_Foundation")
 
 informant = new Array("Informant","Academic","No_Paranoid_He","Naming_Names","Serious","No_Thanks","Posterior","Exhuming_McCarthy","Unreliable","Testify_Memory","Heavy","Managing")
 
-latticework = new Array("Latticework","Hi_Mom","Leroy","Thirsty","Full_of_Surprises","Truant","On_the_Road","Refuge_from_the_Road","Into_the_Country","Talking_Politics","What_s_It_Mean_","Your_Old_Man","Misguided_Dangerous","Frank_Disclosure","Edible","Frank Opinion","Rooting_for_the_Iceberg","Belief_System","Ancient_History","Radical_Mom","Not_a_War_Story","Violent_Mistake","Out_of_School","BMTV","Post-60_s","Bildung","On_Schedule","What_Should_I_Do_","Old_Movies","Blood_Aggression","Cyclops","Justice_","Remember_Your_Roots","Hustler","Rebel Roots","No Excuses","Doing_My_Best","Streets","Forget_Politics")
+latticework = new Array("Latticework","Hi_Mom","Leroy","Thirsty","Full_of_Surprises","Truant","On_the_Road","Refuge_from_the_Road","Into_the_Country","Talking_Politics","What_s_It_Mean_","Your_Old_Man","Misguided_Dangerous","Frank_Disclosure","Edible","Frank_Opinion","Rooting_for_the_Iceberg","Belief_System","Ancient_History","Radical_Mom","Not_a_War_Story","Violent_Mistake","Out_of_School","BMTV","Post-60_s","Bildung","On_Schedule","What_Should_I_Do_","Old_Movies","Blood_Aggression","Cyclops","Justice_","Remember_Your_Roots","Hustler","Rebel_Roots","No Excuses","Doing_My_Best","Streets","Forget_Politics")
 
-demo = new Array("Demo","Here_They_Come","Critics","Special_Occasion","A_Close_One","Say_Miss_","Loose_Lips","Statement","Joker","Fancy_This","Was_That_You_","What_If_It_Was_","Keep_Smiling","Not_So_Cool","Object_Lesson","All_the_Way","Where_Troubles_Melt","Uh_Oh_","_But_No")
+demo = new Array("Demo","Here_They_Come","Critics","Special_Occasion","A_Close_One","Say_Miss_","Loose_Lips","Statement","Joker","Fancy_This","Was_That_You_","What_If_It_Was_","Keep_Smiling_Until_Then","Not_So_Cool","Object_Lesson","All_the_Way","Where_Troubles_Melt","Uh_Oh_","_But_No")
 
 dear_emily = new Array("Dear_Emily","No_Resistance","Failure","War_Games","Hopeless","Firm","Same_Old_Emily_","Sundress","Suit_You_","Otherness","Playing_Around","Look_in_the_Mirror","Women_s_Issue","Come_Home")
 
@@ -26,7 +26,7 @@ telephone = new Array("Telephone","Ringing_Tone","Listeners","Caller","Unhappy",
 
 //STREAMS FROM 'DONE II'
 
-u_turns = new Array("U_Turns","Not_Right","What_Am_I_","A_Little_Paranoia","Five_Hundred","Reflex","What_U_Know","Engineer","No_Complaints","Broadcast","The_White_Suit","Create_","For Me_For_You_","Ubi_Sunt","Know_About_That","Vast_Perpetual","A_New_Refutation_of_Time","Turnabout","About_Turn")
+u_turns = new Array("U_Turns","Not_Right","What_Am_I_","A_Little_Paranoia","Five_Hundred","Reflex","What_U_Know","Engineer","No_Complaints","Broadcast","The_White_Suit","Create_","For Me_For_You","Ubi_Sunt","Know_About_That","Vast_Perpetual","A_New_Refutation_of_Time","Turnabout","About_Turn")
 
 whitman_s_creek = new Array("Whitman_s_Creek","Meet_the_Creek","Anomaly","Miles_in_Nature","Coming_In_","Splashdown","While_You_Can","Fertile_Subject","Up_the_Creek","With_a_Bullet","Et_Voila","Something_Happens","Well_in_Hand","The_Prophet_Returns")
 
@@ -40,9 +40,9 @@ visitor = new Array("Visitor","Face_to_Face","Open_Up","Tricky","Trigger","Ha_Ha
 
 timely = new Array("Timely","Otherworldly","Worlds_Collide","Mail","1963_Facts","1975_Facts","1990_Facts","Dear_You","Blood_Guts_in_S_A_","Facial_Hair","Closer_Look","Face_It","Frenzy","Feed","Update","Apocalypso","Flight_Deterrence","Disasterman","The_Planes","Equation","Dream","Complicated","Gathering","No_Return","Reassurance","Do_Something","Something_")
 
-l_etat_de_tate = new Array("L_Etat_de_Tate","Responsive","on_2","off_1","on_1","off","on","Ring","Help_Mister_Wizard","Ring_Cycle","Errant_Fool","Retreat","Group_Shot","In_Need_of_Help","Ring_Around","Arrant_Fool","Temple","Shooters","Helpful","Fool_s_Errand","Dome","Memorabilia","Relic","Very_Sad","Last_Words","Postindustrial","Shadows","Hold_That_Thought","Virt_","We_Can_Work_It_Out","Don_t_Forget","Forget","Mad","Faceoff","So_Stated","Interesting","Delicate","Interrupt","Th","e_re","st","is","un","re","al","_i","ns","ig","ni","fi","ca","n","t_","more_to_this_")
+l_etat_de_tate = new Array("L_Etat_de_Tate","Responsive","on_2","off_1","on_1","off","on","Ring","Help_Mister_Wizard","Ring_Cycle","Errant_Fool","Retreat","Group_Shot","In_Need_of_Help","Ring_Around","Arrant_Fool","Temple","Shooters","Helpful","Fool_s_Errand","Dome","Memorabilia","Relic","Very_Sad","Last_Words","Postindustrial","Shadows","Hold_That_Thought","Virt_","We_Can_Work_It_Out","Don_t_Forget","Forget_","Mad","Faceoff","So_Stated","Interesting","Delicate","Interrupt","Th","e_re","st","is","un","re","al","_i","ns","ig","ni","fi","ca","n","t_","more_to_this_")
 
-fugitive = new Array("Fugitive","Wait_Watch","Answer_This","Elusive","Stop_and_Go","Take_Off","Line_of_Flight","No_Obstructions","Time_and_Violence","Nerves","At_the_No","Passenger","Among_Friends","Moving_Violation","Car_Chase","Sorry","Regrets","Our_American_Way_of_Life","Gas_","Emily","Hold","What_Do_I_Say_")
+fugitive = new Array("Fugitive","Wait_Watch","Answer_This","Elusive","Stop_and_Go","Take_Off","Line_of_Flight","No_Obstructions","Time_and_Violence","Nerves","At_the_No","Passenger","Among_Friends","Moving_Violation","Car_Chase","Sorry_","Regrets","Our_American_Way_of_Life","Gas_","Emily","Hold","What_Do_I_Say_")
 
 //STREAMS FROM 'DONE III'
 
@@ -62,7 +62,7 @@ in_the_no = new Array("In_the_No","Nice_Girls","Adoration","Listen_Up","Stone_in
 
 slacktown = new Array("Slacktown","The_LaST_Machine","Parabolic","Monastic","Ecumenical","Inspirational","Supplementary","Diabolic","Tumble","Free","Om","Again_","CPUSA","Fuel_Situation","This_is_War","Ready_for_Delivery","Dropkick","Wallshot","Nominal","Facemask","Cover_Story","Plots_Thicken","Things_Change","Great_Hall","Crash","Miles_Miles","Eat","Amulet","Microdot","What_They_Say","What_They_REALLY_Say","Talking_With_Your_Hands","Code_42","Really_Guys","Letter_Man","Treadmill","Devoted","Drawing_Room","Mistaken","Tate_Reboots","New","World","Leader")
 
-now_here_this = new Array("Now_Here_This","Initial_Conditions","Watch_My_Back","National_Dick","Name_That_Fear","This_Is_It_","Talkin_bout_the_Horror","_disClamor_","Bird_Fiver-Two","Grounded","Meet_Again","Not_Yet_Implemented","P_C_","You_Say_You_Vanna","Except_","Political_Correction","Millennial","Back_to_the_Future")
+now_here_this = new Array("Now_Here_This","InitialConditions","Watch_My_Back","National_Dick","Name_That_Fear","This_Is_It_","Talkin_bout_the_Horror","_disClamor_","Bird_Fiver-Two","Grounded","Meet_Again","Not_Yet_Implemented","P_C_","You_Say_You_Vanna","Except_","Political_Correction","Millennial","Back_to_the_Future")
 
 eighty_eighty_eight = new Array("8088","Absence_of_Boris","Impostor","The_Text","Foregone_Conclusion","Parable","Patron","Wanker","Correct_Yourself","About_Time","With_Mirrors","Mirrors_on_the_Ceiling","Plain_Enough","Work")
 
@@ -74,24 +74,24 @@ dreamtime = new Array("Dreamtime","Flounder","Leviaplane","13-F","Blessed_Assura
 
 //STREAMS FROM 'DONE V'
 
-ask_the_marshall = new Array("Ask_the_Marshall","1001_Arabian_Flights","Without_End","Troublesome_Priests","Bernie_s_Nerves","Simon_Says","Surgery","Worry_","Discordia Concorde","Don_t_Worry","Kind_of_Scary","The_Other_Side","Do_It_Now","Fill_the_Pool","Air_Traffic","Satisfaction","Daybreak")
+ask_the_marshall = new Array("Ask_the_Marshall","1001_Arabian_Flights","Without_End_Amen","Troublesome_Priests","Bernie_s_Nerves","Simon_Says","Surgery","Worry_","Discordia Concorde","Don_t_Worry","Kind_of_Scary","The_Other_Side","Do_It_Now","Fill_the_Pool","Air_Traffic","Satisfaction","Daybreak")
 
 from_a_hot_place = new Array("From_a_Hot_Place","Snake_Goggles","Home_Water","Yours")
 
-mr_postman_look_and_see = new Array("Mr_Postman_Look_See","The_War_Channel","Targetting","Hell_Is_Far_Away","Need_to_Know","Cutouts","Breathless","Gas_Masks","Kuralt","Cronkite","Rather_Not","Hard_Start","No_Mo_Veetnams","Novus_Ordo","Rape_in_the_Family","Testimony","The_Color_Guys","Now Eat This")
+mr_postman_look_and_see = new Array("Mr_Postman_Look_See","The_War_Channel","Targetting","Hell_Is_Far_Away","Need_to_Know","Cutouts","Breathless","Gas_Masks","Kuralt","Cronkite","Rather_Not","Hard_Start","No_Mo_Veetnams","Novus_Ordo","Rape_in_the_Family","Testimony","The_Color_Guys","Now_Eat_This")
 
 where_were_you = new Array("Where_Were_You_","War_zones","Ground_Zero","Tuna_Fish","Baghdad_in_June","Zaun","Images","Norman_Coordinate","H_R_P_s","Red","TV_as_Radio","Big_Story","Drama_of_Return","Cyborg_Politics","Pay_Per_State","Wannabe","Attuned","6-10-91","7-3-91","9-91","Turbulence_Down_on_Me","By_the_Way_","What_It_Is_Today")
 
 story_of_my_life = new Array("Story_of_My_Life","Tara","Reading","Almosting_It","Little_Hearts","Now","Swarming","Irrevocable","Swarmup")
 
-freak_whence_he = new Array("Freak_Whence_He","_Para_No_","Here_s_Another_Hint","Acting_Up","Death_Live","Paranalysis","Reality_Check","Paraknowledge","Regards Dick","Anonymous")
+freak_whence_he = new Array("Freak_Whence_He","_Para_No_","Here_s_Another_Hint","Acting_Up","Death_Live","Paranalysis","Reality_Check","Paraknowledge","Regards_Dick","Anonymous")
 
 
 //STREAMS FROM 'DONE VI'
 
 couplings = new Array("Couplings","Coy","Nails","Moralists","Lighting_Up","Hand_Me_Down","Haunting","Revisit","Tell_Me","Scent","Fishes","The_Lovers","Not_There","Fetish","Double","Unexpected","Mirror","Strange_Love","Strange_But_Fine","Don_t_Ask","The_Love_You_Take")
 
-in_country = new Array("In_Country","Foxy","Hello_Down_There","One_of_Our_Aircraft","Options","Watch_Yourself","Why_Worry_","Lighten_Up","Missing","Tender","Blackout","A_True_Story","Dangerous","Apart","Victor","Convenience_Store","Bad_Timing","Something_Easy","Obviously","Not_Quite","Not_At_All","But_This_Time","Change_Your_Life","Not_Again","Strange","True_Confessions","Attitude_Adjustment","Suit_Time","Power_Suit","Growth_Industry","Everything_In_The_Suit","All_Gone","All_Clear")
+in_country = new Array("In_Country","Foxy","Hello_Down_There","One_of_Our_Aircraft","Options","Watch_Yourself","Why_Worry_","Lighten_Up","Missing","Tender","Blackout","A_True_Story","Dangerous","Apart","Victor","Convenience_Store","Bad_Timing","Something_Easy","Obviously","Not_Quite","Not_At_All","But_This_Time_","Change_Your_Life","Not_Again","Strange","True_Confessions","Attitude_Adjustment","Suit_Time","Power_Suit","Growth_Industry","Everything_In_The_Suit","All_Gone","All_Clear")
 
 reality_based = new Array("Reality-Based","All_Right","Greenback","Happy_Warrior","Four_O_Clock","Seen","-Victor-","-Emily-","Future_Tense","A_Good_Question","Because_Because_Because")
 
@@ -118,7 +118,7 @@ streamNames = new Array("Thea's War","Emily to Thea","Postwar","Scare","Informan
 abw = "Fugitive,Visitor,In_Country,Timely,Swarmup,What_About_Boris_,Engineer,Veronica_s_Party,Aperture,Whitman_s_Creek,The_Prophet_Returns,10_000_Heroes,No_One_But_U_,Outnumbered,Warning,Noted_in_Passing,Face_to_Face,Tricky,Pursuit,Answer_This,L_Etat_de_Tate,Help_Mister_Wizard,Interesting,t_"
 
 //REBUILT 2022-01-27
-alone = "Without_Careful,Hesi_Hesitation,See_No_Evil"
+alone = "Without_Careful,Hesi_Hesitation_,See_No_Evil"
 
 //REBUILT 2022-01-27
 aloud = "Reprimand,Paths_to_Explore"
@@ -148,7 +148,7 @@ breaker = "In_Country,Foxy,Hello_Down_There,One_of_Our_Aircraft,Options,Watch_Yo
 carries_over = "Watch_My_Back,From_a_Hot_Place,Snake_Goggles,Home_Water,Yours,The_Other_Guy,The_Other_Us,War_Hole,Dexter_s_Story,No_Such_Place,Guess_What_,Have_a_Seat,Wasn_t_That_Special_,Victor_s_Garden,A_Man_Sleeping,A_Woman_Crying,Scary,Be_Serious,Not_Real,Where_Reality_Begins,Gardener,Knots,Emily_to_Thea,My_Fault_,Get_It_Done,Opinions,Who_s_Out_of_It_,I_m_OK,New_Kids,Love_Emily,Poor_Correspondent,1990_Facts,Frenzy,Feed,Update,Sitrep,Apocalypso,Dream,Gathering,No_Return,Reassurance,Flight_Deterrence,The_Planes,Disasterman,Flounder,Leviaplane,13-F,Blessed_Assurance,Wheel,O_Wow,Kid_Stuff,In_Control,Line_of_Command,Negative_Function,8088,Wanker,Correct_Yourself,About_Time,With_Mirrors,Mirrors_on_the_Ceiling,Plain_Enough,Work,Story_of_My_Life,The_Text,Foregone_Conclusion,Parable,Patron,See_No_Evil,Story_of_Your_Career,Bounty,Leave_It,Far_From_It,Have_a_Dream,Mo_Pomo,With_Open_Eyes,Couplings,Coy,Nails,Moralists,Lighting_Up,Hand_Me_Down,Haunting,Revisit,Tell_Me,Scent,Fetish,Double,Unexpected,Mirror,Fishes,The_Lovers,Not_There,Strange_Love,Strange_But_Fine,Don_t_Ask,Dexter_s_Story,No_Such_Place,Guess_What_,Have_a_Seat,Wasn_t_That_Special_,Victor_s_Garden,A_Man_Sleeping,A_Woman_Crying,Scary,Be_Serious,Not_Real,Where_Reality_Begins,Gardener,Knots,Emily_to_Thea,In_the_No,JSN,No_Music,Pass_It_On,Fog,Lost,Stone_in_Love,Irrational_Heart,Unfit,Rose_Tattoo,Something_Wild,Thanks_for_the_Advice,Capitol,Eyewitness,Back_in_the_Saddle,March,Encounter,Lunch_Hour,Screwups,Comrades,Where_s_the_Story_,Tough,Which_Dream,Happy_Birthday,Tara,Halftones,Sea_Me,Flounder,Leviaplane,13-F,Blessed_Assurance,Wheel,O_Wow,Kid_Stuff,In_Control,Line_of_Command,Negative_Function,8088,Wanker,Correct_Yourself,About_Time,With_Mirrors,Mirrors_on_the_Ceiling,Plain_Enough,Work,Story_of_My_Life,The_Text,Wanker,Correct_Yourself,About_Time,With_Mirrors,Mirrors_on_the_Ceiling,Plain_Enough,Work,Story_of_My_Life,The_Text,Paths_to_Explore"
 
 //UPDATED 2022-01-27, SLIGHTLY MODIFIED FROM VG 1991 ('OVERCONFIDENT')
-confidence = "Scare,Visitor,Timely,Impressed,Overconfident,Chances,8088,See_No_Evil,Patron,Turnabout,Paths_to_Explore"
+confidence = "Scare,Visitor,Timely,Impressed,Overconfident_,Chances,8088,See_No_Evil,Patron,Turnabout,Paths_to_Explore"
 
 //REBUILT 2022-01-27
 country = "Halftones,Listen_Up,Emily_to_Thea,The_General,New_Kids,Peace_Now,8088,From_a_Hot_Place,Yours,In_the_No,Plain_Enough,Parable,Wanker,The_Other_Guy,Lighten_Up,All_Clear,Good_Question,Pump_It_Up,Not_Again,Dear_Emily,Couplings,Knots,Paths_to_Explore"
@@ -267,7 +267,7 @@ wanting = "Halftones,Postwar,Our_Mother,JSN,Veronica_s_Fall,1963_Facts,1990_Fact
 watch_this = "Images,The_War_Channel,Death_Live,Watchman,zero_point_zero_one,Mirror,Eyewitness,Paths_to_Explore"
 
 //2022-01-28 - KEEPING DECEMBER VERSION
-what_it_seems = "From_a_Hot_Place,Snake_Goggles,Home_Water,Yours,The_Other_Guy,The_Other_Us,War_Hole,Dexter_s_Story,No_Such_Place,Guess_What_,Have_a_Seat,Wasn_t_That_Special_,Victor_s_Garden,A_Man_Sleeping,A_Woman_Crying,Scary,A_True_Story,Bitchin_,Age_Before_Bounty,Seriously,More_of_the_Same,Veronica_s_Party,Body_Shots,Resistance_Begins,Polemicist,Exchange_of_Views,Conflict_Management,Public_Opinion,Ghost,Couplings,Coy,Nails,Moralists,Lighting_Up,Hand_Me_Down,Haunting,Revisit,Tell_Me,Scent,Fetish,Double,Unexpected,Mirror,Fishes,The_Lovers,Not_There,Strange_Love,Strange_But_Fine,Don_t_Ask,Dexter_s_Story,No_Such_Place,Guess_What_,Have_a_Seat,Wasn_t_That_Special_,Victor_s_Garden,A_Man_Sleeping,A_Woman_Crying,Scary,Be_Serious,Not_Real,Where_Reality_Begins,Gardener,Knots,Latticework,Hi_Mom,Leroy,Thirsty,Full_of_Surprises,Truant,On_the_Road,Refuse_from_the_Road,Into_the_Country,What_s_It_Mean_,Talking_Politics,What_Should_I_Do_,Old_Movies,Blood_Aggression,Cyclops,Justice_,Demo,Here_They_Come,Critics,Special_Occasion,A_Close_One,Say_Miss_,Loose_Lips,Statement,Irresistible,Control_Voice,Attuned,War_Zones,Suit_Time,Power_Suit,Growth_Industry,Everything_in_the_Suit,All_Gone,The_War_Channel,Breathless,Gas_Masks,Face_the_Wall,Keep_the_Change,Unseen,Big_Games,Cyborg_Politics,Pay_Per_State,What_It_Is_Today,Ground_Zero,Tuna_Fish,Baghdad_in_June,Zaun,Without_End_Amen,Need_to_Know,Paraknowledge,Regards_Dick,Anonymous,Name_That_Fear"
+what_it_seems = "From_a_Hot_Place,Snake_Goggles,Home_Water,Yours,The_Other_Guy,The_Other_Us,War_Hole,Dexter_s_Story,No_Such_Place,Guess_What_,Have_a_Seat,Wasn_t_That_Special_,Victor_s_Garden,A_Man_Sleeping,A_Woman_Crying,Scary,A_True_Story,Bitchin_,Age_Before_Bounty,Seriously,More_of_the_Same,Veronica_s_Party,Body_Shots,Resistance_Begins,Polemicist,Exchange_of_Views,Conflict_Management,Public_Opinion,Ghost,Couplings,Coy,Nails,Moralists,Lighting_Up,Hand_Me_Down,Haunting,Revisit,Tell_Me,Scent,Fetish,Double,Unexpected,Mirror,Fishes,The_Lovers,Not_There,Strange_Love,Strange_But_Fine,Don_t_Ask,Dexter_s_Story,No_Such_Place,Guess_What_,Have_a_Seat,Wasn_t_That_Special_,Victor_s_Garden,A_Man_Sleeping,A_Woman_Crying,Scary,Be_Serious,Not_Real,Where_Reality_Begins,Gardener,Knots,Latticework,Hi_Mom,Leroy,Thirsty,Full_of_Surprises,Truant,On_the_Road,Refuge_from_the_Road,Into_the_Country,What_s_It_Mean_,Talking_Politics,What_Should_I_Do_,Old_Movies,Blood_Aggression,Cyclops,Justice_,Demo,Here_They_Come,Critics,Special_Occasion,A_Close_One,Say_Miss_,Loose_Lips,Statement,Irresistible,Control_Voice,Attuned,War_Zones,Suit_Time,Power_Suit,Growth_Industry,Everything_in_the_Suit,All_Gone,The_War_Channel,Breathless,Gas_Masks,Face_the_Wall,Keep_the_Change,Unseen,Big_Games,Cyborg_Politics,Pay_Per_State,What_It_Is_Today,Ground_Zero,Tuna_Fish,Baghdad_in_June,Zaun,Without_End_Amen,Need_to_Know,Paraknowledge,Regards_Dick,Anonymous,Name_That_Fear"
 
 //2022-01-28 - KEEPING DECEMBER VERSION
 where_were_you = "Where_Were_You_,Images,Thea_s_War,Unreal,Buildup,Games,Big_Games,Heirloom,Our_Mother,Your_Generation,Resistance_,Resistance_Begins,Polemicist,Exchange_of_Views,Conflict_Management,Public_Opinion,Ghost,Emily_to_Thea,My_Fault_,Get_It_Done,Opinions,Who_s_Out_of_It_,I_m_OK,New_Kids,Love_Emily,Bitchin_,Age_Before_Bounty,Seriously,More_of_the_Same,Nice_Girls,Adoration,Listen_Up,Stone_in_Love,Irrational_Heart,Unfit,Rose_Tattoo,Something_Wild,Thanks_for_the_Advice,Halftones,Sea_Me,Remember_Winter,Dreamwork,Peace_Now,Not_Now,In_the_No,JSN,No_Music,Pass_It_On,Fog,Lost,Her_Element,Compulsion,Hard_Starter,The_Dance,Exit,Unreal,Face_the_Wall,Keep_the_Change,Sisters,Generations,Heirloom,Your_Generation,Resistance_,Irresistible,Control_Voice,Attuned,Images,Timely,Otherworldly,Worlds_Collide,Mail,Dear_You,Blood_Guts_in_S_A_,In_Country,Foxy,Hello_Down_There,One_of_Our_Aircraft,Options,Watch_Yourself,Why_Worry_,Attitude_Adjustment,Lighten_Up,Missing,Tender,Blackout,A_True_Story,Strange,True_Confessions,Apart,Victor,Dangerous,Convenience_Store,Bad_Timing,Something_Easy,Obviously,Not_Quite,Not_At_All,But_This_Time_,Change_Your_Life,Not_Again,All_Clear,From_a_Hot_Place,Snake_Goggles,Home_Water,Yours,Scare,Reprimand,Shaky,Thea_s_Mail,Insidious,Motives,What_About_Boris_,Chances,Now_Here_This,Watch_My_Back,National_Dick"
@@ -283,4 +283,4 @@ allPaths = new Array(abw,alone,aloud,answer_me,astray,as_we_want,bent,blinding_s
 
 pathNames = "ABW,Alone,Aloud,Answer Me,Astray,As We Want,Bent,Blinding Sights,Breaker,Carries Over,Confidence,Country,Delusion,Desperate,End Us,Enough Slack,Face to Face,Fearless,Fictive Victories,Foreseen,Grand,High Above,Holding Back,Inward,Know Nothing,Lifestory,Norman,Nothing Carries Over,Not Simple,Offering,Once Only,Oneiric,One Way Street,Pathways,Praecox,Precisely Now,Risky,Seemly,See The Light,Slack,Strange,Theatre,Turning and Turning,Twisted,Upside Down,Wading In,Walkabout,Wanting,Watch This,What It Seems,Where Were You?,Workout"
 
-pathHeads = "All_Hazards_,Hesitation_,Allowed_,Act_Sober_,Uttered_,Waving_Flags_,We_Know_,Left_,Necessary_,Asleep_,Confident_,Necessary_,Remember_,Proceed_,Muttered_,Gardens_,Like_a_Lover_,We_Fear_,Who_Have_Them_,And_Farms_,Correct_,Better_,Held_,In_,the_Truth_,Its_Own_,Above_Us_,Indifferent_,Was_,Who_Offer_,All_the_Same_,Expressions_,At_Random_,Revision_,No_More_,Each_Unique_,All_Risks_,Seeming_,Your_Only_Way_,Enough_,Returning_,Out_,Your_Life_,Twisted_Passages_,More_,In_the_Beginning_,Walk_On_,Immediately_,Burning_Flags_,in_Americans_,Where_Are_You_Going_,Our_Work_"
+pathHeads = "All_Hazards_,Hesitation_,Allowed_,Act_Sober_,Uttered_,Waving_Flags_,We_Know_,Left_,In_Country,Asleep_,Confident_,Necessary_,Remember_,Proceed_,Muttered_,Gardens_,Like_a_Lover_,We_Fear_,Who_Have_Them_,And_Farms_,Correct_,Better_,Held_,In_,the_Truth_,Its_Own_,Above_Us_,Indifferent_,Was_,Who_Offer_,All_the_Same_,Expressions_,At_Random_,Revision_,No_More_,Each_Unique_,All_Risks_,Seeming_,Your_Only_Way_,Enough_,Returning_,Out_,Your_Life_,Twisted_Passages_,More_,In_the_Beginning_,Walk_On_,Immediately_,Burning_Flags_,in_Americans_,Where_Are_You_Going_,Our_Work_"
