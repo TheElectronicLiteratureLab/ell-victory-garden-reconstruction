@@ -86,8 +86,6 @@ function pageStart()
 		document.getElementById('topper').innerHTML = "<a class='topLink' href=" + pathHead + " style='color:" + pathColor +"''>" + thePathName + "</a> &middot; " + "<a class='topLink' href=" + streamHead + " style='color:" + streamColor + "'>" + theStream + "</a>";
 		//RESET TRANSITMODE TO NULL
 		sessionStorage.setItem('transitMode', '');
-		//*** FOR TESTING ***
-		document.getElementById('topper').innerHTML += " *** " + sessionStorage.getItem('pathCount');
 	}
 }
 
