@@ -12,7 +12,7 @@ emily_to_thea = new Array("Where_s_my_goddam_letter","Emily_to_Thea","My_Fault_"
 
 postwar = new Array("Postwar","Morning","Noon","Night","Aftermath","Breakfast","Lunch","Dinner","Leroy_at_the_Beach","New_Drugs","Reality_Artist","Beautiful_People","At_Work","At_Play","In_Dreams","Surprise_Call","Long_Distance","Foursome","NJ","Epithalamion","About_the_War","Kisses","Then","And_And_Now","And_Then_Again","Mourning","Miles","Stranger","And_","Anima","Image")
 
-scare = new Array("Scare","Reprimand","Shaky","Thea_s_Mail","Poor_Correspondent","Insidious","Motives","What_About_Boris_","Chances","Bad","This_Is_a_Recording","Ratfucking","Transcript","Hostage","Apolitical","Solid_Foundation")
+scare = new Array("Scare","Reprimand","Shaky","Thea_s_Mail","Poor_Correspondent","Insidious","Motives","What_About_Boris_","Chances","Bad","This_is_a_Recording","Ratfucking","Transcript","Hostage","Apolitical","Solid_Foundation")
 
 informant = new Array("Informant","Academic","No_Paranoid_He","Naming_Names","Serious","No_Thanks","Posterior","Exhuming_McCarthy","Unreliable","Testify_Memory","Heavy","Managing")
 
