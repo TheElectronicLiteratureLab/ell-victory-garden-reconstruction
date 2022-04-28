@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* temporary styles for easy HTML readability */
+        
+body, p, blockquote, h1, h3, h4, h5, h6 {
+	font-family: "Crimson Pro";
+}
+
+h2, button {
+	font-family: "Cabin";
+}
+
+nav {
+	white-space: nowrap;
+}
+
+.all-caps input {
+	text-transform: uppercase;
+}
