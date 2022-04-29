@@ -18,7 +18,7 @@
 <h1>Streams</h1>
 
 <div id="streamlist"></div>
-
+<a href='Come_In.html' class='textlink'>Labyrinth</a>
 <br><br>
 
 </main>
@@ -29,8 +29,7 @@
 	for(var i=0; i<allStreams.length; i++){
 		theStream = allStreams[i]
 		thePage = theStream[0]
-		document.getElementById('streamlist').innerHTML += "<img src='images/streamThumbs/" + streamThumbNames[i] + "_tn.jpg' alt='thumbnail'>" + "<br>"
-		document.getElementById('streamlist').innerHTML += "<a href='" + thePage + ".html'" + " class='textlink'>" + streamNames[i] + "</a><br><br>"
+		document.getElementById('streamlist').innerHTML += "<a href='" + thePage + ".html'" + " class='textlink'>" + streamNames[i] + "</a><br>"
 	}
 </script>
 
