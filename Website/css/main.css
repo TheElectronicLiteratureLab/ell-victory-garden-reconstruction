@@ -1,19 +1,232 @@
 @charset "UTF-8";
 
-/* temporary styles for easy HTML readability */
-        
-body, p, blockquote, h1, h3, h4, h5, h6 {
+/*--------MAIN LAYOUT--------*/
+html, body {
+	scroll-behavior: smooth;
 	font-family: "Crimson Pro";
+	margin: 0 auto;
+	background-color: #1F1E1C;
+}
+* {
+	box-sizing:  border-box;
+}
+main {
+}
+section {
+	padding: 1rem 0;
+	margin: 0;
 }
 
-h2, button {
-	font-family: "Cabin";
+/*--------COLORS--------*/
+html {
+	color: #FFFFFF;
+
+	--color-white: #FFFFFF;
+	--color-black: #100F0D;
+	--color-black-drk: #000000;
+	--color-sand-dark: #1F1E1C;
+	--color-sand-light: #8D826E;
+	--color-taupe-light: #E4DFDD;
+	--color-blue: #6C748C;
 }
 
-nav {
-	white-space: nowrap;
+/*--------TYPOGRAPHY--------*/
+html {
+	font-family: 'Crimson Pro', serif;
+	--font-primary: 'Crimson Pro', serif;
 }
-
+h1, h2, h3, h4, h5, h6, p, blockquote {
+	color: var(--color-white);
+}
+h2, h3, button {
+	font-family: 'Cabin', sans-serif;
+}
+h3, h4, h5, h6 {
+	margin: 1rem 0;
+}
+h1, h2, h3, h4, h6 {
+	line-height: 1.5;
+}
+h1, h3 {
+	text-transform:;
+}
+h1 {
+	font-family: 'Crimson Pro', serif;
+	font-size: 110px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 16.8px;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+h3 {
+	font-size: 26px;
+	font-weight: 500;
+	letter-spacing: 3.12px;
+	margin: 1rem 0;
+}
+h4 {
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+h5 {
+	/*font-weight: 700;
+	letter-spacing: 1.2px;
+	font-size: 20px;*/
+}
+h6 {
+	/*font-weight: 700;
+	font-size: 16px;*/
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+p {
+	font-size: 15px;
+	color: var(--color-white);
+	font-weight: 400;
+	letter-spacing: 1.125px;
+	line-height: 1.6;
+	max-width: 950px;
+}
+/* edit to match project */
+/*@media screen and (min-width: 950px) {
+  p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 1.5rem 0;
+  }
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+   color: white;
+   text-decoration: none;
+}
+a:hover, button:hover {
+  cursor: pointer;
+}
+.italic {
+  font-style: italic;
+  font-size: inherit;
+  font-weight: inherit;
+}
 .all-caps input {
 	text-transform: uppercase;
-}
+}*/
+
+
+/* - - - - - - - - - - - - - - - default/mobile styles - - - - - - - - - - - - - - - */
+
+
+
+/* all class attributes */
+
+.header-nav
+.header-nav-item
+
+.hero
+.sct-content
+
+.grid-columns
+.grid-columns-text
+.grid-columns-img
+.grid-boxes
+.grid-boxes-text
+.grid-boxes-statistics
+.grid-boxes-img
+.grid-centered
+.grid-centered-text
+
+.carousel-container
+.image-carousel
+.carousel-img
+
+.footer-logo
+.footer-about
+.footer-contact
+.footer-organization-icons
+.footer-nav
+.footer-nav-item
+.copyright
+
+
+.allcaps
+.italics /* not used */
+.centered
+
+
+.hero-home-container
+.hero-home
+.maze-blurb-container
+.maze-blurb
+.home-1
+.home-2
+.home-3
+
+.history-1
+.history-2
+.history-3
+.history-4
+
+.reconstruction-1
+.reconstruction-2
+.reconstruction-3
+.reconstruction-4
+.reconstruction-5
+
+.hero-author
+.author-1
+.author-2
+.author-3
+
+.credits-1
+
+
+
+/* all id attributes */
+
+#header-nav-standalone
+#header-nav-blank
+
+#hero-home-author
+#hero-home-statement
+#maze-blurb-quote
+
+
+
+
+/* - - - - - - - - - - - - - - - tablet styles - - - - - - - - - - - - - - - */
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+
+
+
+/* - - - - - - - - - - - - - - - desktop styles - - - - - - - - - - - - - - - */
+
+@media only screen and (min-width: 701px)
+
+
+
+/* Amnesia media query format… */
+@media screen and (min-width: 1000px) {
+
+	nav {
+		white-space: nowrap;
+	}
+
+
+
+
+
+
+
+
+
+
