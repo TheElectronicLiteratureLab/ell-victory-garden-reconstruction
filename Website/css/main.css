@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-/*--------MAIN LAYOUT--------*/
-html, body {
-	scroll-behavior: smooth;
-	font-family: "Crimson Pro";
-	margin: 0 auto;
-	background-color: #1F1E1C;
-}
-* {
-	box-sizing:  border-box;
-}
-main {
-}
-section {
-	padding: 1rem 0;
-	margin: 0;
-}
-
 /*--------COLORS--------*/
 html {
 	color: #FFFFFF;
@@ -34,21 +17,21 @@ html {
 html {
 	font-family: 'Crimson Pro', serif;
 	--font-primary: 'Crimson Pro', serif;
+	font-size: 62.5%;
 }
-h1, h2, h3, h4, h5, h6, p, blockquote {
+h1, h2, h3, h4, h5, h6, p, .button, blockquote {
 	color: var(--color-white);
 }
-h2, h3, button {
+h2, h3, .button, a {
 	font-family: 'Cabin', sans-serif;
 }
 h3, h4, h5, h6 {
 	margin: 1rem 0;
 }
-h1, h2, h3, h4, h6 {
+h1, h2, h3, h4, h5, h6 {
 	line-height: 1.5;
 }
 h1, h3 {
-	text-transform:;
 }
 h1 {
 	font-family: 'Crimson Pro', serif;
@@ -58,12 +41,12 @@ h1 {
 	letter-spacing: 16.8px;
 }
 h2 {
-	font-size: 30px;
+	font-size: 50px;
 	font-weight: 200;
 	letter-spacing: 1px;
 }
 h3 {
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: 500;
 	letter-spacing: 3.12px;
 	margin: 1rem 0;
@@ -74,96 +57,328 @@ h4 {
 	letter-spacing: 0px;
 }
 h5 {
-	/*font-weight: 700;
+	font-weight: 700;
 	letter-spacing: 1.2px;
-	font-size: 20px;*/
+	font-size: 20px;
 }
 h6 {
-	/*font-weight: 700;
-	font-size: 16px;*/
+	font-weight: 700;
+	font-size: 16px;
 }
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
-p {
-	font-size: 15px;
+p, figcaption, address, nav a {
+	font-size: 20px;
 	color: var(--color-white);
 	font-weight: 400;
 	letter-spacing: 1.125px;
 	line-height: 1.6;
 	max-width: 950px;
 }
-/* edit to match project */
-/*@media screen and (min-width: 950px) {
-  p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin: 1.5rem 0;
-  }
+/* link, visited, active links */
+a:link, a:visited, a:active {
+	color: white;
+	text-decoration: none;
 }
-a {
-  text-decoration: none;
-}
+/* mouse over link */
 a:hover {
-   color: white;
-   text-decoration: none;
-}
-a:hover, button:hover {
-  cursor: pointer;
+	color: #8D826E;
+	text-decoration: underline;
 }
 .italic {
-  font-style: italic;
-  font-size: inherit;
-  font-weight: inherit;
+	font-style: italic;
+	font-size: inherit;
+	font-weight: inherit;
 }
 .all-caps input {
 	text-transform: uppercase;
-}*/
+}
+.button {
+	display: inline-block;
+	border: solid 3px white;
+	padding: 16px 15px;
+	color: white;
+	background-color: #1F1E1C;
+	text-align: center;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+
+/*--------MAIN LAYOUT--------*/
+html, body {
+	scroll-behavior: smooth;
+	overflow: visible;
+	margin: 0 auto;
+	background-color: #1F1E1C;
+	font-family: "Crimson Pro";
+}
+* {
+	box-sizing:  border-box;
+}
+main {
+}
+
+/*--------HEADER/NAVBAR--------*/
+header nav {
+	z-index: 9999;
+	width: 100%;
+	padding: 13px;
+	background: rgba(0, 0, 0, 0.5);
+}
+header nav ul {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 5%;
+}
+header nav ul li {
+	display: block;
+	width: 100%;
+	border: none;
+	padding: 11px;
+	text-align: center;
+}
+header nav ul li:nth-child(1) img {
+	border: none;
+	height: 1em;
+}
+header nav ul li:nth-child(6) {
+	border: solid 3px white;
+	text-transform: uppercase;
+}
+.sticky {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+
+/*--------HERO--------*/
+.hero-home, .hero-history, .hero-reconstruction, .hero-author-container, .hero-credits, .maze-blurb-container {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("img/home-maze-background.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow-wrap: break-word;
+	height: 100%;
+	width: 100%;
+}
+/* hero background images */
+.hero-home-container {
+	background-image: url("img/home-hero.jpg");
+	text-align: center;
+}
+.hero-history {
+	background-image: linear-gradient(transparent, #1F1E1C), url("img/history-hero.jpg");
+}
+.hero-reconstruction {
+	background-image: linear-gradient(transparent, #1F1E1C), url("img/reconstruction-hero.jpg");
+}
+.hero-author-container {
+	background-image: linear-gradient(transparent, #1F1E1C), url("img/author-hero.jpg");
+}
+.hero-credits {
+	background-image: linear-gradient(transparent, #1F1E1C), url("img/credits-hero.jpg");
+}
+.maze-blurb-container {
+	background-image: url("home-maze-background.jpg");
+}
+
+/*--------MAZE CONTENT--------*/
+.maze-blurb-container {
+	background-color: #E4DFDD;
+	background-image: url("img/home-maze-background.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+#maze-blurb-quote-large {
+	font-size: 35pt;
+	color: black;
+}
+.maze-blurb p {
+	margin: 66px auto 50px;
+	font-size: 20pt;
+	color: black;
+}
+.maze-blurb .button {
+	display: inline-block;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 5px 5px 6px black;
+	padding: 25px;
+	color: white;
+	background-color: #45271C;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/*--------SECTION CONTENT--------*/
+section {
+	max-width: 1920px;
+	gap: 6.5%; 
+	margin: auto;
+	height: 37%;
+	padding: 145px 6.5% 162px;
+	display: flex;
+}
+.sct-content p {
+	padding-top: 39px;
+	margin-bottom: 39px;
+}
+
+/* flex columns, flex centered, grid boxes */
+.flex-columns-text {
+	width: 67%;
+}
+.flex-columns-img {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 33%;
+	margin: 0px auto;
+}
+.flex-centered-text {
+	width: 67%;
+	border:  solid 1px red;
+}
+.grid-boxes {
+}
+.grid-boxes-img {
+}
+
+/*--------FOOTER--------*/
+footer {
+	display: flex;
+	flex-basis: auto;
+	justify-content: space-between; 
+	margin: 0px auto;
+	padding: 2% 5% 2% 2%;
+	background-color: #100F0D;	
+}
+.footer-logo, .footer-about, .footer-contact, .footer-nav {
+	max-width: 510px;
+	margin: 0px 2.5% 0px;
+}
+.footer-logo {
+	max-width: 300px;
+	margin-top: 2%;
+}
+.footer-vg22-logo {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 510px;
+}
+.footer-organization-icons {
+	display: flex;
+	flex-wrap: wrap;
+}
+#cmdc-logo {
+	max-height: 70px;
+	margin: 30px 1rem 30px 0px;
+}
+#elo-logo {
+	max-height: 49px;
+	margin: 30px 1.5rem;
+}
+#ell-logo {
+	max-height: 78px;
+	margin: 30px 0px 30px 1rem;
+}
+.footer-nav li a {
+	margin: 1rem 0px;
+	text-align: left;
+	border: none;
+	font-family: cabin;
+}
+
+/*--------COPYRIGHT--------*/
+.copyright p {
+	max-width: none;
+	margin: auto;
+	padding: 1rem 0;
+	background-color: black;
+	font-size: ;
+	text-align: center;
+}
+
+/*--------IMAGES--------*/
+figure img {
+	width: 100%;
+	max-width: 510px;
+	vertical-align: top;
+}
+figcaption {
+	padding: 10px;
+	caption-side: bottom;
+	text-align: center;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - desktop styles - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 769px)
+
+
+/* - - - - - - - - - - - - - - - tablet styles - - - - - - - - - - - - - - - */
+
+/* @media only screen and (min-width: 600px) and (max-width: 768px) { */
 
 
 /* - - - - - - - - - - - - - - - default/mobile styles - - - - - - - - - - - - - - - */
 
+/* @media only screen and (max-width: 600px) {
+	section {
+		display: wrap;
+		flex-wrap: wrap;
+	}
+} */
 
 
-/* all class attributes */
+
+
+/* all class attributes
+
+.allcaps
+.italics
+.button
 
 .header-nav
 .header-nav-item
+.sticky
 
-.hero
 .sct-content
-
-.grid-columns
-.grid-columns-text
-.grid-columns-img
+.flex-columns
+.flex-columns-text
+.flex-columns-img
+.flex-boxes
+.flex-boxes-text
+.flex-boxes-statistics
+.flex-boxes-img
+.flex-centered
+.flex-centered-text
 .grid-boxes
-.grid-boxes-text
-.grid-boxes-statistics
 .grid-boxes-img
-.grid-centered
-.grid-centered-text
-
-.carousel-container
-.image-carousel
-.carousel-img
-
-.footer-logo
-.footer-about
-.footer-contact
-.footer-organization-icons
-.footer-nav
-.footer-nav-item
-.copyright
-
-
-.allcaps
-.italics /* not used */
-.centered
-
 
 .hero-home-container
 .hero-home
+.hero-home-author
+.hero-home-statement
 .maze-blurb-container
 .maze-blurb
 .home-1
@@ -180,6 +395,9 @@ a:hover, button:hover {
 .reconstruction-3
 .reconstruction-4
 .reconstruction-5
+.carousel-container
+.image-carousel
+.carousel-img
 
 .hero-author
 .author-1
@@ -188,45 +406,28 @@ a:hover, button:hover {
 
 .credits-1
 
+.flex-footer
+.footer-logo
+.footer-vg22-logo
+.footer-about
+.footer-contact
+.footer-organization-icons
+.icons
+.footer-nav
+.footer-nav-item
+.copyright  */
 
 
-/* all id attributes */
 
-#header-nav-standalone
+
+/* all id attributes
+
 #header-nav-blank
 
 #hero-home-author
 #hero-home-statement
-#maze-blurb-quote
+#maze-blurb-quote-large
 
-
-
-
-/* - - - - - - - - - - - - - - - tablet styles - - - - - - - - - - - - - - - */
-
-@media only screen and (min-width: 500px) and (max-width: 700px) {
-
-
-
-/* - - - - - - - - - - - - - - - desktop styles - - - - - - - - - - - - - - - */
-
-@media only screen and (min-width: 701px)
-
-
-
-/* Amnesia media query format… */
-@media screen and (min-width: 1000px) {
-
-	nav {
-		white-space: nowrap;
-	}
-
-
-
-
-
-
-
-
-
-
+#cmdc-logo
+#elo-logo
+#ell-logo  */
