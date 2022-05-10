@@ -23,26 +23,6 @@
 <script>
 	//ALWAYS GO TO TITLEPAGE FROM HERE
 	override = "titlePage"
-	function maplink(who){
-		switch(who){
-			case "thea":
-				sessionStorage.setItem('currentPath',theatre);
-				location = "Thea_s_War.html";
-				break;
-			case "boris":
-				sessionStorage.setItem('currentPath',slack);
-				location = "Slacktown.html";
-				break;
-			case "emily":
-				sessionStorage.setItem('currentPath',offering);
-				location = "Dear_Emily.html";
-				break;
-			case "tara":
-				sessionStorage.setItem('currentPath',grand);
-				location = "L_Etat_de_Tate.html";
-				break;
-		}
-	}
 </script>
 </head>
 <body onLoad="coverUp(); redirect_Page()">
@@ -63,7 +43,7 @@
 <script type="text/javascript">
 	//set cover image
 	function coverUp(){
-		document.getElementById('coverImg').src="images/covers/VG_Cover_Image_" + Math.floor(Math.random()*11) + ".jpg";
+		document.getElementById('coverImg').src="images/covers/VG_Cover_Image_" + Math.floor(Math.random()*12) + ".jpg";
 	}
 
 	//Redirect the page
