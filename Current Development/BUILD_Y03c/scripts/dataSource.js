@@ -16,11 +16,11 @@ scare = new Array("Scare","Reprimand","Shaky","Thea_s_Mail","Poor_Correspondent"
 
 informant = new Array("Informant","Academic","No_Paranoid_He","Naming_Names","Serious","No_Thanks","Posterior","Exhuming_McCarthy","Unreliable","Testify_Memory","Heavy","Managing")
 
-latticework = new Array("Latticework","Hi_Mom","Leroy","Thirsty","Full_of_Surprises","Truant","On_the_Road","Refuge_from_the_Road","Into_the_Country","Talking_Politics","What_s_It_Mean_","Your_Old_Man","Misguided_Dangerous","Frank_Disclosure","Edible","Frank_Opinion","Rooting_for_the_Iceberg","Belief_System","Ancient_History","Radical_Mom","Not_a_War_Story","Violent_Mistake","Out_of_School","BMTV","Post-60_s","Bildung","On_Schedule","What_Should_I_Do_","Old_Movies","Blood_Aggression","Cyclops","Justice_","Remember_Your_Roots","Hustler","Rebel_Roots","No Excuses","Doing_My_Best","Streets","Forget_Politics")
+latticework = new Array("Roadshow","Hi_Mom","Leroy","Thirsty","Full_of_Surprises","Truant","On_the_Road","Refuge_from_the_Road","Into_the_Country","Talking_Politics","What_s_It_Mean_","Your_Old_Man","Misguided_Dangerous","Frank_Disclosure","Edible","Frank_Opinion","Rooting_for_the_Iceberg","Belief_System","Ancient_History","Radical_Mom","Not_a_War_Story","Violent_Mistake","Out_of_School","BMTV","Post-60_s","Bildung","On_Schedule","What_Should_I_Do_","Old_Movies","Blood_Aggression","Cyclops","Justice_","Remember_Your_Roots","Hustler","Rebel_Roots","No Excuses","Doing_My_Best","Streets","Forget_Politics","Latticework")
 
-demo = new Array("Demo","Here_They_Come","Critics","Special_Occasion","A_Close_One","Say_Miss_","Loose_Lips","Statement","Joker","Fancy_This","Was_That_You_","What_If_It_Was_","Keep_Smiling_Until_Then","Not_So_Cool","Object_Lesson","All_the_Way","Where_Troubles_Melt","Uh_Oh_","_But_No")
+demo = new Array("Interview","Demo","Here_They_Come","Critics","Special_Occasion","A_Close_One","Say_Miss_","Loose_Lips","Statement","Joker","Fancy_This","Was_That_You_","What_If_It_Was_","Keep_Smiling_Until_Then","Not_So_Cool","Object_Lesson","All_the_Way","Where_Troubles_Melt","Uh_Oh_","_But_No")
 
-dear_emily = new Array("Dear_Emily","No_Resistance","Failure","War_Games","Hopeless","Firm","Same_Old_Emily_","Sundress","Suit_You_","Otherness","Playing_Around","Look_in_the_Mirror","Women_s_Issue","Come_Home")
+dear_emily = new Array("Correspondence","Dear_Emily","No_Resistance","Failure","War_Games","Hopeless","Firm","Same_Old_Emily_","Sundress","Suit_You_","Otherness","Playing_Around","Look_in_the_Mirror","Women_s_Issue","Come_Home")
 
 telephone = new Array("Telephone","Ringing_Tone","Listeners","Caller","Unhappy","Adjectival","Business","Proposition","Courteous","Demand","Letters","Two_or_Three_Thousand","People_Power","Why_Bother_","String_Attached","Unity_Candidate","Bad_Shit","Background_Fill","Ask_the_Man")
 
@@ -32,7 +32,7 @@ whitman_s_creek = new Array("Whitman_s_Creek","Meet_the_Creek","Anomaly","Miles_
 
 ten_thousand_heroes = new Array("10_000_Heroes","Our_Heroes","Absent_Brothers","Going_West","Decline_of_Man","Doubly_Incorrect","Speaking_of_U_","Parley","Floor_Thirteen","Newsworthy","Talking_Tate","What_s_With_Boris_","All_or_None","Now_Realize_This","No_Heroes","Anger","Guess_Who_","No_One_But_U_")
 
-aperture = new Array("Aperture","Wise","Not_I","How_U_","Audience","Speaking_of_Which_","How_Things_Are","Some_Kind_of_Crisis","Ourselves","Theory_of_My_Life","Multiplier_Effect","Some_Scene","The_Seventies","Trembling_on_the_Brink","On_the_Bus","What_She_Knows","Better_All_The_Time","Distinctions")
+aperture = new Array("Wide_Open","Aperture","Wise","Not_I","How_U_","Audience","Speaking_of_Which_","How_Things_Are","Some_Kind_of_Crisis","Ourselves","Theory_of_My_Life","Multiplier_Effect","Some_Scene","The_Seventies","Trembling_on_the_Brink","On_the_Bus","What_She_Knows","Better_All_The_Time","Distinctions")
 
 veronica_s_party = new Array("Veronica_s_Party","Ghost","Body_Shots","Resistance_Begins","Polemicist","Exchange_of_Views","Conflict_Management","Public_Opinion","Check_It_Out","Backyard","Harangue","Prophet")
 
@@ -52,7 +52,7 @@ halftones = new Array("Halftones","Glorious","Sticky","Sea_Me","Remember_Winter"
 
 see_no_evil = new Array("See_No_Evil","Story_of_Your_Career","Bounty","Leave_It","Far_From_It","Have_a_Dream","Mo_Pomo","With_Open_Eyes")
 
-capitol = new Array("Capitol","Eyewitness","Back_in_the_Saddle","March","Encounter","Lunch_Hour","Screwups","Comrades","Where_s_the_Story_","Tough","Which_Dream","Happy_Birthday")
+capitol = new Array("System_Error","Capitol","Eyewitness","Back_in_the_Saddle","March","Encounter","Lunch_Hour","Screwups","Comrades","Where_s_the_Story_","Tough","Which_Dream","Happy_Birthday")
 
 jsn = new Array("JSN","Lost","Look_Out_","Who_s_This_Now_","Don_t_Look","No_Music","Pass_It_On","Fog","Her_Element","Compulsion","Hard_Starter","The_Dance","Act_Up","Veronica_s_Fall","Exit")
 
@@ -64,19 +64,19 @@ slacktown = new Array("Slacktown","The_LaST_Machine","Parabolic","Monastic","Ecu
 
 now_here_this = new Array("Now_Here_This","InitialConditions","Watch_My_Back","National_Dick","Name_That_Fear","This_Is_It_","Talkin_bout_the_Horror","_disClamor_","Bird_Fiver-Two","Grounded","Meet_Again","Not_Yet_Implemented","P_C_","You_Say_You_Vanna","Except_","Political_Correction","Millennial","Back_to_the_Future")
 
-eighty_eighty_eight = new Array("8088","Absence_of_Boris","Impostor","The_Text","Foregone_Conclusion","Parable","Patron","Wanker","Correct_Yourself","About_Time","With_Mirrors","Mirrors_on_the_Ceiling","Plain_Enough","Work")
+eighty_eighty_eight = new Array("Discussion","8088","Absence_of_Boris","Impostor","The_Text","Foregone_Conclusion","Parable","Patron","Wanker","Correct_Yourself","About_Time","With_Mirrors","Mirrors_on_the_Ceiling","Plain_Enough","Work")
 
 observer = new Array("Observer","Noted_in_Passing","Stargazing","Class_Trip","Inside_Tate","Quiz","Plane_Geometry","Cometary","Plane","What_He_Could_See","Perigee","Patterns","Coincidence","Pragmatics","Conservative","Important","Serious_Business","Warning","Close")
 
 showtime = new Array("Showtime","East","West","Envax_Scamdee","Controversial","I_D_","Loop","Hyperspace","All_the_Above","Slack","Gas_Gas_Gas","Now_I_Understand","Gad","Endgame","Exeunt","Silence","The_Red_King","Into_the_Dark","Impressed","Forfeit","Just_Say_No","Vox_Pop_","Grass")
 
-dreamtime = new Array("Dreamtime","Flounder","Leviaplane","13-F","Blessed_Assurance","Wheel","O_Wow","Kid_Stuff","In_Control","Line_of_Command","Negative_Function","Emergency","Blowout","Escapade","See_Hear","Fire_in_the_Holo","Sinking_Feeling","Into_the_Wreck","Book_Him","Bed","Going_UP_","Perfectly_Sensible","The_Watchtower","Watchman","Angelology","Charlie_Tuna","Solsbury_Hill","Max-Q","Apical","Special_Delivery","Rain","En-dedans_le_Deluge","Floater","Embarked","Fishy","Dolphins_Aren_t_Fish","Rainbow","So_What","zero_point_zero","__4")
+dreamtime = new Array("The_Action_of_Mind_Alone","Dreamtime","Flounder","Leviaplane","13-F","Blessed_Assurance","Wheel","O_Wow","Kid_Stuff","In_Control","Line_of_Command","Negative_Function","Emergency","Blowout","Escapade","See_Hear","Fire_in_the_Holo","Sinking_Feeling","Into_the_Wreck","Book_Him","Bed","Going_UP_","Perfectly_Sensible","The_Watchtower","Watchman","Angelology","Charlie_Tuna","Solsbury_Hill","Max-Q","Apical","Special_Delivery","Rain","En-dedans_le_Deluge","Floater","Embarked","Fishy","Dolphins_Aren_t_Fish","Rainbow","So_What","zero_point_zero","__4")
 
 //STREAMS FROM 'DONE V'
 
-ask_the_marshall = new Array("Ask_the_Marshall","1001_Arabian_Flights","Without_End_Amen","Troublesome_Priests","Bernie_s_Nerves","Simon_Says","Surgery","Worry_","Discordia Concorde","Don_t_Worry","Kind_of_Scary","The_Other_Side","Do_It_Now","Fill_the_Pool","Air_Traffic","Satisfaction","Daybreak")
+ask_the_marshall = new Array("Screentime","Ask_the_Marshall","1001_Arabian_Flights","Without_End_Amen","Troublesome_Priests","Bernie_s_Nerves","Simon_Says","Surgery","Worry_","Discordia_Concorde","Don_t_Worry","Kind_of_Scary","The_Other_Side","Do_It_Now","Fill_the_Pool","Air_Traffic","Satisfaction","Daybreak")
 
-from_a_hot_place = new Array("From_a_Hot_Place","Snake_Goggles","Home_Water","Yours")
+from_a_hot_place = new Array("Poetry","From_a_Hot_Place","Snake_Goggles","Home_Water","Yours")
 
 mr_postman_look_and_see = new Array("Mr_Postman_Look_See","The_War_Channel","Targetting","Hell_Is_Far_Away","Need_to_Know","Cutouts","Breathless","Gas_Masks","Kuralt","Cronkite","Rather_Not","Hard_Start","No_Mo_Veetnams","Novus_Ordo","Rape_in_the_Family","Testimony","The_Color_Guys","Now_Eat_This")
 
@@ -84,18 +84,18 @@ where_were_you = new Array("Where_Were_You_","War_zones","Ground_Zero","Tuna_Fis
 
 story_of_my_life = new Array("Story_of_My_Life","Tara","Reading","Almosting_It","Little_Hearts","Now","Swarming","Irrevocable","Swarmup")
 
-freak_whence_he = new Array("Freak_Whence_He","_Para_No_","Here_s_Another_Hint","Acting_Up","Death_Live","Paranalysis","Reality_Check","Paraknowledge","Regards_Dick","Anonymous")
+freak_whence_he = new Array("Mother_Chaos","Freak_Whence_He","_Para_No_","Here_s_Another_Hint","Acting_Up","Death_Live","Paranalysis","Reality_Check","Paraknowledge","Regards_Dick","Anonymous")
 
 
 //STREAMS FROM 'DONE VI'
 
-couplings = new Array("Couplings","Coy","Nails","Moralists","Lighting_Up","Hand_Me_Down","Haunting","Revisit","Tell_Me","Scent","Fishes","The_Lovers","Not_There","Fetish","Double","Unexpected","Mirror","Strange_Love","Strange_But_Fine","Don_t_Ask","The_Love_You_Take")
+couplings = new Array("Black_Bedroom","Couplings","Coy","Nails","Moralists","Lighting_Up","Hand_Me_Down","Haunting","Revisit","Tell_Me","Scent","Fishes","The_Lovers","Not_There","Fetish","Double","Unexpected","Mirror","Strange_Love","Strange_But_Fine","Don_t_Ask","The_Love_You_Take")
 
 in_country = new Array("In_Country","Foxy","Hello_Down_There","One_of_Our_Aircraft","Options","Watch_Yourself","Why_Worry_","Lighten_Up","Missing","Tender","Blackout","A_True_Story","Dangerous","Apart","Victor","Convenience_Store","Bad_Timing","Something_Easy","Obviously","Not_Quite","Not_At_All","But_This_Time_","Change_Your_Life","Not_Again","Strange","True_Confessions","Attitude_Adjustment","Suit_Time","Power_Suit","Growth_Industry","Everything_In_The_Suit","All_Gone","All_Clear")
 
 reality_based = new Array("Reality-Based","All_Right","Greenback","Happy_Warrior","Four_O_Clock","Seen","-Victor-","-Emily-","Future_Tense","A_Good_Question","Because_Because_Because")
 
-down_in_the_dark = new Array("Down_in_the_Dark","Waste_Not_Want_Not","Shortly","Time","_and__1","_and_","backwardBlack")
+down_in_the_dark = new Array("Damage","Down_in_the_Dark","Waste_Not_Want_Not","Shortly","Time","_and__1","_and_","backwardBlack")
 
 victor_s_garden = new Array("Victor_s_Garden","A_Man_Sleeping","A_Woman_Crying","Scary","Be_Serious","Not_Real","Where_Reality_Begins","Gardener","Knots")
 

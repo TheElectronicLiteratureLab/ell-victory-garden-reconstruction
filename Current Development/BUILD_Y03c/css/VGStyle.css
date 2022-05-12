@@ -41,6 +41,13 @@ a:hover {
 	transition-duration: 0.2s;
 }
 
+div.rule {
+  border-top: 2px dotted #b09f82;
+  margin-top:  4px;
+  margin-bottom:  4px;
+  text-decoration:  noshade;
+}
+
 .topLink { text-decoration: none; color: #B09F82; }
 
 .tab1 { margin-left: 40px;}
