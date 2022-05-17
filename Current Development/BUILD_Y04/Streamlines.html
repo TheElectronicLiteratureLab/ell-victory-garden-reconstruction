@@ -5,19 +5,33 @@
 	<title>Streamlines</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson Pro|Cabin">
 <link rel='stylesheet' href='css/VGStyle.css'>
-	<!-- INTERNAL STYLESHEET TO BYPASS VERTICAL CENTERING -->
+	<!-- INTERNAL STYLESHEET TO BYPASS VERTICAL CENTERING; ALSO LOCAL BOXING EFFECT -->
 	<style>
 		main { position: absolute; top: 10px; }
+		.streamBox {
+			border-style:  dotted;
+			border-width:  2px;
+			border-color:  #b09f82;
+			padding:  8px;
+		}
+		#streamlist{
+			width: 700px;
+			text-align: center;
+			position: relative;
+		}
+
 	</style>
 	<script src='scripts/VGScript.js'></script>
 	<script src='scripts/dataSource.js'></script>
 </head>
-<body onLoad="pageStart()" style="text-align: center">
+<body onLoad="pageStart()" style="text-align: center;">
 <main>
 
-<h1>Streams</h1>
+<h1>The Streams</h1>
+
 
 <div id="streamlist"></div>
+
 
 <br><br>
 
@@ -29,8 +43,7 @@
 	for(var i=0; i<allStreams.length; i++){
 		theStream = allStreams[i]
 		thePage = theStream[0]
-		document.getElementById('streamlist').innerHTML += "<img src='images/streamThumbs/" + streamThumbNames[i] + "_tn.jpg' alt='thumbnail'>" + "<br>"
-		document.getElementById('streamlist').innerHTML += "<a href='" + thePage + ".html'" + " class='textlink'>" + streamNames[i] + "</a><br><br>"
+		document.getElementById('streamlist').innerHTML += "<div class='streamBox'><a href='"+ thePage + ".html'><img src='images/streamThumbs/" + streamThumbNames[i] + "_tn.jpg' alt='thumbnail'></a>" + "<br>" + "<a href='" + thePage + ".html'" + " class='textlink'>" + streamNames[i] + "</a></div><br><br>"
 	}
 </script>
 
