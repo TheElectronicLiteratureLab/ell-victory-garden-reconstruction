@@ -201,7 +201,7 @@ header nav ul button:hover {
 }
 
 /*--------HERO--------*/
-.hero-home, .hero-history, .hero-reconstruction, .hero-author-container, .hero-credits, .maze-blurb-container {
+.hero-home, .hero-history, .hero-reconstruction, .hero-author, .hero-credits, .maze-blurb-container {
 	overflow-wrap: break-word;
 	height: 100%;
 	width: 100%;
@@ -227,8 +227,12 @@ header nav ul button:hover {
 	position: relative;
 	transform: translate(-100px, 20px);
 }
-.hero-history {
-	background-image: linear-gradient(transparent, #1F1E1C), url("../img/history-hero.jpg");
+.hero-history-container {
+	background: linear-gradient(0deg, #1F1E1C 0%, #1F1E1C00 70%), url("../img/history-hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center right;
+	text-align: left;
 }
 .hero-reconstruction {
 	background-image: linear-gradient(transparent, #1F1E1C), url("../img/reconstruction-hero.jpg");
@@ -348,11 +352,17 @@ section {
 }
 .flex-centered-text {
 	width: 67%;
-	border:  solid 1px red;
+  	position: relative;
+  	left: 50%;
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
 }
 .grid-boxes {
 }
 .grid-boxes-img {
+}
+.sct-content h3 {
+	padding: 35px 0 0 0;
 }
 
 /*--------FOOTER--------*/
@@ -552,6 +562,20 @@ figcaption {
 	}
 	.content-spacer {
 		margin-top: 162px;
+	}
+	.flex-centered-text {
+	width: 100%;
+  	position: relative;
+  	left: 0;
+  	-ms-transform: translateX(0%);
+  	transform: translateX(0%);
+	}
+	.flex-centered-text .button {
+		margin: 0;
+	  	position: relative;
+	  	left: 50%;
+	  	-ms-transform: translateX(-50%);
+	  	transform: translateX(-50%);
 	}
 	/*--------FOOTER--------*/
 	#cmdc-logo {
