@@ -25,13 +25,17 @@
     <!--NAVBAR-->
     <header>
         <nav class="header-nav sticky" aria-label="Main">
-            <ul>
-                <li class="header-nav-item"><a href="index.html"><img src="img/vg-2022-logo-sand-white-text.png" alt="the VG22 logo"></a></li>
+            <button class="ham-button" id="ham-burger" onclick="hamOpen();"></button>
+            <button class="ham-button" id="ham-cross" onclick="hamClose();"></button>
+            <ul id="ham-menu">
+                <li class="header-nav-item"><a href="index.html"><img src="img/vg-2022-logo-navbar.png" alt="the VG22 logo"></a></li>
+                <li></li>
                 <li class="header-nav-item"><a href="history.html">History</a></li>
                 <li class="header-nav-item"><a href="reconstruction.html">Reconstruction</a></li>
                 <li class="header-nav-item"><a href="author.html">Author</a></li>
                 <li class="header-nav-item"><a href="credits.html">Credits</a></li>
-                <li class="header-nav-item all-caps"><a href="play.html" target="_blank">Enter&nbsp;the&nbsp;Garden</a></li>
+                <li></li>
+                <li class="header-nav-item all-caps"><a href="play.html" target="_blank"><button>Enter&nbsp;the&nbsp;Garden</button></a></li>
             </ul>
         </nav>
     </header>
@@ -40,20 +44,22 @@
         <!--HERO-->
         <section class="hero-home-container" role="banner">
             <div class="hero-home">
-                <h1>Victory Garden 2022</h1>
                 <p id="hero-home-author">Stuart Moulthrop</p>
+                <h1>Victory Garden 2022</h1>
                 <p id="hero-home-statement">Context Statement. Lorem ipsum dolor sit amet. Quisque nec ex non orci tincidunt aliquam nec et magna.</p>
             </div>
         </section>
 
         <!--MAZE BLURB-->
         <section class="maze-blurb-container">
+            <img id="maze-blurb-top" src="img/maze-section.png">
             <div class="maze-blurb">
                 <blockquote id="maze-blurb-quote-large">&ldquo;I am trying to get some reading done (story of my life) but the world keeps intruding.</blockquote>
                 <p>It is 7:05 p.m. on the 16th of January 1991. Something dark and terrible is unfolding in Baghdad, Iraq. Something dark and terrible took place in Staffordshire, England during the month of July 1916. Various things, some of them dark and perhaps terrible, are about to happen in a place called Tara.&rdquo;</p>
                 <input type="buttton" class="button" onclick="location.href='play.html';" value="Enter the Garden">
             </div>
         </section>
+        <img id="maze-blurb-bot" src="img/maze-section.png">
 
         <!--FLEX CONTENT-->
         <!--"Project History"-->
@@ -62,14 +68,22 @@
             <!--flex text-->
             <div class="flex-columns-text"> 
                 <h2>Project History</h2>
+                    <!--flex image-->
+                    <div>
+                        <figure class="flex-columns-img">
+                           <img class="desktop-hide" src="img/home-original-north-garden.jpg" alt="image alt">
+                           <figcaption class="desktop-hide">image caption</figcaption>
+                        </figure>
+                    </div>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in luctus leo. Curabitur pretium vulputate arcu et dapibus. Sed vehicula dui vitae vulputate tristique. Etiam non tincidunt elit, in aliquam ligula. Morbi quis quam condimentum nulla tincidunt posuere. Etiam dapibus nibh mi, a tincidunt diam dignissim vel. Proin scelerisque nibh sed mi euismod, vitae efficitur neque vulputate. Suspendisse euismod nulla dolor, eget commodo est pretium sed. Fusce lacinia pellentesque laoreet. Donec vitae consectetur leo. Duis rutrum ac lorem non bibendum. Cras hendrerit dictum velit, at laoreet turpis fringilla in.</p>
                 <input type="buttton" class="button" onclick="location.href='history.html';" value="Learn More">
             </div>
             
             <!--flex image-->
-            <figure class="flex-columns-img">
-               <img src="img/home-original-north-garden.jpg" alt="image alt">
-               <figcaption>image caption</figcaption>
+            <figure class="flex-columns-img desktop-only">
+               <img class="desktop-only" src="img/home-original-north-garden.jpg" alt="image alt">
+               <figcaption class="desktop-only">image caption</figcaption>
             </figure>
             
         </section>
@@ -78,14 +92,21 @@
         <section class="sct-content flex-columns home-2">
 
             <!--flex image-->
-            <figure class="flex-columns-img">
-                <img src="img/home-emily.jpg" alt="image alt">
-                <figcaption>image caption</figcaption>
+            <figure class="flex-columns-img desktop-only">
+                <img class="desktop-only" src="img/home-emily.jpg" alt="image alt">
+                <figcaption class="desktop-only">image caption</figcaption>
             </figure>
 
             <!--flex text-->
             <div class="flex-columns-text"> 
                 <h2>Reconstruction</h2>
+                <!--flex image-->
+                    <div>
+                        <figure class="flex-columns-img">
+                           <img class="desktop-hide" src="img/home-emily.jpg" alt="image alt">
+                           <figcaption class="desktop-hide">image caption</figcaption>
+                        </figure>
+                    </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in luctus leo. Curabitur pretium vulputate arcu et dapibus. Sed vehicula dui vitae vulputate tristique. Etiam non tincidunt elit, in aliquam ligula. Morbi quis quam condimentum nulla tincidunt posuere. Etiam dapibus nibh mi, a tincidunt diam dignissim vel. Proin scelerisque nibh sed mi euismod, vitae efficitur neque vulputate. Suspendisse euismod nulla dolor, eget commodo est pretium sed. Fusce lacinia pellentesque laoreet. Donec vitae consectetur leo. Duis rutrum ac lorem non bibendum. Cras hendrerit dictum velit, at laoreet turpis fringilla in.</p>
                 <input type="buttton" class="button" onclick="location.href='reconstruction.html';" value="Learn More">
             </div>
@@ -98,15 +119,24 @@
             <!--flex text-->
             <div class="flex-columns-text"> 
                 <h2>About Stuart Moulthrop</h2>
+                <!--flex image-->
+                    <div>
+                        <figure class="flex-columns-img">
+                           <img class="desktop-hide" src="img/home-moulthrop.jpg" alt="image alt">
+                           <figcaption class="desktop-hide">image caption</figcaption>
+                        </figure>
+                    </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in luctus leo. Curabitur pretium vulputate arcu et dapibus. Sed vehicula dui vitae vulputate tristique. Etiam non tincidunt elit, in aliquam ligula. Morbi quis quam condimentum nulla tincidunt posuere. Etiam dapibus nibh mi, a tincidunt diam dignissim vel. Proin scelerisque nibh sed mi euismod, vitae efficitur neque vulputate. Suspendisse euismod nulla dolor, eget commodo est pretium sed. Fusce lacinia pellentesque laoreet. Donec vitae consectetur leo. Duis rutrum ac lorem non bibendum. Cras hendrerit dictum velit, at laoreet turpis fringilla in.</p>
                 <input type="buttton" class="button" onclick="location.href='author.html';" value="Learn More">
             </div>
             
             <!--flex image-->
-            <figure class="flex-columns-img">
-                <img src="img/home-moulthrop.jpg" alt="image alt">
-                <figcaption>image caption</figcaption>
+            <figure class="flex-columns-img desktop-only">
+                <img class="desktop-only" src="img/home-moulthrop.jpg" alt="image alt">
+                <figcaption class="desktop-only">image caption</figcaption>
             </figure>
+
+            <div class="content-spacer desktop-hide"></div>
 
         </section>    
     </main>
@@ -154,11 +184,21 @@
         </nav>
 
     </footer>
+
+    <!--mobile organization icons-->
+    <div class="footer-organization-icons-tablet">
+        <a href="https://dtc-wsuv.org/cmdc/" target="_blank"><img class="icons" src="img/footer-cmdc-logo.jpg" alt="the CMDC logo"></a>
+        <a href="https://eliterature.org/" target="_blank"><img class="icons" src="img/footer-elo-logo.png" alt="the ELO logo"></a>
+        <a href="https://dtc-wsuv.org/wp/ell/" target="_blank"><img class="icons" src="img/footer-ell-logo.png" alt="the ELL logo"></a>
+    </div>
     
     <!--COPYRIGHT-->
     <div class="copyright">
         <p>&copy;Copyright 2022</p>
     </div>
+
+<!--Hamburger Menu Script-->
+<script src='scripts/hamScript.js'></script>
 
 </body>
 </html>
