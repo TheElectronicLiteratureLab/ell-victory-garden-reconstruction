@@ -101,17 +101,19 @@ victor_s_garden = new Array("Wouldn_t_It_Be_Nice","Victor_s_Garden","A_Man_Sleep
 
 homefront = new Array("Intruders","Homefront","You_re_No_Fun","Strategy","Flirt","Up_","And_In","High_Road","Nosing_Around","Parapet","Insanity","Document","Foiled_Again","Magistrix_Ludi","On_the_Board","Accountable")
 
-//ADDING THIS ONE
+//ADDING THESE
+persons = new Array("Persons","Reading_Ahead","Coming_Home","Underworld","Viewing","Fast_Track","Homelife","Altered","Tower","On_the_Beach","Watergazing","Torchlight","Passager")
+
 labyrinth = new Array("A_Maze","Come_In")
 
 //OMNIBUS STUFF FOR STREAMS
 
 
-allStreams = new Array(story_of_my_life,where_were_you,thea_s_war,mr_postman_look_and_see,see_no_evil,jsn,in_the_no,dear_emily,ask_the_marshall,now_here_this,emily_to_thea,in_country,aperture,from_a_hot_place,observer,john_law,latticework,scare,ten_thousand_heroes,veronica_s_party,halftones,capitol,demo,timely,telephone,whitman_s_creek,showtime,eighty_eighty_eight,reality_based,couplings,informant,u_turns,visitor,freak_whence_he,slacktown,dreamtime,fugitive,homefront,l_etat_de_tate,victor_s_garden,down_in_the_dark,postwar,labyrinth)
+allStreams = new Array(story_of_my_life,where_were_you,thea_s_war,mr_postman_look_and_see,see_no_evil,jsn,in_the_no,dear_emily,ask_the_marshall,now_here_this,emily_to_thea,in_country,aperture,from_a_hot_place,observer,john_law,latticework,scare,ten_thousand_heroes,veronica_s_party,halftones,capitol,demo,timely,telephone,whitman_s_creek,showtime,eighty_eighty_eight,reality_based,couplings,informant,u_turns,visitor,freak_whence_he,slacktown,dreamtime,fugitive,homefront,l_etat_de_tate,victor_s_garden,down_in_the_dark,postwar,persons,labyrinth)
 
-streamNames = new Array("Story of My Life","Where Were You?","Thea's War","Mr. Postman Look and See","See No Evil","JSN","In the No","Dear Emily","Ask the Marshall","Now Here This","Emily to Thea","In Country","Aperture","From a Hot Place","Observer","John Law","Latticework","Scare","Ten Thousand Heroes","Veronica's Party","Halftones","Capitol","Demo","Timely","Telephone","Whitman's Creek","Showtime","8088","Reality-Based","Couplings","Informant","U Turns","Visitor","Freak Whence He","Slacktown","Dreamtime","Fugitive","Homefront","L'Etat de Tate","Victor's Garden","Down in the Dark","Postwar","Labyrinth")
+streamNames = new Array("Story of My Life","Where Were You?","Thea's War","Mr. Postman Look and See","See No Evil","JSN","In the No","Dear Emily","Ask the Marshall","Now Here This","Emily to Thea","In Country","Aperture","From a Hot Place","Observer","John Law","Latticework","Scare","Ten Thousand Heroes","Veronica's Party","Halftones","Capitol","Demo","Timely","Telephone","Whitman's Creek","Showtime","8088","Reality-Based","Couplings","Informant","U Turns","Visitor","Freak Whence He","Slacktown","Dreamtime","Fugitive","Homefront","L'Etat de Tate","Victor's Garden","Down in the Dark","Postwar","Persons","Labyrinth")
 
-streamThumbNames = new Array("story_of_my_life","where_were_you","thea_s_war","mr_postman_look_see","see_no_evil","jsn","in_the_no","dear_emily","ask_the_marshall","now_here_this","emily_to_thea","in_country","aperture","from_a_hot_place","observer","john_law","latticework","scare","ten_thousand_heroes","veronica_s_party","halftones","capitol","demo","timely","telephone","whitman_s_creek","showtime","8088","reality-based","couplings","informant","u_turns","visitor","freak_whence_he","slacktown","dreamtime","fugitive","homefront","l_etat_de_tate","victor_s_garden","down_in_the_dark","postwar","labyrinth")
+streamThumbNames = new Array("story_of_my_life","where_were_you","thea_s_war","mr_postman_look_see","see_no_evil","jsn","in_the_no","dear_emily","ask_the_marshall","now_here_this","emily_to_thea","in_country","aperture","from_a_hot_place","observer","john_law","latticework","scare","ten_thousand_heroes","veronica_s_party","halftones","capitol","demo","timely","telephone","whitman_s_creek","showtime","8088","reality-based","couplings","informant","u_turns","visitor","freak_whence_he","slacktown","dreamtime","fugitive","homefront","l_etat_de_tate","victor_s_garden","down_in_the_dark","postwar","persons","labyrinth")
 
 // P A T H S
 
