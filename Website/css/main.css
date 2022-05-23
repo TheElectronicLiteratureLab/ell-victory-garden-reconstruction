@@ -73,7 +73,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 p, figcaption, address, nav a {
 	font-size: 20px;
-	color: var(--color-white);
 	font-weight: 400;
 	letter-spacing: 1.125px;
 	line-height: 1.6;
@@ -243,13 +242,79 @@ header nav ul button:hover {
 	text-align: left;
 }
 .hero-author-container {
-	background-image: linear-gradient(transparent, #1F1E1C), url("../img/author-hero.jpg");
+	background-image: linear-gradient(0deg, #1F1E1C 0%, #1F1E1C00 70%), url("../img/author-hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	text-align: left;
 }
-.hero-credits {
-	background-image: linear-gradient(transparent, #1F1E1C), url("../img/credits-hero.jpg");
+.hero-credits-container {
+	background-image: linear-gradient(0deg, #1F1E1C 0%, #1F1E1C00 70%), url("../img/credits-hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	text-align: left;
+}
+.hero-author img {
+	display: inline;
+	max-width: 600px;
+	border: solid 12px black;
+	grid-row: 1;
+  	grid-column: 2;
+}
+.hero-author-text {
+	margin: 0px 0px 0px 50px;
+}
+.hero-author-text p, .hero-author-text h1 {
+	color: black;
+}
+.hero-author {
+	display: flex;
+	max-width: 1300px;
+	position: relative;
+  	left: 50%;
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
 }
 .maze-blurb-container {
 	background-image: url("../home-maze-background.jpg");
+}
+
+/*--------CREDITS--------*/
+section.credits-1 {
+	display: block;
+	text-align: center;
+}
+
+.flex-credits {
+}
+
+.credits-1 h2 {
+	padding-bottom: 50px;
+}
+
+.credits-1 .flex-columns {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 25px;
+	justify-content: center;
+}
+
+.social-icon {
+	background: url("../img/social-li-gray.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	width: 35px;
+	position: absolute;
+	transform: translate(-40px, 260px);
+	cursor: pointer;
+}
+.social-icon:hover {
+	background: url("../img/social-li-darksand.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
 }
 
 /*--------MAZE CONTENT--------*/
@@ -362,9 +427,14 @@ section {
   	-ms-transform: translateX(-50%);
   	transform: translateX(-50%);
 }
+.flex-centered-text p {
+	max-width: 1920px;
+}
 .grid-boxes {
 }
 .grid-boxes-img {
+	width: 100%;
+	max-width: 300px;
 }
 .sct-content h3 {
 	padding: 35px 0 0 0;
@@ -455,6 +525,58 @@ section {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+/*--------OTHER WORKS--------*/
+section.author-4 {
+	display: block;
+	text-align: center;
+	padding-top: 0;
+}
+
+.author-4 .flex-columns {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 25px;
+	justify-content: center;
+}
+
+.author-4 a {
+	cursor: pointer;
+}
+
+.author-4 #hegirascope {
+	background: url("../img/hegirascope.png");
+}
+.author-4 #hegirascope:hover {
+	background: url("../img/hegirascope.gif");
+}
+
+.author-4 #reagan-library {
+	background: url("../img/reagan-library.png");
+}
+.author-4 #reagan-library:hover {
+	background: url("../img/reagan-library.gif");
+}
+
+.author-4 #under-language {
+	background: url("../img/under-language.png");
+}
+.author-4 #under-language:hover {
+	background: url("../img/under-language.gif");
+}
+
+.author-4 #deep-surface {
+	background: url("../img/deep-surface.png");
+}
+.author-4 #deep-surface:hover {
+	background: url("../img/deep-surface.gif");
+}
+
+.author-4 #empreinte-radio {
+	background: url("../img/empreinte-radio.png");
+}
+.author-4 #empreinte-radio:hover {
+	background: url("../img/empreinte-radio.gif");
 }
 
 /*--------FUN FACTS--------*/
@@ -635,6 +757,18 @@ figcaption {
 	header nav a {
 		font-size: 15px;
 	}
+	/*--------CREDITS---------*/
+	.flex-credits .grid-boxes-img {
+		width: 200px;
+		max-width: 200px;
+	}
+
+	.social-icon {
+		width: 35px;
+		position: absolute;
+		transform: translate(-40px, 160px);
+		cursor: pointer;
+	}
 
 	/*--------MAZE CONTENT--------*/
 	#maze-blurb-quote-large {
@@ -781,6 +915,24 @@ figcaption {
 		position: relative;
 		font-size: 22px;
 		right:0;
+	}
+	/*--------HERO CONTENT--------*/
+	.hero-home, .hero-history, .hero-reconstruction, .hero-author, .hero-credits {
+		padding-top: 0px;
+		padding-bottom: 200px;
+		height: 100%;
+	}
+	.hero-author img {
+		max-width: 100%;
+	}
+	.hero-author-text {
+		margin: 0px;
+	}
+	.hero-author-text p, .hero-author-text h1 {
+	color: white;
+}
+	.hero-author {
+		display: inline-block;
 	}
 	/*--------MAZE CONTENT--------*/
 	#maze-blurb-quote-large {
