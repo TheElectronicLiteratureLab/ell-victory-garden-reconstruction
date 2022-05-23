@@ -276,9 +276,6 @@ header nav ul button:hover {
   	-ms-transform: translateX(-50%);
   	transform: translateX(-50%);
 }
-.maze-blurb-container {
-	background-image: url("../home-maze-background.jpg");
-}
 
 /*--------CREDITS--------*/
 section.credits-1 {
