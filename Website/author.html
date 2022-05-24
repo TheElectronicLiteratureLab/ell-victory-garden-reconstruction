@@ -25,13 +25,17 @@
     <!--NAVBAR-->
     <header>
         <nav class="header-nav sticky" aria-label="Main">
-            <ul>
-                <li class="header-nav-item"><a href="index.html"><img src="img/vg-2022-logo-sand-white-text.png" alt="the VG22 logo"></a></li>
+            <button class="ham-button" id="ham-burger" onclick="hamOpen();"></button>
+            <button class="ham-button" id="ham-cross" onclick="hamClose();"></button>
+            <ul id="ham-menu">
+                <li class="header-nav-item"><a href="index.html"><img src="img/vg-2022-logo-navbar.png" alt="the VG22 logo"></a></li>
+                <li></li>
                 <li class="header-nav-item"><a href="history.html">History</a></li>
                 <li class="header-nav-item"><a href="reconstruction.html">Reconstruction</a></li>
                 <li class="header-nav-item"><a href="author.html">Author</a></li>
                 <li class="header-nav-item"><a href="credits.html">Credits</a></li>
-                <li class="header-nav-item all-caps"><a href="play.html" target="_blank">Enter&nbsp;the&nbsp;Garden</a></li>
+                <li></li>
+                <li class="header-nav-item all-caps"><a href="play.html" target="_blank"><button>Enter&nbsp;the&nbsp;Garden</button></a></li>
             </ul>
         </nav>
     </header>
@@ -43,15 +47,18 @@
 
                 <!--author image-->
                 <figure>
-                   <img src="img/placeholder.png" alt="image alt">
+                   <img src="img/author-moulthrop.jpg" alt="image alt">
                 </figure>
 
                 <!--author text-->
-                <h1>Stuart Moulthrop</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in luctus leo. Curabitur pretium vulputate arcu et dapibus. Sed vehicula dui vitae vulputate tristique. Etiam non tincidunt elit, in aliquam ligula. Morbi quis quam condimentum nulla tincidunt posuere. Etiam dapibus nibh mi, a tincidunt diam dignissim vel.</p>
+                <div class="hero-author-text">
+                    <h1>Stuart Moulthrop</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in luctus leo. Curabitur pretium vulputate arcu et dapibus. Sed vehicula dui vitae vulputate tristique. Etiam non tincidunt elit, in aliquam ligula. Morbi quis quam condimentum nulla tincidunt posuere. Etiam dapibus nibh mi, a tincidunt diam dignissim vel.</p>
+                </div>
 
+                </div>
             </div>
-        </div>
+        </section>
 
         <!--FLEX CONTENT-->
         <!--"Innovater of Hypertext Fiction"-->
@@ -60,14 +67,20 @@
                 <!--flex text-->
                 <div class="flex-columns-text"> 
                     <h2>Innovator of Hypertext Fiction</h2>
+                        <div>
+                            <figure class="flex-columns-img">
+                               <img class="desktop-hide" src="img/author-original-map.jpg" alt="image alt">
+                               <figcaption class="desktop-hide">image caption</figcaption>
+                            </figure>
+                        </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in luctus leo. Curabitur pretium vulputate arcu et dapibus. Sed vehicula dui vitae vulputate tristique. Etiam non tincidunt elit, in aliquam ligula. Morbi quis quam condimentum nulla tincidunt posuere. Etiam dapibus nibh mi, a tincidunt diam dignissim vel. Proin scelerisque nibh sed mi euismod, vitae efficitur neque vulputate. Suspendisse euismod nulla dolor, eget commodo est pretium sed. Fusce lacinia pellentesque laoreet. Donec vitae consectetur leo. Duis rutrum ac lorem non bibendum. Cras hendrerit dictum velit, at laoreet turpis fringilla in.</p>
                     <p>Mauris a libero interdum, egestas tellus nec, efficitur nibh. Maecenas ac aliquam sapien. Fusce placerat, lectus ac semper molestie, libero purus malesuada urna, in gravida ante urna eu erat. Aenean luctus mattis tincidunt. Proin nulla felis, vehicula id tellus in, congue aliquet turpis. Quisque sollicitudin feugiat felis id accumsan. Duis maximus vitae libero eget dignissim. Maecenas nec magna vitae nibh rhoncus congue id porta metus. Nulla fermentum pellentesque metus interdum facilisis. Proin a tortor convallis, consequat urna pharetra, dapibus nibh.</p>
                 </div>
                 
                 <!--flex image-->
-                <figure class="flex-columns-img">
-                   <img src="img/placeholder.png" alt="image alt">
-                   <figcaption>image caption</figcaption>
+                <figure class="flex-columns-img desktop-only">
+                   <img class="desktop-only" src="img/author-original-map.jpg" alt="image alt">
+                   <figcaption class="desktop-only">image caption</figcaption>
                 </figure>
 
             </div>
@@ -85,65 +98,44 @@
 
         </section>
 
-        <!--"Video Games"-->
-        <section class="sct-content flex-columns author-3">
-                
-                <!--flex image-->
-                <figure class="flex-columns-img">
-                    <img src="img/placeholder.png" alt="image alt">
-                    <figcaption>image caption</figcaption>
-                </figure>
-
-                <!--flex text-->
-                <div class="flex-columns-text"> 
-                    <h2>Video Games</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in luctus leo. Curabitur pretium vulputate arcu et dapibus. Sed vehicula dui vitae vulputate tristique. Etiam non tincidunt elit, in aliquam ligula. Morbi quis quam condimentum nulla tincidunt posuere. Etiam dapibus nibh mi, a tincidunt diam dignissim vel. Proin scelerisque nibh sed mi euismod, vitae efficitur neque vulputate. Suspendisse euismod nulla dolor, eget commodo est pretium sed.</p>
-                    <input type="buttton" class="button" onclick="location.href='';" value="Learn More">
-                </div>
-
-        </section>
-
         <!--"Other Works"-->
-        <section class="sct-content flex-boxes author-4">
-
-            <!--header text-->
-            <h2>Other Works</h2>
+        <section class="author-4">
 
             <!--boxes-->
-            <a><figure class="flex-box-img">
-                <img src="img/placeholder.png" alt="image alt">
-                <img src="img/placeholder.gif" alt="gif alt">
-                <figcaption>Hegirascope (1995)</figcaption>
-            </figure></a>
+            <div class="flex-columns">
+                <a><figure class="flex-box-img">
+                    <img id="hegirascope" src="img/placeholder.png" alt="image alt">
+                    <figcaption>Hegirascope (1995)</figcaption>
+                </figure></a>
 
-            <a><figure class="flex-box-img">
-                <img src="img/placeholder.png" alt="image alt">
-                <img src="img/placeholder.gif" alt="gif alt">
-                <figcaption>Reagan Library (1999)</figcaption>
-            </figure></a>
+                <a><figure class="flex-box-img">
+                    <img id="reagan-library" src="img/placeholder.png" alt="image alt">
+                    <figcaption>Reagan Library (1999)</figcaption>
+                </figure></a>
 
-            <a><figure class="flex-box-img">
-                <img src="img/placeholder.png" alt="image alt">
-                <img src="img/placeholder.gif" alt="gif alt">
-                <figcaption>Under Language (2007)</figcaption>
-            </figure></a>
+                <a><figure class="flex-box-img">
+                    <img id="under-language" src="img/placeholder.png" alt="image alt">
+                    <figcaption>Under Language (2007)</figcaption>
+                </figure></a>
 
-            <a><figure class="flex-box-img">
-                <img src="img/placeholder.png" alt="image alt">
-                <img src="img/placeholder.gif" alt="gif alt">
-                <figcaption>Deep Surface (2007)</figcaption>
-            </figure></a>
+                <a><figure class="flex-box-img">
+                    <img id="deep-surface" src="img/placeholder.png" alt="image alt">
+                    <figcaption>Deep Surface (2007)</figcaption>
+                </figure></a>
 
-            <a><figure class="flex-box-img">
-                <img src="img/placeholder.png" alt="image alt">
-                <img src="img/placeholder.gif" alt="gif alt">
-                <figcaption>Empreinte Radio (2014)</figcaption>
-            </figure></a>
+                <a><figure class="flex-box-img">
+                    <img id="empreinte-radio" src="img/placeholder.png" alt="image alt">
+                    <figcaption>Empreinte Radio (2014)</figcaption>
+                </figure></a>
+            </div>
+
+            <div class="content-spacer"></div>
 
         </section>
     </main>
 
 <!--FOOTER-->
+    <!--FOOTER-->
     <footer role="contentinfo">
         
         <!--logo img-->
@@ -186,11 +178,21 @@
         </nav>
 
     </footer>
+
+    <!--mobile organization icons-->
+    <div class="footer-organization-icons-tablet">
+        <a href="https://dtc-wsuv.org/cmdc/" target="_blank"><img class="icons" src="img/footer-cmdc-logo.jpg" alt="the CMDC logo"></a>
+        <a href="https://eliterature.org/" target="_blank"><img class="icons" src="img/footer-elo-logo.png" alt="the ELO logo"></a>
+        <a href="https://dtc-wsuv.org/wp/ell/" target="_blank"><img class="icons" src="img/footer-ell-logo.png" alt="the ELL logo"></a>
+    </div>
     
     <!--COPYRIGHT-->
     <div class="copyright">
         <p>&copy;Copyright 2022</p>
     </div>
+
+<!--Hamburger Menu Script-->
+<script src='scripts/hamScript.js'></script>
 
 </body>
 </html>
