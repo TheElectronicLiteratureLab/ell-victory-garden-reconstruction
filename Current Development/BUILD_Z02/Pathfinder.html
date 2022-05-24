@@ -8,8 +8,15 @@
 	<!-- INTERNAL STYLESHEET TO BYPASS VERTICAL CENTERING -->
 	<style>
 		main { position: absolute; top: 10px; }
-		body{
-			background-image: url('images/Pathfinder_BG.jpg');
+		#pathList{
+			text-align:  center;
+			position:  absolute;
+			top:  60px;
+		}
+		#decal{
+			position:  absolute;
+			top:  60px;
+			left:  200px;
 		}
 	</style>
 	<script src='scripts/VGScript.js'></script>
@@ -19,10 +26,10 @@
 <body onLoad="pageStart()">
 <main>
 
+
+
+<div id="pathList">
 <h1>The Paths</h1>
-
-<div class='centered'>
-
 	<!-- 1 ABW -->
 	<a href='All_Hazards_.html'>ABW</a><br>
 	<!-- 2 alone -->
@@ -140,6 +147,10 @@
 
 	<br><br>
 
+</div>
+
+<div id="decal">
+	<img src="images/Pathfinder_Decal.jpg" width="200" alt="labyrinthine design">
 </div>
 </main>
 

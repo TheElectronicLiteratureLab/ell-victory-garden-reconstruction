@@ -218,7 +218,7 @@ function pathFinder(dir)
 				} //END OF 'FORWARD' CONDITIONS
 				else
 				{ //REVERSE
-					if(thePathCount == 0) //AT START OF PATH; GO TO INDEX
+					if(thePathCount == -1) //AT START OF PATH; GO TO INDEX
 					{
 						dest = 'index'
 					}
