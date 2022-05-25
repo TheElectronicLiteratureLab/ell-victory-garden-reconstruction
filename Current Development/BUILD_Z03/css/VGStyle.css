@@ -1,0 +1,533 @@
+body { 
+	position: relative;
+	height: 95%;
+}
+
+main {
+	width: 90%;
+	max-width: 700px;
+	margin-top: 20px;
+	font-family: Crimson Pro,serif;
+	font-size:  14pt;
+	line-height: 26px;
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+tt {
+	font-family:  Courier New,Courier,monospace;
+	font-size:  12pt;
+}
+
+h1 { 
+	text-align: center;
+	font-family:  Cabin,sans-serif; 
+	font-size: 20pt; 
+	font-weight: 700;
+}
+
+a {
+	color: #9A896D;
+	transition-property: color;
+	transition-duration: 0.2s;
+}
+
+a:hover {
+	color: #7B919E;
+	transition-property: color;
+	transition-duration: 0.2s;
+}
+
+div.rule {
+  border-top: 2px dotted #b09f82;
+  margin-top:  4px;
+  margin-bottom:  4px;
+  text-decoration:  noshade;
+}
+
+.topLink { text-decoration: none; color: #B09F82; }
+
+.tab1 { margin-left: 40px;}
+
+.tab2 { margin-left: 60px;}
+
+.tab3 { margin-left: 80px;}
+
+.centered { text-align: center; }
+
+.caption { font-family:  Cabin,sans-serif; font-size:  11pt; text-align: center; color: #b09f82; }
+
+.subCaption { font-family:  Cabin,sans-serif; font-size:  9pt; text-align: center; color: #b09f82; }
+
+.sand {
+	color: #b09f82; 
+}
+
+#topper{
+	font: 8pt Tahoma;
+	text-align: center;
+	text-transform:  uppercase;
+}
+
+.cover-image {
+	animation-duration: 20s;
+	animation-name: coverFade;
+	animation-fill-mode: forwards;
+}
+
+.red{ color: #FF0000; }
+
+.picLink{ font-weight: 700; text-decoration: none }
+
+.sand-top {
+	animation-duration: 20s;
+	animation-name: coverSlideFadeUp;
+	animation-fill-mode: forwards;
+}
+
+.sand-bottom {
+	margin: 0px;
+	animation-duration: 20s;
+	animation-name: coverSlideFadeDown;
+	animation-fill-mode: forwards;
+}
+
+.quick-fade {
+	animation-duration: 0.5s;
+	animation-name: quickFadeIn;
+	animation-fill-mode: forwards;
+}
+
+.loading-bar {
+	opacity: 0;
+	padding: 0;
+	margin-top: 5px; 
+	transform-origin: left;
+	border-top: 4px solid;
+	animation-duration: 19.8s;
+	animation-timing-function: linear;
+	animation-delay: 0.2s;
+	animation-name: loadingBar;
+	animation-fill-mode: forwards;
+}
+
+/* ANIMATION CONTENT BELOW */
+
+@keyframes loadingBar {
+	0% {
+		opacity: 1;
+		transform: scale(0.01, 1);
+	}
+
+	96% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+
+	100% {
+		opacity: 0;
+	}
+
+}
+
+@keyframes coverSlideFadeUp {
+	0% {
+		opacity: 0%;
+		position: relative;
+		top: 20px;
+	}
+
+	4%,96% {
+		opacity: 100%;
+		position: relative;
+		top: 0px;
+	}
+
+	100% {
+		opacity: 0%;
+		position: relative;
+		top: 20px;
+	}
+}
+
+@keyframes coverSlideFadeDown {
+	0% {
+		opacity: 0%;
+		position: relative;
+		bottom: 20px;
+	}
+
+	4%,96% {
+		opacity: 100%;
+		position: relative;
+		bottom: 0px;
+	}
+
+	100% {
+		opacity: 0%;
+		position: relative;
+		bottom: 20px;
+	}
+}
+
+@keyframes coverFade {
+	0% {
+		opacity: 0%;
+	}
+
+	4%,96% {
+		opacity: 100%;
+	}
+
+	100% {
+		opacity: 0%;
+	}
+}
+
+@keyframes quickFadeIn {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+/* UI CONTENT BELOW */
+.ui-pos {
+	pointer-events: none;
+	position: fixed;
+	z-index: 20;
+  	top: 50%;
+  	left: 50%;
+  	transform: translateY(-50%) translateX(-50%);
+}
+
+.ui-box { /* This is a <nav> inside the <body> */
+	pointer-events: auto; 
+	position: relative;
+	right: 410px;
+}
+
+.ui-box .ui-template { /* This is an <img> inside the .ui-box <nav> */
+  transform: scale(75%);
+  opacity: 0;
+}
+
+.ui-box button {
+	position: absolute;
+	background-color: white;
+	border: solid #B09F82 1px;
+	cursor: pointer;
+}
+
+.ui-box .ui-helix {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	z-index: -5;
+	transform: translateY(-50%) translateX(-50%) scale(60%);
+	background-image: url('../images/ui/ui-helix.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+	/* UI BUTTON 1 */
+	.ui-box .ui-button-1 { /* Center button on the UI - Initial state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 15%;
+		padding: 0;
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-map.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-button-1:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-1-over { /* Center button on the UI - Hover state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 15%;
+		transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		background-image: url('../images/ui/ui-btn-map-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+	/* UI BUTTON 2 */
+	.ui-box .ui-button-2 { /* Center button on the UI - Initial state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 25%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-paths.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-button-2:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-2-over { /* Center button on the UI - Hover state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 25%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-paths-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+	/* UI BUTTON 0 */
+	.ui-box .ui-button-0 { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 50%;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-square.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-button-0:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-0-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 50%;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-square-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+	/* UI BUTTON 3 */
+	.ui-box .ui-button-3 { /* Center button on the UI - Initial state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 75%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-streams.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-button-3:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-3-over { /* Center button on the UI - Hover state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 75%;
+		transform: translateY(-50%) translateX(-50%);
+		background-image: url('../images/ui/ui-btn-streams-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+	/* UI BUTTON 4 */
+	.ui-box .ui-button-4 { /* Center button on the UI - Initial state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 85%;
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-tower.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-button-4:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-button-4-over { /* Center button on the UI - Hover state */
+		width: 30px;
+		height: 30px;
+		left: 50%;
+		top: 85%;
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-tower-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+	/* UI STREAM BACK */
+	.ui-box .ui-stream-back { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 25%;
+		top: 34%;
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-arrow.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-stream-back:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-stream-back-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 25%;
+		top: 34%;
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-arrow-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+	/* UI STREAM FORWARD */
+	.ui-box .ui-stream-forward { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 75%;
+		top: 34%;
+		transform: translateY(-50%) translateX(-50%) rotate(135deg);
+		background-image: url('../images/ui/ui-btn-arrow.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-stream-forward:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-stream-forward-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 75%;
+		top: 34%;
+		transform: translateY(-50%) translateX(-50%) rotate(135deg);
+		background-image: url('../images/ui/ui-btn-arrow-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+	/* UI PATH BACK */
+	.ui-box .ui-path-back { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 25%;
+		top: 66%;
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-arrow.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-path-back:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-path-back-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 25%;
+		top: 66%;
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		background-image: url('../images/ui/ui-btn-arrow-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+	/* UI PATH FORWARD */
+	.ui-box .ui-path-forward { /* Center button on the UI - Initial state */
+		width: 20px;
+		height: 20px;
+		left: 75%;
+		top: 66%;
+		transform: translateY(-50%) translateX(-50%) rotate(135deg);
+		background-image: url('../images/ui/ui-btn-arrow.png');
+		border: solid #B09F82 1px;
+		background-size: cover;
+		opacity: 1;
+		transition-property: opacity;
+		transition-duration: 0.2s;
+	}
+
+	.ui-box .ui-path-forward:hover { /* Transition the center button on the UI when hovered */
+		opacity: 0;
+	}
+
+	.ui-box .ui-path-forward-over { /* Center button on the UI - Hover state */
+		width: 20px;
+		height: 20px;
+		left: 75%;
+		top: 66%;
+		transform: translateY(-50%) translateX(-50%) rotate(135deg);
+		background-image: url('../images/ui/ui-btn-arrow-over.png');
+		border: solid #7B919E 1px;
+		background-size: cover;
+	}
+
+
+@media only screen and (max-height: 500px) {
+/* For smaller screens, shrink the UI */
+  .ui-box {
+    transform: scale(90%);
+  }
+}
+
+@media only screen and (max-height: 400px) {
+/* For smaller screens, shrink the UI */
+  .ui-box {
+    transform: scale(80%);
+  }
+}
+
+@media only screen and (max-height: 350px) {
+/* For smaller screens, shrink the UI */
+  .ui-box {
+    transform: scale(60%);
+  }
+}
