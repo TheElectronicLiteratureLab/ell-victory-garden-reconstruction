@@ -27,6 +27,9 @@ function transit(dest){
 //REPORT PATH AND STREAM IN 'TOPPER' DIV
 function pageStart()
 {
+
+	console.log(sessionStorage.getItem("transitMode"))
+	
 	//SOME PAGES DON'T HAVE THE HEADER
 	if(document.getElementById('topper') != null)
 	{
@@ -39,11 +42,11 @@ function pageStart()
 		thePath = sessionStorage.getItem('currentPath');
 		if(thePath == null) //THIS PAGE WAS ACCESSED OUT OF SEQUENCE - SET DEFAULT PATH
 		{
-			thePathName = "Grand";
+			thePathName = "garden";
 			//THESE LINES SEEM NOT TO HAVE EFFECT
 			//SOMETHING IN PATHFINDER PROBABLY OVERRIDES THEM FOR NON-SEQUENCE PAGES:
 			//FORCES TRANSITION TO INDEX - MAY NEED TO ADDRESS THIS FOR TESTING
-			sessionStorage.setItem('currentPath', grand);
+			sessionStorage.setItem('currentPath', garden);
 			sessionStorage.setItem('pathCount', '0')
 		}
 		else //WE'RE ALREADY ON A PATH - IDENTIFY IT

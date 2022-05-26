@@ -29,6 +29,13 @@ h1 {
 	font-weight: 700;
 }
 
+h2 { 
+	text-align: left;
+	font-family:  Cabin,sans-serif; 
+	font-size: 14pt; 
+	font-weight: 700;
+}
+
 a {
 	color: #9A896D;
 	transition-property: color;
