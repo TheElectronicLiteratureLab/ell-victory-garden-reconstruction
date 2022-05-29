@@ -243,6 +243,17 @@ function emilyPic(){
 	document.getElementById("Emily").src = "images/Emilys/emily_" + Math.floor(Math.random()*100) + ".jpg";
 }
 
+//CALLED ON "ARCANA" PAGE
+function arcanaPic(){
+		imgPick = Math.floor(Math.random()*5);
+		if(imgPick == 0) theImage = "Fool_Card";
+		if(imgPick == 1) theImage = "Lovers_Card";
+		if(imgPick == 2) theImage = "Strength_Card";
+		if(imgPick == 3) theImage = "Tower_Card";
+		if(imgPick == 4) theImage = "Hermit_Card";
+		document.getElementById("arcanaImg").src = "images/streamImages/" + theImage + ".jpg";
+}
+
 //SCRUB FILE EXTENSION FROM PAGE NAMES
 function shortNamer()
 {
