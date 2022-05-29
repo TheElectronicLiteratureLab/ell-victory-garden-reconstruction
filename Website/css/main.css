@@ -80,6 +80,9 @@ p, figcaption, address, nav a {
 	transition-property: all;
 	transition-duration: 0.2s;
 }
+i {
+	font-style: italic;
+}
 /* link, visited, active links */
 a:link, a:visited, a:active {
 	color: white;
