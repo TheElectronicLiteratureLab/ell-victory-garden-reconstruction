@@ -39,7 +39,8 @@
 </body>
 
 <script>
-	for(var i=0; i<allStreams.length; i++){
+	//STOP SHORT OF LAST ITEM IN ALLSTREAMS
+	for(var i=0; i<allStreams.length-1; i++){
 		theStream = allStreams[i]
 		thePage = theStream[0]
 		document.getElementById('streamlist').innerHTML += "<div class='streamBox'><a href='"+ thePage + ".html'><img src='images/streamThumbs/" + streamThumbNames[i] + "_tn.jpg' alt='thumbnail'></a>" + "<br>" + "<a href='" + thePage + ".html'" + " class='textlink'>" + streamNames[i] + "</a></div><br><br>"

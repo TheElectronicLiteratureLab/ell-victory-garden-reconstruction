@@ -110,14 +110,16 @@ persons = new Array("Persons","Reading_Ahead","Coming_Home","Underworld","Viewin
 
 labyrinth = new Array("A_Maze","Come_In")
 
+arcana = new Array("Arcana","Q_and_A","What_They_Want","2033","Nonhuman")
+
 //OMNIBUS STUFF FOR STREAMS
 
 
-allStreams = new Array(story_of_my_life,where_were_you,thea_s_war,mr_postman_look_and_see,see_no_evil,jsn,in_the_no,dear_emily,ask_the_marshall,now_here_this,emily_to_thea,in_country,aperture,from_a_hot_place,observer,john_law,latticework,scare,ten_thousand_heroes,veronica_s_party,halftones,capitol,demo,timely,telephone,whitman_s_creek,showtime,eighty_eighty_eight,reality_based,couplings,informant,u_turns,visitor,freak_whence_he,slacktown,fugitive,dreamtime,homefront,l_etat_de_tate,victor_s_garden,floater,down_in_the_dark,postwar,persons,labyrinth)
+allStreams = new Array(story_of_my_life,where_were_you,thea_s_war,mr_postman_look_and_see,see_no_evil,jsn,in_the_no,dear_emily,ask_the_marshall,now_here_this,emily_to_thea,in_country,aperture,from_a_hot_place,observer,john_law,latticework,scare,ten_thousand_heroes,veronica_s_party,halftones,capitol,demo,timely,telephone,whitman_s_creek,showtime,eighty_eighty_eight,reality_based,couplings,informant,u_turns,visitor,freak_whence_he,slacktown,fugitive,dreamtime,homefront,l_etat_de_tate,victor_s_garden,floater,down_in_the_dark,postwar,persons,labyrinth,arcana)
 
-streamNames = new Array("Story of My Life","Where Were You?","Thea's War","Mr. Postman Look and See","See No Evil","JSN","In the No","Dear Emily","Ask the Marshall","Now Here This","Emily to Thea","In Country","Aperture","From a Hot Place","Observer","John Law","Latticework","Scare","Ten Thousand Heroes","Veronica's Party","Halftones","Capitol","Demo","Timely","Telephone","Whitman's Creek","Showtime","8088","Reality-Based","Couplings","Informant","U Turns","Visitor","Freak Whence He","Slacktown","Fugitive","Dreamtime","Homefront","L'Etat de Tate","Victor's Garden","Floater","Down in the Dark","Postwar","Persons","Labyrinth")
+streamNames = new Array("Story of My Life","Where Were You?","Thea's War","Mr. Postman Look and See","See No Evil","JSN","In the No","Dear Emily","Ask the Marshall","Now Here This","Emily to Thea","In Country","Aperture","From a Hot Place","Observer","John Law","Latticework","Scare","Ten Thousand Heroes","Veronica's Party","Halftones","Capitol","Demo","Timely","Telephone","Whitman's Creek","Showtime","8088","Reality-Based","Couplings","Informant","U Turns","Visitor","Freak Whence He","Slacktown","Fugitive","Dreamtime","Homefront","L'Etat de Tate","Victor's Garden","Floater","Down in the Dark","Postwar","Persons","Labyrinth","Arcana")
 
-streamThumbNames = new Array("story_of_my_life","where_were_you","thea_s_war","mr_postman_look_see","see_no_evil","jsn","in_the_no","dear_emily","ask_the_marshall","now_here_this","emily_to_thea","in_country","aperture","from_a_hot_place","observer","john_law","latticework","scare","ten_thousand_heroes","veronica_s_party","halftones","capitol","demo","timely","telephone","whitman_s_creek","showtime","8088","reality-based","couplings","informant","u_turns","visitor","freak_whence_he","slacktown","fugitive","dreamtime","homefront","l_etat_de_tate","victor_s_garden","floater","down_in_the_dark","postwar","persons","labyrinth")
+streamThumbNames = new Array("story_of_my_life","where_were_you","thea_s_war","mr_postman_look_see","see_no_evil","jsn","in_the_no","dear_emily","ask_the_marshall","now_here_this","emily_to_thea","in_country","aperture","from_a_hot_place","observer","john_law","latticework","scare","ten_thousand_heroes","veronica_s_party","halftones","capitol","demo","timely","telephone","whitman_s_creek","showtime","8088","reality-based","couplings","informant","u_turns","visitor","freak_whence_he","slacktown","fugitive","dreamtime","homefront","l_etat_de_tate","victor_s_garden","floater","down_in_the_dark","postwar","persons","labyrinth","arcana")
 
 // P A T H S
 
