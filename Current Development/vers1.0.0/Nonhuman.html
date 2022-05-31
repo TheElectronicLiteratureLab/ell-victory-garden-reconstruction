@@ -11,19 +11,19 @@
 	</style>
 <script src='scripts/VGScript.js'></script>
 <script src='scripts/dataSource.js'></script>
+<script src='scripts/arcanaScript.js'></script>
+<script src='scripts/arcanaSource.js'></script>
 <script>
 	override = "index";
 </script>
 </head>
-<body onLoad="pageStart()">
+<body onLoad="pageStart(); writeNow()">
 <main>
 
 
 <h1>Nonhuman</h1>
 
-<p>
-	This is the page hosting the "arcana" generation stuff.  Add links to the scripts.
-</p>
+<div id='out'></div>
 
 </main>
 <script src='scripts/uiScript.js'></script>
