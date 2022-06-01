@@ -14,7 +14,7 @@ function writeNow(){
 }
 
 function geppetto(){
-	switcher = Math.floor(Math.random()*8);
+	switcher = Math.floor(Math.random()*11);
 	t = "";
 	switch(switcher){
 		case 0:
@@ -30,7 +30,7 @@ function geppetto(){
 			t = massEffect();
 			break;
 		case 3:
-			//sentence with stuttering repetitions
+			//sentence with repetitions
 			t = repNoise() + ".";
 			break;
 		case 4:
@@ -39,18 +39,62 @@ function geppetto(){
 			break;
 		case 5:
 			// @ various figures, including VG characters
-			t = "@" + g(whois);
+			t = atter();
 			break;
 		case 6:
 			//word grabs
 			t = grabber();
 			break;
 		case 7:
-			//Specific sayings
-			t = g(sayWhat) + ".";
+			//headlines, in-line or H2
+			if(r(5) == 0){
+				t = "<h2>" + g(headMatter) + "</h2>";
+			}
+			else{
+				t = g(headMatter);
+			}
+			break;
+		case 8:
+			//page number
+			t = pager();
+			break;
+		case 9:
+			//MODULE
+			t = "<br><tt><strong>MODULE "  + r(3000);
+			if(r(3) == 0) t +=" FAILS TO " + g(modulus);
+			t += "</strong></tt><br>";
+			break;
+		case 10:
+			//hashtag
+			t = "#" + allCap(g(wordMass));
 			break;
 	}
 	return t;
+}
+
+function atter(){
+	atsy = "@";
+	if(r(2)==0){
+		atsy += g(whoIs);
+	}
+	else{
+		atsy += g(firstNames) + " " + g(lastNames);
+	}
+	return atsy;
+}
+
+function pager(){
+	pageTurn = "<br><span class='centered'>";
+	if(r(3) == 0) pageTurn += "NOW ON ";
+	pageTurn += "Page " + r(1037);
+	if(r(2) == 0){
+		pageTurn += "... ";
+	}
+	else{
+		pageTurn += ": "
+	}
+	pageTurn += "</span><br>"
+	return pageTurn;
 }
 
 function grabber(){

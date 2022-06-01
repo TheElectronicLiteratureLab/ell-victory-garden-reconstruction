@@ -110,7 +110,7 @@ persons = new Array("Persons","Reading_Ahead","Coming_Home","Underworld","Viewin
 
 labyrinth = new Array("A_Maze","Come_In")
 
-arcana = new Array("Arcana","Q_and_A","What_They_Want","2033","Nonhuman")
+arcana = new Array("Arcana","Q_and_A","What_They_Want","2033","Machine")
 
 //OMNIBUS STUFF FOR STREAMS
 
