@@ -1,4 +1,4 @@
-screenArray = new Array("","","","","","","","","","","","","","","");
+screenArray = new Array("","","","","","","","","","","");
 outCount = 0;
 function writeNow(){
 
@@ -14,7 +14,7 @@ function writeNow(){
 }
 
 function geppetto(){
-	switcher = Math.floor(Math.random()*11);
+	switcher = Math.floor(Math.random()*12);
 	t = "";
 	switch(switcher){
 		case 0:
@@ -47,29 +47,46 @@ function geppetto(){
 			break;
 		case 7:
 			//headlines, in-line or H2
-			if(r(5) == 0){
-				t = "<h2>" + g(headMatter) + "</h2>";
-			}
-			else{
-				t = g(headMatter);
-			}
+			t = headCase();
 			break;
 		case 8:
 			//page number
 			t = pager();
 			break;
 		case 9:
-			//MODULE
-			t = "<br><tt><strong>MODULE "  + r(3000);
-			if(r(3) == 0) t +=" FAILS TO " + g(modulus);
+			//MODULE etc.
+			t = "<br><tt><strong>" + g(modWords) + " " + r(3000);
+			if(r(3) == 0) t +=" " + g(modVerbs) + " TO " + g(modulus);
 			t += "</strong></tt><br>";
 			break;
 		case 10:
 			//hashtag
 			t = "#" + allCap(g(wordMass));
 			break;
+		case 11:
+		//random string of emojis
+			for(var i=0; i< 3 + r(3); i++){
+				t += "<SPAN style='font-size: 12pt;'>";
+				t += "&#"+gString(emojis) + ";</SPAN>";
+			}
+	
+			break;
 	}
+	//COLORIZE!?
+	if(r(10) == 5) t = "<span style='color: red'>" + t + "</span>"
 	return t;
+}
+
+function headCase(){
+	headCheese = "";
+	if(r(3) == 0){
+		headCheese = g(headMatter);
+	}
+	else{
+		headCheese = toCap(g(wordMass));
+	}
+	if(r(5) == 0) headCheese = "<h2>" + headCheese + "</h2>";
+	return headCheese;
 }
 
 function atter(){
@@ -84,17 +101,23 @@ function atter(){
 }
 
 function pager(){
-	pageTurn = "<br><span class='centered'>";
-	if(r(3) == 0) pageTurn += "NOW ON ";
-	pageTurn += "Page " + r(1037);
-	if(r(2) == 0){
-		pageTurn += "... ";
+	pageTurn = "";
+	pageNum = r(1038);
+	switch(r(4)){
+		case 0:
+			pageTurn = "END OF PAGE " + pageNum + ".";
+			break;
+		case 1:
+			pageTurn = "PAGE " + pageNum + " BEGINS:";
+			break;
+		case 2:
+			pageTurn = "MEANWHILE ON PAGE " + pageNum + "... ";
+			break;
+		case 3:
+			pageTurn = gString("THUS,SO,HERE,ANYWAY") + " " + gString("ENDS,BEGINS,CONTINUES") + " PAGE " + pageNum + "."
+			break;
 	}
-	else{
-		pageTurn += ": "
-	}
-	pageTurn += "</span><br>"
-	return pageTurn;
+	return pageTurn + " ";
 }
 
 function grabber(){
@@ -234,8 +257,8 @@ function toCap(tcString){
 	//CAPITALIZES FIRST LETTER OF GIVEN STRING
 	theStub = tcString.substring(1,tcString.length);
 	theCharCode = tcString.charCodeAt(0);
-	//DON'T DO IF ALREADY A CAPITAL LETTER
-	if(theCharCode <64 && theCharCode < 91) theCharCode -=32;
+	//OPERATE ONLY ON LOWERCASE LETTERS
+	if(theCharCode >96 && theCharCode < 123) theCharCode -=32;
 	return String.fromCharCode(theCharCode) + theStub;
 }
 
@@ -258,6 +281,11 @@ function unCap(ucString){
 	if(theCharCode < 96 && theCharCode <123) theCharCode +=32;
 	return String.fromCharCode(theCharCode) + theStub;
 	}
+}
+
+function gString(what){
+	gStringArray = what.split(",");
+	return gStringArray[Math.floor(Math.random()*gStringArray.length)];
 }
 
 function g(what){
