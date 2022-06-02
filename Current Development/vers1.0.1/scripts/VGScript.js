@@ -14,6 +14,12 @@ window.addEventListener('keyup', function(event) {
   if(event.keyCode == 13) pathFinder('fwd');
 });
 
+function forwardAnywhere(){
+	allGarden = garden.split(",");
+	anywhere = allGarden[Math.floor(Math.random()*allGarden.length)];
+	transit(anywhere);
+}
+
 function transit(dest){
 	//INDEX PAGE IS SPECIAL CASE
 	if(dest == "index"){

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Arcana</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson Pro|Cabin">
+	<link rel='stylesheet' href='css/VGStyle.css'>
+<style>
+			main { position: absolute; top: 10px; }
+			.wrapper {
+				  display: grid;
+  					grid-template-columns: repeat(3, 10fr);
+  					gap: 8px;
+  					grid-auto-rows: minmax(80px, auto);
+			}
+			.north { grid-column: 2 / 3; grid-row: 1; }
+			.west  { grid-column: 3 / 3; grid-row: 2; }
+			.center {grid-column: 2 / 3; grid-row: 2;}
+			.east  { grid-column: 1 / 3; grid-row: 2; }
+			.south { grid-column: 2 / 3; grid-row: 3;}
+</style>
+	<script src='scripts/VGScript.js'></script>
+	<script src='scripts/dataSource.js'></script>
+	<script>sessionStorage.setItem('transitMode','stream')</script>
+</head>
+<body onLoad="pageStart(); layCards();">
+<main>
+
+<h1>Arcana</h1>
+
+<div class='wrapper'>
+
+<div class='north'><a href="javascript: seeCard('N')"><img  id="N" src="images/streamImages/Fool_Card.jpg" width="200" alt="A card of the Special Arcana" /></a></div>
+<div class='east'><a href="javascript: seeCard('E')"><img id="E" src="images/streamImages/Fool_Card.jpg" width="200" alt="A card of the Special Arcana" /></a></div>
+<div class='center'><a href=''><img src="images/streamImages/Center_Card.jpg" width="200" alt="New Reading Link" /></a></div>
+<div class='south'><a href="javascript: seeCard('S')"><img id="S" src="images/streamImages/Fool_Card.jpg" width="200" alt="A card of the Special Arcana" /></a></div>
+<div class='west'><a href="javascript: seeCard('W')"><img id="W" src="images/streamImages/Fool_Card.jpg" width="200" alt="A card of the Special Arcana" /></a></div>
+
+
+</div>
+
+<p class='centered'><a href="Q_and_A.html"><strong>Proceed</strong></a></p>
+
+<script>
+function seeCard(whichPos){
+	if(whichPos == 'N') window.open("images/streamImages/" + NPick + "_Card.jpg");
+	if(whichPos == 'E') window.open("images/streamImages/" + EPick + "_Card.jpg");
+	if(whichPos == 'S') window.open("images/streamImages/" + SPick + "_Card.jpg");
+	if(whichPos == 'W') window.open("images/streamImages/" + WPick + "_Card.jpg");
+}
+
+function layCards(){
+
+	theCards = new Array("Hermit","Fool","Strength","Tower","Lovers");
+
+	picker = Math.floor(Math.random()*theCards.length);
+	NPick = theCards[picker]
+	NCardURL = "images/streamImages" + NPick + "_Card.jpg";
+	theCards.splice(picker,1);
+
+	picker = Math.floor(Math.random()*theCards.length);
+	EPick = theCards[picker]
+	theCards.splice(picker,1);
+
+	picker = Math.floor(Math.random()*theCards.length);
+	SPick = theCards[picker]
+	theCards.splice(picker,1);
+
+	picker = Math.floor(Math.random()*theCards.length);
+	WPick = theCards[picker]
+
+	//ASSIGN VALUES TO IMGs
+	document.getElementById('N').src="images/streamImages/"+ NPick + "_Card.jpg";
+	document.getElementById('E').src="images/streamImages/"+ EPick + "_Card.jpg";
+	document.getElementById('S').src="images/streamImages/"+ SPick + "_Card.jpg";
+	document.getElementById('W').src="images/streamImages/"+ WPick + "_Card.jpg";
+}
+
+</script>
+</main>
+</html>

@@ -64,12 +64,12 @@ function geppetto(){
 			t = "#" + allCap(g(wordMass));
 			break;
 		case 11:
-		//random string of emojis
-			for(var i=0; i< 3 + r(3); i++){
-				t += "<SPAN style='font-size: 12pt;'>";
-				t += "&#"+gString(emojis) + ";</SPAN>";
-			}
-	
+			//WORDMASS LINKED TO RANDOM PAGE IN TEXT
+			t = "<a href='javascript: forwardAnywhere()'><strong>" + allCap(g(wordMass)) + "</strong></a>";
+			break;
+		case 12:
+			//RE-USING THOSE GLUONS
+			t = g(gluons);
 			break;
 	}
 	//COLORIZE!?
@@ -203,7 +203,7 @@ function twoSplice(){
 	}
 
 	if(r(3) == 0){
-		splicing = part1 + " " + joiner() + " " + part2;
+		splicing = part1 + " &#" + gString(emojis) + "; " + part2;
 	}
 	else{
 		splicing = part1 + part2;
@@ -225,17 +225,6 @@ function formCheck(sent){
 	if(lastChar == "." || lastChar == "?" || lastChar =="!") fixit = false;
 	if(fixit == true) sent += ".";
 	return sent;
-}
-
-function joiner(){
-	join = "";
-	if(r(3) == 0){
-		join = allCap(g(gluons));
-	}
-	else{
-		join = allCap(g(wordMass));
-	}
-	return join;
 }
 
 function reverser(revS){

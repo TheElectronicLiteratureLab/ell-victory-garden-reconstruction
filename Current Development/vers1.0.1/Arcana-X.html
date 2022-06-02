@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Arcana-X</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson Pro|Cabin">
+	<link rel='stylesheet' href='css/VGStyle.css'>
+<style>
+			main { position: absolute; top: 10px; }
+			.wrapper {
+				  display: grid;
+  					grid-template-columns: repeat(3, 10fr);
+  					gap: 0px;
+  					grid-auto-rows: minmax(80px, auto);
+			}
+			.north { grid-column: 2 / 3; grid-row: 1; }
+			.west  { grid-column: 3 / 3; grid-row: 2; }
+			.east  { grid-column: 1 / 3; grid-row: 2; }
+			.south { grid-column: 2 / 3; grid-row: 3;}
+</style>
+	<script src='scripts/VGScript.js'></script>
+	<script src='scripts/dataSource.js'></script>
+	<script>sessionStorage.setItem('transitMode','stream')</script>
+</head>
+<body onLoad="pageStart(); layCards();">
+<main>
+
+<h1>Arcana</h1>
+
+<div class='wrapper'>
+
+<div class='north'><img  id="N" src="images/streamImages/Fool_Card.jpg" width="200" alt="A card of the Special Arcana" /></div>
+<div class='east'><img id="E" src="images/streamImages/Fool_Card.jpg" width="200" alt="A card of the Special Arcana" /></div>
+<div class='south'><img id="S" src="images/streamImages/Fool_Card.jpg" width="200" alt="A card of the Special Arcana" /></div>
+<div class='west'><img id="W" src="images/streamImages/Fool_Card.jpg" width="200" alt="A card of the Special Arcana" /></div>
+
+</div>
+<script>
+function layCards(){
+	theCards = new Array("Hermit","Fool","Strength","Tower","Lovers")
+	NPick = theCards[Math.floor(Math.random()*theCards.length)];
+	theCards.splice(NPick);
+	EPick = theCards[Math.floor(Math.random()*theCards.length)];
+	theCards.splice(EPick);
+	SPick = theCards[Math.floor(Math.random()*theCards.length)];
+	theCards.splice(SPick);
+	WPick = theCards[0];
+	window.alert(NPick,EPick,SPick,WPick);
+	//ASSIGN VALUES TO IMGs
+	document.getElementById('N').src="images/streamImages/"+ NPick + "_Card.jpg";
+	document.getElementById('E').src="images/streamImages/"+ EPick + "_Card.jpg";
+	document.getElementById('S').src="images/streamImages/"+ SPick + "_Card.jpg";
+	document.getElementById('W').src="images/streamImages/"+ WPick + "_Card.jpg";
+}
+
+</script>
+</main>
+</html>

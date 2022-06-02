@@ -35,19 +35,24 @@ Stuart Moulthrop<br>
 
 </p>
 	Read by <a href="Streamlines.html">Streams</a> or <a href="Pathfinder.html">Paths</a>, 
-	enter via the <a href="Come_In.html">Labyrinth</a>, or
+	enter via the <a href="Come_In.html">Labyrinth</a>, start at <a href="javascript: forwardAnywhere()">random</a>, or
 </p>
 <p class='centered'>
-	<a href="readME.html">B E G I N</a>
+	<a href="javascript: downTheGardenPath()">B E G I N</a>
 </p>
-<p id='buildID' style="color: #DD0000; font-size: 12pt"></p>
+<p id='buildID' style="font-size: 12pt"></p>
 </div>
 
 </main>
 </body>
 
 <script>
-	document.getElementById('buildID').innerHTML = "BUILD " + theBuild;
+	document.getElementById('buildID').innerHTML = theBuild;
+	function downTheGardenPath(){
+		sessionStorage.setItem('currentPath',garden);
+		sessionStorage.setItem('pathCount','-1');
+		window.open('Fool.html')
+	}
 </script>
 
 </html>
