@@ -6,19 +6,20 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson Pro|Cabin">
 <link rel='stylesheet' href='css/VGStyle.css'>
 	<!-- INTERNAL STYLESHEET TO BYPASS VERTICAL CENTERING -->
-	<style>
-		main { position: absolute; top: 10px; }
-		#pathList{
-			text-align:  center;
-			position:  absolute;
-			top:  60px;
-		}
-		#decal{
-			position:  absolute;
-			top:  60px;
-			left:  200px;
-		}
-	</style>
+
+<style>
+			main { position: absolute; top: 10px; }
+			.wrapper {
+				  display: grid;
+  					grid-template-columns: repeat(2, 10fr);
+  					gap: 8px;
+  					grid-auto-rows: minmax(80px, auto);
+			}
+			.pathList { grid-column: 1 / 2; grid-row: 1; }
+			.decal  { grid-column: 2 / 2; grid-row: 1; }
+
+</style>
+
 	<script src='scripts/VGScript.js'></script>
 	
 	<script src='scripts/dataSource.js'></script>
@@ -26,10 +27,13 @@
 <body onLoad="pageStart()">
 <main>
 
-<div class='centered' style="width: 700px;">
-
-<div id="pathList">
 <h1>The Paths</h1>
+<br>
+
+<div class='wrapper'>
+
+<div class="pathList" style="text-align: center;">
+
 	<!-- 1 ABW -->
 	<a href='All_Hazards_.html'>ABW</a><br>
 	<!-- 2 alone -->
@@ -149,7 +153,7 @@
 
 </div>
 
-<div id="decal">
+<div class="decal">
 	<img src="images/Pathfinder_Decal.jpg" width="200" alt="labyrinthine design">
 </div>
 
