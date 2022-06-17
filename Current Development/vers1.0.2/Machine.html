@@ -9,6 +9,19 @@
 	<style>
 		main { position: absolute; top: 10px; }
 		h2 { text-align: center; }
+		#floater{
+			background-color: orange;
+			font-family: Courier New, monospace;
+			font-size:  36pt;
+			line-height:  32pt;
+			font-weight:  700;
+			color:  yellow;
+			padding:  12px;
+		}
+		.dropper{
+			font:  19pt Arial;
+			font-weight:  700;
+		}
 	</style>
 <script src='scripts/VGScript.js'></script>
 <script src='scripts/dataSource.js'></script>
@@ -18,13 +31,17 @@
 	override = "index";
 </script>
 </head>
-<body onLoad="pageStart(); writeNow()">
+<body onLoad="pageStart(); writeNow(); startFloat(); startRain1();startRain2()">
 <main>
 
 
 <h1>Machine</h1>
 
-<div id='out'></div>
+<div id='out'  style="width: 700px;"></div>
+
+<div id='floater' style='position: absolute;'></div>
+<div id='drop1' class='dropper' style='position: absolute;'></div>
+<div id='drop2' class='dropper' style='position: absolute;'></div>
 
 </main>
 <script src='scripts/uiScript.js'></script>
