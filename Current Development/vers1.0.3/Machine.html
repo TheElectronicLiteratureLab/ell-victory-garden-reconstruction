@@ -12,8 +12,8 @@
 		#floater{
 			background-color: orange;
 			font-family: Courier New, monospace;
-			font-size:  36pt;
-			line-height:  32pt;
+			font-size:  32pt;
+			line-height: 28pt;
 			font-weight:  700;
 			color:  yellow;
 			padding:  12px;
@@ -22,6 +22,12 @@
 			font:  19pt Arial;
 			font-weight:  700;
 		}
+		body{
+		  	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+  			scrollbar-width: none; /* for Firefox */
+  			overflow:  hidden;
+		}
+ 
 	</style>
 <script src='scripts/VGScript.js'></script>
 <script src='scripts/dataSource.js'></script>
@@ -29,9 +35,10 @@
 <script src='scripts/arcanaSource.js'></script>
 <script>
 	override = "index";
+	//startFloat(); startRain1();startRain2();"
 </script>
 </head>
-<body onLoad="pageStart(); writeNow(); startFloat(); startRain1();startRain2()">
+<body onLoad="pageStart(); writeNow();startFloat(); startRain1(); startRain2();">
 <main>
 
 

@@ -17,6 +17,130 @@ function writeNow(){
 	screenDelay = setTimeout(writeNow,1000);
 }
 
+function startFloat(){
+	flot = 	document.getElementById('floater');
+	onStage = false;
+	floatDir = "down";
+	if(r(2) == 0) floatDir = "up";
+	if(floatDir == "down") flot.style.top = -200-r(200);
+	if(floatDir == "up") flot.style.top = window.innerHeight+200+r(200);
+	flot.style.left = 50 + r(50);
+	theRot = r(25);
+	rotAmt = 0.35;
+	rotDir = "left";
+	if(r(2) == 0) rotDir = "right";
+	if(r(2) == 0) theRot *= -1;
+	flot.style.transform = 'rotate(' + theRot + 'deg)';
+	//COLORS
+	switch(r(7)){
+		case 0:
+			flot.style.color = '#FFFFFF';
+			flot.style.backgroundColor = '#000000';
+			break;
+		case 1:
+			flot.style.color = 'yellow';
+			flot.style.backgroundColor = 'orange';
+			break;
+		case 2:
+			flot.style.color = 'red';
+			flot.style.backgroundColor = 'DarkGreen';
+			break;
+		case 3:
+			flot.style.color = 'yellow';
+			flot.style.backgroundColor = 'violet';
+			break;
+		case 4:
+			flot.style.color = 'purple';
+			flot.style.backgroundColor = 'gold';
+			break;
+		case 5:
+			flot.style.color = 'cyan';
+			flot.style.backgroundColor = 'DarkGreen';
+			break;
+		case 6:
+			flot.style.color = 'Green';
+			flot.style.backgroundColor = 'magenta';
+			break;
+	}
+	flot.style.opacity = 0.75;
+	floatSpeed = 2;
+	flot.innerHTML = modUp();
+	floatie = setTimeout(doFloat,35)	
+}
+
+function doFloat(){
+	flot = document.getElementById('floater');
+	theTop = parseInt(flot.style.top);
+	if(floatDir == "down") theTop += floatSpeed;
+	if(floatDir == "up") theTop -= floatSpeed;
+	floatSpeed += 0.05
+	flot.style.top = theTop;
+	if(rotDir == "right") theRot += rotAmt;
+	if(rotDir == "left") theRot -= rotAmt;
+	rotAmt += 0.025;
+	flot.style.transform = 'rotate(' + theRot + 'deg)';
+	//ONSTAGE SET
+	if(theTop > 0 && theTop < window.innerHeight) onStage = true;
+	//OFFSTAGE TEST
+	if(onStage == true && (theTop > window.innerHeight + 200 || theTop < -200)){
+		startFloat();
+	}
+	else{ //RECYCLE
+		floatie = setTimeout(doFloat,35)
+	}
+}
+
+function startRain1(){
+	d1 = document.getElementById('drop1');
+	d1OnStage = false;
+	d1.style.left = 50 + r(500);
+	d1.style.top = 0 - r(1200);
+	d1.style.opacity = 1;
+	d1FloatSpeed = 2;
+	d1.innerHTML = formCheck(getSentence());
+	textReign = setTimeout(tDrizzle,35)	
+}
+
+function startRain2(){
+	d2 = document.getElementById('drop2');
+	d2OnStage = false;
+	d2.style.left = 50 + r(500);
+	d2.style.top = 0 - r(1200);
+	d2.style.opacity = 1;
+	d2FloatSpeed = 2;
+	d2.innerHTML = grabber();
+	//NO NEED TO START DRIZZLE HERE
+}
+
+//ANIMATE THE TEXTDROPS
+function tDrizzle(){
+	d1 = document.getElementById('drop1');
+	d2 = document.getElementById('drop2');
+	d1.style.opacity -= 0.009;
+	d2.style.opacity -= 0.009;
+	d1Top = parseInt(d1.style.top);
+	d2Top = parseInt(d2.style.top);
+	d1Top += d1FloatSpeed;
+	d2Top += d2FloatSpeed;
+	d1FloatSpeed += r(5)/10
+	d2FloatSpeed += r(5)/10
+	d1.style.top = d1Top;
+	d2.style.top = d2Top;
+	//ONSTAGE SET
+	if(d1Top > 0 && d1Top < window.innerHeight) d1OnStage = true;
+	if(d2Top > 0 && d2Top < window.innerHeight) d2OnStage = true;
+	//OFFSTAGE TEST
+	if(d1OnStage == true && (d1Top > window.innerHeight + 200 || d1Top < -200)){
+		startRain1();
+	}
+	else{ //RECYCLE
+		textReign = setTimeout(tDrizzle,35)
+	}
+	if(d2OnStage == true && (d2Top > window.innerHeight + 200 || d2Top < -200)){
+		startRain2();
+	}
+}
+
 function geppetto(){
 	switcher = Math.floor(Math.random()*25);
 	//switcher = 24;
@@ -185,58 +309,6 @@ function hereWeAre(){
 	return loc + ".]";
 }
 
-function startRain1(){
-	d1 = document.getElementById('drop1');
-	d1OnStage = false;
-	d1.style.left = 50 + r(500);
-	d1.style.top = 0 - r(1200);
-	d1.style.opacity = 1;
-	d1FloatSpeed = 2;
-	d1.innerHTML = grabber();
-	textReign = setTimeout(tDrizzle,35)	
-}
-
-function startRain2(){
-	d2 = document.getElementById('drop2');
-	d2OnStage = false;
-	d2.style.left = 50 + r(500);
-	d2.style.top = 0 - r(1200);
-	d2.style.opacity = 1;
-	d2FloatSpeed = 2;
-	d2.innerHTML = grabber();
-	//NO NEED TO START DRIZZLE HERE
-}
-
-//ANIMATE THE TEXTDROPS
-function tDrizzle(){
-	d1 = document.getElementById('drop1');
-	d2 = document.getElementById('drop2');
-	d1.style.opacity -= 0.009;
-	d2.style.opacity -= 0.009;
-	d1Top = parseInt(d1.style.top);
-	d2Top = parseInt(d2.style.top);
-	d1Top += d1FloatSpeed;
-	d2Top += d2FloatSpeed;
-	d1FloatSpeed += r(5)/10
-	d2FloatSpeed += r(5)/10
-	d1.style.top = d1Top;
-	d2.style.top = d2Top;
-	//ONSTAGE SET
-	if(d1Top > 0 && d1Top < window.innerHeight) d1OnStage = true;
-	if(d2Top > 0 && d2Top < window.innerHeight) d2OnStage = true;
-	//OFFSTAGE TEST
-	if(d1OnStage == true && (d1Top > window.innerHeight + 200 || d1Top < -200)){
-		startRain1();
-	}
-	else{ //RECYCLE
-		textReign = setTimeout(tDrizzle,35)
-	}
-	if(d2OnStage == true && (d2Top > window.innerHeight + 200 || d2Top < -200)){
-		startRain2();
-	}
-}
-
-
 function statUs(){
 	su = "<br><br>" + gString("WORDS,TOKENS,CHARACTERS,IDEOMES,MICROMEMES,SPEECH ACTS,PAGES") + " ";
 	if(r(3) == 0) su += "NOT ";
@@ -302,79 +374,6 @@ function bookReporter(){
 		br += ".";
 	}
 	return br;
-}
-
-function startFloat(){
-	flot = 	document.getElementById('floater');
-	onStage = false;
-	floatDir = "down";
-	if(r(2) == 0) floatDir = "up";
-	if(floatDir == "down") flot.style.top = -200-r(200);
-	if(floatDir == "up") flot.style.top = window.innerHeight+200+r(200);
-	flot.style.left = 50 + r(500);
-	theRot = r(25);
-	rotAmt = 0.35;
-	rotDir = "left";
-	if(r(2) == 0) rotDir = "right";
-	if(r(2) == 0) theRot *= -1;
-	flot.style.transform = 'rotate(' + theRot + 'deg)';
-	//COLORS
-	switch(r(7)){
-		case 0:
-			flot.style.color = '#FFFFFF';
-			flot.style.backgroundColor = '#000000';
-			break;
-		case 1:
-			flot.style.color = 'yellow';
-			flot.style.backgroundColor = 'orange';
-			break;
-		case 2:
-			flot.style.color = 'red';
-			flot.style.backgroundColor = 'DarkGreen';
-			break;
-		case 3:
-			flot.style.color = 'yellow';
-			flot.style.backgroundColor = 'violet';
-			break;
-		case 4:
-			flot.style.color = 'purple';
-			flot.style.backgroundColor = 'gold';
-			break;
-		case 5:
-			flot.style.color = 'cyan';
-			flot.style.backgroundColor = 'DarkGreen';
-			break;
-		case 6:
-			flot.style.color = 'Green';
-			flot.style.backgroundColor = 'magenta';
-			break;
-	}
-	flot.style.opacity = 0.75;
-	floatSpeed = 2;
-	flot.innerHTML = modUp();
-	floatie = setTimeout(doFloat,35)	
-}
-
-function doFloat(){
-	flot = document.getElementById('floater');
-	theTop = parseInt(flot.style.top);
-	if(floatDir == "down") theTop += floatSpeed;
-	if(floatDir == "up") theTop -= floatSpeed;
-	floatSpeed += 0.05
-	flot.style.top = theTop;
-	if(rotDir == "right") theRot += rotAmt;
-	if(rotDir == "left") theRot -= rotAmt;
-	rotAmt += 0.025;
-	flot.style.transform = 'rotate(' + theRot + 'deg)';
-	//ONSTAGE SET
-	if(theTop > 0 && theTop < window.innerHeight) onStage = true;
-	//OFFSTAGE TEST
-	if(onStage == true && (theTop > window.innerHeight + 200 || theTop < -200)){
-		startFloat();
-	}
-	else{ //RECYCLE
-		floatie = setTimeout(doFloat,35)
-	}
 }
 
 function modUp(){

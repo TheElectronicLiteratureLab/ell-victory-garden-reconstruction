@@ -246,7 +246,12 @@ function pathFinder(dir)
 
 //CALLED ON THE TWO 'IMAGE' PAGES
 function emilyPic(){
-	document.getElementById("Emily").src = "images/Emilys/emily_" + Math.floor(Math.random()*100) + ".jpg";
+	thePick = Math.floor(Math.random()*100);
+	document.getElementById("Emily").src = "images/Emilys/emily_" + thePick + ".jpg";
+	theCaption = emilyCaptions[thePick];
+	defCap = Math.floor(Math.random()*emilyDefCaptions.length);
+	if(theCaption.length < 3) theCaption = emilyDefCaptions[defCap];
+	document.getElementById("emCap").innerHTML = theCaption;
 }
 
 //CALLED ON "ARCANA" PAGE
