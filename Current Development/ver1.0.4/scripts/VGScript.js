@@ -244,7 +244,7 @@ function pathFinder(dir)
 
 } //END OF PATHFINDER FUNCTION
 
-//CALLED ON THE TWO 'IMAGE' PAGES
+//CALLED ON THE THREE 'IMAGE' PAGES (IMAGE, ENDLESSIMAGE, BACKWARDIMAGE)
 function emilyPic(){
 	thePick = Math.floor(Math.random()*100);
 	document.getElementById("Emily").src = "images/Emilys/emily_" + thePick + ".jpg";

@@ -2,29 +2,30 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>Turbulence Down on Me</title>
+	<title>Image</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson Pro|Cabin">
 <link rel='stylesheet' href='css/VGStyle.css'>
+	<!-- INTERNAL STYLESHEET TO BYPASS VERTICAL CENTERING -->
+	<style>
+		main { position: absolute; top: 10px; }
+	</style>
 <script src='scripts/VGScript.js'></script>
 <script src='scripts/dataSource.js'></script>
+<script>
+	override="";
+</script>
 </head>
-<body onLoad="pageStart()">
-<main>
+<body onLoad="pageStart(); emilyPic();">
 <div id="topper"></div>
 
-
-<h1>Turbulence Down on Me</h1>
-
-
-
-
-
-
-<p><em>What is it about August?</em></p>
-
-                                                                           <p>— George Bush, 8-20-91 </p>
+<h1>Image</h1>
+<p style="text-align: center">
+<img id="Emily" src="images/Emilys/whiteDot.jpg" width="700" height="700" alt="Image of Emily" >
+</p>
+<p class="caption" id="emCap"></p>
 
 </main>
 <script src='scripts/uiScript.js'></script>
 </body>
+
 </html>
